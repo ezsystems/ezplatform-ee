@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "47f07552a2a5dd516939580903d8ce20",
+    "hash": "072b7ef73b9369eba70d4f1737bf24d4",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -1004,20 +1004,20 @@
         },
         {
             "name": "ezsystems/landing-page-fieldtype-bundle",
-            "version": "dev-master",
+            "version": "v1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/EzLandingPageFieldTypeBundle.git",
-                "reference": "acba3f42c33c9ffb61bcd83d6a608a3445160f89"
+                "reference": "7dc36537ce1864cc995d61a0b12386ac4f80baa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/EzLandingPageFieldTypeBundle/zipball/acba3f42c33c9ffb61bcd83d6a608a3445160f89",
-                "reference": "acba3f42c33c9ffb61bcd83d6a608a3445160f89",
-                "shasum": ""
+                "url": "https://updates.ez.no/studio/dist/ezsystems-landing-page-fieldtype-bundle-7dc36537ce1864cc995d61a0b12386ac4f80baa9-zip-88c487.zip",
+                "reference": "7dc36537ce1864cc995d61a0b12386ac4f80baa9",
+                "shasum": "14a5b1a5e479190c0c562a351a109f915a18633c"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "~6.0@dev",
+                "ezsystems/ezpublish-kernel": "~6.0@alpha",
                 "zetacomponents/feed": "1.4"
             },
             "require-dev": {
@@ -1042,10 +1042,10 @@
             ],
             "description": "eZ Platform Landing Page FieldType",
             "support": {
-                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/master",
+                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.0.0-alpha4",
                 "issues": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/issues"
             },
-            "time": "2015-08-05 13:19:14"
+            "time": "2015-08-05 13:23:24"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
@@ -1208,17 +1208,17 @@
         },
         {
             "name": "ezsystems/studio-ui-bundle",
-            "version": "dev-master",
+            "version": "v1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/StudioUIBundle.git",
-                "reference": "3d2e1d79b223c2dcfc3f91c6f71bf254a97247b3"
+                "reference": "8883a4864eed911594c6bf01923ad02bb54c3c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/StudioUIBundle/zipball/3d2e1d79b223c2dcfc3f91c6f71bf254a97247b3",
-                "reference": "3d2e1d79b223c2dcfc3f91c6f71bf254a97247b3",
-                "shasum": ""
+                "url": "https://updates.ez.no/studio/dist/ezsystems-studio-ui-bundle-8883a4864eed911594c6bf01923ad02bb54c3c9c-zip-7ce448.zip",
+                "reference": "8883a4864eed911594c6bf01923ad02bb54c3c9c",
+                "shasum": "8b1ec7fd3229f11a27a0fcf7aa76dcc11f94d2ea"
             },
             "require-dev": {
                 "ezsystems/ezpublish-kernel": ">= 5.4",
@@ -1242,10 +1242,10 @@
             ],
             "description": "eZ Studio UI Bundle",
             "support": {
-                "source": "https://github.com/ezsystems/StudioUIBundle/tree/master",
+                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.0.0-alpha5",
                 "issues": "https://github.com/ezsystems/StudioUIBundle/issues"
             },
-            "time": "2015-08-05 13:15:02"
+            "time": "2015-08-05 11:21:28"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -3908,8 +3908,8 @@
         "ezsystems/demobundle": 15,
         "ezsystems/comments-bundle": 15,
         "ezsystems/privacy-cookie-bundle": 20,
-        "ezsystems/studio-ui-bundle": 20,
-        "ezsystems/landing-page-fieldtype-bundle": 20,
+        "ezsystems/studio-ui-bundle": 15,
+        "ezsystems/landing-page-fieldtype-bundle": 15,
         "behat/sahi-client": 20,
         "ezsystems/behatbundle": 20
     },
