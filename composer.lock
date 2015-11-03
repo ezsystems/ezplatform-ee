@@ -1031,17 +1031,17 @@
         },
         {
             "name": "ezsystems/ezstudio-demo-bundle",
-            "version": "v1.0.0-beta5",
+            "version": "v1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/ezstudio-demo-bundle.git",
-                "reference": "eea49bc51e8d761f2d92a82425e348503664cf0a"
+                "reference": "1a398b837332cd2b2338fd072bb26f25558eb3f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/studio/dist/ezsystems-ezstudio-demo-bundle-eea49bc51e8d761f2d92a82425e348503664cf0a-zip-3c011d.zip",
-                "reference": "eea49bc51e8d761f2d92a82425e348503664cf0a",
-                "shasum": "080cd2ddac9c6236a5d2fe66225f3b7ee7255a17"
+                "url": "https://updates.ez.no/studio/dist/ezsystems-ezstudio-demo-bundle-1a398b837332cd2b2338fd072bb26f25558eb3f6-zip-e84818.zip",
+                "reference": "1a398b837332cd2b2338fd072bb26f25558eb3f6",
+                "shasum": "19668c49355c0eb4d49a45d8797f4f24ad9b0a63"
             },
             "require": {
                 "components/bootstrap": "3.3.5",
@@ -1049,6 +1049,7 @@
                 "ezsystems/ezstudio-demo-bundle-data": "~1.0@beta",
                 "ezsystems/landing-page-fieldtype-bundle": "~1.0@beta",
                 "ezsystems/platform-ui-assets-bundle": "~1.0@beta",
+                "ezsystems/share-buttons-bundle": "~1.0@beta",
                 "knplabs/knp-menu-bundle": "1.*",
                 "php": ">=5.4.4"
             },
@@ -1074,10 +1075,10 @@
             ],
             "description": "Demo bundle for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/ezstudio-demo-bundle/tree/v1.0.0-beta5",
+                "source": "https://github.com/ezsystems/ezstudio-demo-bundle/tree/v1.0.0-beta7",
                 "issues": "https://github.com/ezsystems/ezstudio-demo-bundle/issues"
             },
-            "time": "2015-10-23 10:02:20"
+            "time": "2015-11-03 10:44:17"
         },
         {
             "name": "ezsystems/ezstudio-demo-bundle-data",
