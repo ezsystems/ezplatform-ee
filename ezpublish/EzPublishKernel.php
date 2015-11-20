@@ -41,6 +41,7 @@ class EzPublishKernel extends Kernel
             new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
             new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
             new EzSystems\StudioDemoBundle\EzSystemsStudioDemoBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new EzSystems\ShareButtonsBundle\EzSystemsShareButtonsBundle(),
             new EzSystems\PlatformUIAssetsBundle\EzSystemsPlatformUIAssetsBundle(),
             new EzSystems\PlatformUIBundle\EzSystemsPlatformUIBundle(),
