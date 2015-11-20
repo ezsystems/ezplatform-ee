@@ -5,13 +5,14 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site]
+        list: [demo_site]
         groups:
-            site_group: [site]
-        default_siteaccess: site
+            demo_site_group: [demo_site]
+        default_siteaccess: demo_site
         match:
             URIElement: 1
 
     system:
-        site_group:
+        demo_site_group:
             languages: [eng-GB]
+            var_dir: var/ezdemo_site
