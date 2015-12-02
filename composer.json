@@ -35,7 +35,7 @@
         "ezsystems/platform-ui-bundle": "1.0.0-rc1 as 1.0.0",
         "ezsystems/platform-ui-assets-bundle": "1.0.0-rc1 as 1.0.0",
         "ezsystems/comments-bundle": "6.0.0-rc1 as 6.0.0",
-        "ezsystems/studio-ui-bundle": "1.0.0-rc1 as 1.0.0",
+        "ezsystems/studio-ui-bundle": "1.0.0-rc2 as 1.0.0",
         "ezsystems/landing-page-fieldtype-bundle": "1.0.0-rc1 as 1.0.0",
         "ezsystems/ezstudio-demo-bundle": "1.0.0-rc1 as 1.0.0",
         "ezsystems/ezstudio-demo-bundle-data": "1.0.0-rc1 as 1.0.0",
