@@ -8,7 +8,7 @@
 ## Prerequisite
 
   These instructions assume you have technical knowledge and have already installed PHP, web server &
-  *a database server* needed for this software. For further information on requirements [see online doc](https://doc.ez.no/display/EZP/Requirements)
+  *a database server* needed for this software. For further information on requirements [see online doc](https://doc.ez.no/display/TECHDOC/Requirements)
 
   **Before you start**:
   - Create Database: Installation will ask you for credentials/details for which database to use
@@ -26,7 +26,7 @@
     `parameters.yml` contains settings for your database, mail system, and optionally [Solr](http://lucene.apache.org/solr/)
     if `search_engine` is configured as `solr`, as opposed to default `legacy` *(a limited database powered search engine)*.
 
-    A. **Extract archive** (tar/zip) *from http://share.ez.no/downloads/downloads*  
+    A. **Extract archive** (tar/zip) *from https://support.ez.no/Downloads/eZ-Studio-15.12*
 
        Extract the eZ Studio archive to a directory, then execute post install scripts:
 
@@ -53,8 +53,8 @@
 
      Options:
        - `<version>`: Optional, *if omitted you'll get latest stable*, examples for specifying:
-        - `1.0.0@beta`: Example of getting latests 1.0.0 beta
-        - `v1.0.0-beta5`: example of picking a specific release/tag
+        - `~1.0.0`: Example of getting latests 1.0.x release, recommended
+        - `v1.0.0-beta5`: example of picking a specific tag
         - `dev-master`: to get current development version (pre release) `master` branch
        - For core development: Add '--prefer-source' to get full git clones, and remove '--no-dev' to get things like phpunit and behat installed.
        - Further reading: https://getcomposer.org/doc/03-cli.md#create-project
@@ -135,7 +135,7 @@
     You may now complete the eZ Studio installation with ezplatform:install command, example of use:
 
     ```bash
-    $ php -d memory_limit=-1 app/console ezplatform:install --env prod clean
+    $ php -d memory_limit=-1 app/console ezplatform:install --env prod demo
     ```
 
     **Note**: Password for the generated `admin` user is `publish`, this name and password is needed when you would like to login to backend Studio UI. Future versions will prompt you for a unique password during installation.
