@@ -4,119 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a7c714074a43bf0d3d38dad9d4914343",
-    "content-hash": "e8b3155997cbafe6c4f4a45ef282c731",
+    "hash": "692f3c01473a48666d938c76b9d97a36",
+    "content-hash": "b9069621e027a8538ce47abfb4f60938",
     "packages": [
-        {
-            "name": "components/bootstrap",
-            "version": "3.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/bootstrap.git",
-                "reference": "d71c2a234c61f53f1109a26ba8155902a51f8ca5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/d71c2a234c61f53f1109a26ba8155902a51f8ca5",
-                "reference": "d71c2a234c61f53f1109a26ba8155902a51f8ca5",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": ">=1.9.1 <3.0"
-            },
-            "suggest": {
-                "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/bootstrap.js"
-                    ],
-                    "files": [
-                        "js/*.js",
-                        "css/*.css",
-                        "css/*.map",
-                        "fonts/*",
-                        "less/mixins/*.less",
-                        "less/*.less"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery"
-                        ]
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "http://getbootstrap.com",
-            "keywords": [
-                "css",
-                "framework",
-                "front-end",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ],
-            "time": "2015-06-17 06:08:09"
-        },
-        {
-            "name": "components/jquery",
-            "version": "2.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/jquery.git",
-                "reference": "7b1d1104656a092423fbfba13c5920e9bbba290c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/7b1d1104656a092423fbfba13c5920e9bbba290c",
-                "reference": "7b1d1104656a092423fbfba13c5920e9bbba290c",
-                "shasum": ""
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "jquery.js"
-                    ],
-                    "files": [
-                        "jquery.min.js",
-                        "jquery.min.map",
-                        "jquery-migrate.js",
-                        "jquery-migrate.min.js"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John Resig",
-                    "email": "jeresig@gmail.com"
-                }
-            ],
-            "description": "jQuery JavaScript Library",
-            "homepage": "http://jquery.com",
-            "time": "2015-05-08 05:04:47"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -796,60 +686,6 @@
             "time": "2015-02-22 15:40:31"
         },
         {
-            "name": "ezsystems/comments-bundle",
-            "version": "v6.0.0",
-            "target-dir": "EzSystems/CommentsBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/CommentsBundle.git",
-                "reference": "32e192db34b20e152dc56991a392edb59ef9555f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/CommentsBundle/zipball/32e192db34b20e152dc56991a392edb59ef9555f",
-                "reference": "32e192db34b20e152dc56991a392edb59ef9555f",
-                "shasum": ""
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.0",
-                "symfony-cmf/routing": "~1.1"
-            },
-            "require-dev": {
-                "matthiasnoback/symfony-dependency-injection-test": "0.*",
-                "phpunit/phpunit": "~4.1.3"
-            },
-            "suggest": {
-                "ezsystems/ngsymfonytools-bundle": "Needed for use with legacy backend tab for administration of comments"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "EzSystems\\CommentsBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Jerome Vieilledent",
-                    "email": "jv@ez.no"
-                },
-                {
-                    "name": "Bertrand Dunogier",
-                    "email": "bd@ez.no"
-                }
-            ],
-            "description": "Commenting system for eZ Publish",
-            "time": "2015-12-02 18:54:18"
-        },
-        {
             "name": "ezsystems/ezplatform-solr-search-engine",
             "version": "v1.0.1",
             "source": {
@@ -900,16 +736,16 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "v6.0.0",
+            "version": "v6.0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "8e9532655327d4f7a36ca52e42b04087b03aaf63"
+                "reference": "514dca065b089ad1bb7ca98625c7c34ea5a51f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/8e9532655327d4f7a36ca52e42b04087b03aaf63",
-                "reference": "8e9532655327d4f7a36ca52e42b04087b03aaf63",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/514dca065b089ad1bb7ca98625c7c34ea5a51f09",
+                "reference": "514dca065b089ad1bb7ca98625c7c34ea5a51f09",
                 "shasum": ""
             },
             "require": {
@@ -957,12 +793,6 @@
                 "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.0.x-dev"
-                },
-                "ezpublish-legacy-dir": "vendor/ezsystems/ezpublish-legacy"
-            },
             "autoload": {
                 "psr-4": {
                     "EzSystems\\PlatformInstallerBundle\\": "eZ/Bundle/PlatformInstallerBundle/src",
@@ -976,193 +806,9 @@
             "license": [
                 "GPL-2.0"
             ],
-            "description": "eZ Publish API and kernel. This is the heart of eZ Publish 5.",
+            "description": "Kernel used by ezsystems/ezplatform and derivatives. Provides the Content Repository, its APIs, and the application's Symfony framework integration.",
             "homepage": "http://share.ez.no",
-            "time": "2015-12-09 11:07:14"
-        },
-        {
-            "name": "ezsystems/ezstudio-demo-bundle",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ezsystems/ezstudio-demo-bundle.git",
-                "reference": "117a28d0fe34e475e7f5bf20a05b1527a83ab30c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-demo-bundle-117a28d0fe34e475e7f5bf20a05b1527a83ab30c-zip-1d861b.zip",
-                "reference": "117a28d0fe34e475e7f5bf20a05b1527a83ab30c",
-                "shasum": "c6998cba591adbf4c7da0aab61be8767ff783dc2"
-            },
-            "require": {
-                "components/bootstrap": "3.3.5",
-                "ezsystems/ezpublish-kernel": "^6.0",
-                "ezsystems/ezstudio-demo-bundle-data": "^1.0",
-                "ezsystems/landing-page-fieldtype-bundle": "^1.0",
-                "ezsystems/platform-ui-assets-bundle": "^1.0",
-                "ezsystems/share-buttons-bundle": "^1.0",
-                "knplabs/knp-menu-bundle": "1.*",
-                "php": ">=5.4.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\StudioDemoBundle\\": ""
-                }
-            },
-            "license": [
-                "TTL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Studio dev-team",
-                    "homepage": "https://github.com/ezsystems/ezstudio-demo-bundle/graphs/contributors"
-                }
-            ],
-            "description": "Demo bundle for eZ Studio",
-            "support": {
-                "source": "https://github.com/ezsystems/ezstudio-demo-bundle/tree/v1.0.0",
-                "issues": "https://github.com/ezsystems/ezstudio-demo-bundle/issues"
-            },
-            "time": "2015-12-10 11:29:48"
-        },
-        {
-            "name": "ezsystems/ezstudio-demo-bundle-data",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ezsystems/ezstudio-demo-bundle-data.git",
-                "reference": "341fddf1b8e13cd3a3282f3bd4c054fd27fab3da"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-demo-bundle-data-341fddf1b8e13cd3a3282f3bd4c054fd27fab3da-zip-e571d2.zip",
-                "reference": "341fddf1b8e13cd3a3282f3bd4c054fd27fab3da",
-                "shasum": "ce0bee6d3f39e53b840a09427c74e03a48072dda"
-            },
-            "type": "library",
-            "license": [
-                "TTL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Studio dev team",
-                    "homepage": "https://github.com/ezsystems/ezstudio-demo-bundle/graphs/contributors"
-                }
-            ],
-            "description": "Data for ezsystems/ezstudio-demo-bundle",
-            "support": {
-                "source": "https://github.com/ezsystems/ezstudio-demo-bundle-data/tree/v1.0.0-rc1",
-                "issues": "https://github.com/ezsystems/ezstudio-demo-bundle-data/issues"
-            },
-            "time": "2015-12-02 20:19:06"
-        },
-        {
-            "name": "ezsystems/flex-workflow",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ezsystems/flex-workflow.git",
-                "reference": "111b2ecee85cfb4448f6c1b3632f647c6125c1cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-111b2ecee85cfb4448f6c1b3632f647c6125c1cc-zip-134180.zip",
-                "reference": "111b2ecee85cfb4448f6c1b3632f647c6125c1cc",
-                "shasum": "2ed079dadf310a314b0b597829e44e4392e73490"
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.0",
-                "ezsystems/platform-ui-assets-bundle": "^1.0",
-                "ezsystems/platform-ui-bundle": "^1.0",
-                "ezsystems/repository-forms": "^1.0",
-                "symfony/swiftmailer-bundle": "~2.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\FlexWorkflow\\": "lib",
-                    "EzSystems\\FlexWorkflow\\Tests\\": "tests/FlexWorkflow",
-                    "EzSystems\\FlexWorkflowBundle\\": "bundle",
-                    "EzSystems\\FlexWorkflowBundle\\Tests\\": "tests/FlexWorkflowBundle"
-                }
-            },
-            "license": [
-                "TTL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Systems",
-                    "email": "dev-team@ez.no"
-                }
-            ],
-            "description": "Flex Workflow extension for eZ Studio",
-            "support": {
-                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.0.0",
-                "issues": "https://github.com/ezsystems/flex-workflow/issues"
-            },
-            "time": "2015-12-10 11:11:32"
-        },
-        {
-            "name": "ezsystems/landing-page-fieldtype-bundle",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ezsystems/EzLandingPageFieldTypeBundle.git",
-                "reference": "731051699eaa72543f188a88a0178b0f6ffd6eb5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-landing-page-fieldtype-bundle-731051699eaa72543f188a88a0178b0f6ffd6eb5-zip-a74a07.zip",
-                "reference": "731051699eaa72543f188a88a0178b0f6ffd6eb5",
-                "shasum": "b00a43151c4eb29c3269f545491b0f06e935fa40"
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.0",
-                "zetacomponents/feed": "1.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\LandingPageFieldTypeBundle\\": "src/"
-                }
-            },
-            "license": [
-                "TTL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Systems",
-                    "email": "dev-team@ez.no"
-                }
-            ],
-            "description": "eZ Platform Landing Page FieldType",
-            "support": {
-                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.0.0",
-                "issues": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/issues"
-            },
-            "time": "2015-12-10 11:33:49"
+            "time": "2015-12-15 10:45:03"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
@@ -1202,16 +848,16 @@
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
-                "reference": "d3e81a9a6740a335ab6eccf7712e008b208e4757"
+                "reference": "d2b40146f9b9513d4e08717695b799f0f914ce0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/d3e81a9a6740a335ab6eccf7712e008b208e4757",
-                "reference": "d3e81a9a6740a335ab6eccf7712e008b208e4757",
+                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/d2b40146f9b9513d4e08717695b799f0f914ce0d",
+                "reference": "d2b40146f9b9513d4e08717695b799f0f914ce0d",
                 "shasum": ""
             },
             "require": {
@@ -1235,7 +881,7 @@
                 "GPL-2.0"
             ],
             "description": "eZ Platform UI Bundle",
-            "time": "2015-12-09 14:00:53"
+            "time": "2015-12-15 11:24:20"
         },
         {
             "name": "ezsystems/repository-forms",
@@ -1285,101 +931,6 @@
             ],
             "description": "Use Symfony forms with eZ Platform repository objects",
             "time": "2015-12-01 23:10:14"
-        },
-        {
-            "name": "ezsystems/share-buttons-bundle",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezsystems/EzSystemsShareButtonsBundle.git",
-                "reference": "8dc3d026a4f1c53e6523c8453f9223378c817409"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/EzSystemsShareButtonsBundle/zipball/8dc3d026a4f1c53e6523c8453f9223378c817409",
-                "reference": "8dc3d026a4f1c53e6523c8453f9223378c817409",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/symfony": "~2.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\ShareButtonsBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "eZ Platform dev-team & eZ Community",
-                    "homepage": "https://github.com/ezsystems/EzSystemsShareButtonsBundle/contributors"
-                }
-            ],
-            "description": "Social share buttons integration bundle into eZ Publish/eZ Platform",
-            "keywords": [
-                "buttons",
-                "facebook",
-                "google plus",
-                "linkedin",
-                "share",
-                "social",
-                "twitter"
-            ],
-            "time": "2015-11-17 13:59:53"
-        },
-        {
-            "name": "ezsystems/studio-ui-bundle",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ezsystems/StudioUIBundle.git",
-                "reference": "a745300028f5861486e1673482ab57ab88927eb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-a745300028f5861486e1673482ab57ab88927eb1-zip-ca35f9.zip",
-                "reference": "a745300028f5861486e1673482ab57ab88927eb1",
-                "shasum": "d2af038eaf8bbacc98b6271f4d99de357aff86ef"
-            },
-            "require": {
-                "ezsystems/ezpublish-kernel": "^6.0",
-                "ezsystems/ezstudio-demo-bundle": "^1.0",
-                "ezsystems/landing-page-fieldtype-bundle": "^1.0",
-                "ezsystems/platform-ui-bundle": "^1.0",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EzSystems\\StudioUIBundle\\": ""
-                }
-            },
-            "license": [
-                "TTL-2.0"
-            ],
-            "description": "eZ Studio UI Bundle",
-            "support": {
-                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.0.0",
-                "issues": "https://github.com/ezsystems/StudioUIBundle/issues"
-            },
-            "time": "2015-12-10 13:52:13"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -1889,119 +1440,6 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
-        },
-        {
-            "name": "knplabs/knp-menu",
-            "version": "v1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "f8e867268f63f561c1adadd6cbb5d8524f921873"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/f8e867268f63f561c1adadd6cbb5d8524f921873",
-                "reference": "f8e867268f63f561c1adadd6cbb5d8524f921873",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "pimple/pimple": "*",
-                "silex/silex": "1.0.*",
-                "twig/twig": ">=1.2,<2.0-dev"
-            },
-            "suggest": {
-                "pimple/pimple": "for the built-in implementations of the menu provider and renderer provider",
-                "silex/silex": "for the integration with your silex application",
-                "twig/twig": "for the TwigRenderer and the integration with your templates"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Knp\\Menu\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                },
-                {
-                    "name": "KnpLabs",
-                    "homepage": "http://knplabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
-                }
-            ],
-            "description": "An object oriented menu library",
-            "homepage": "http://knplabs.com",
-            "keywords": [
-                "menu",
-                "tree"
-            ],
-            "time": "2012-06-10 16:20:40"
-        },
-        {
-            "name": "knplabs/knp-menu-bundle",
-            "version": "v1.1.2",
-            "target-dir": "Knp/Bundle/MenuBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "2fecac02614e5a006f674dd5dd754eeaeca060b9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/2fecac02614e5a006f674dd5dd754eeaeca060b9",
-                "reference": "2fecac02614e5a006f674dd5dd754eeaeca060b9",
-                "shasum": ""
-            },
-            "require": {
-                "knplabs/knp-menu": "~1.1",
-                "symfony/framework-bundle": "~2.0"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Knp\\Bundle\\MenuBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                },
-                {
-                    "name": "Knplabs",
-                    "homepage": "http://knplabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://github.com/KnpLabs/KnpMenuBundle/contributors"
-                }
-            ],
-            "description": "This bundle provides an integration of the KnpMenu library",
-            "keywords": [
-                "menu"
-            ],
-            "time": "2013-05-25 10:20:03"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -3789,72 +3227,6 @@
             "description": "The Base package provides the basic infrastructure that all packages rely on. Therefore every component relies on this package.",
             "homepage": "https://github.com/zetacomponents",
             "time": "2014-09-19 03:28:34"
-        },
-        {
-            "name": "zetacomponents/feed",
-            "version": "1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zetacomponents/Feed.git",
-                "reference": "925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zetacomponents/Feed/zipball/925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861",
-                "reference": "925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861",
-                "shasum": ""
-            },
-            "require": {
-                "zetacomponents/base": "~1.8"
-            },
-            "require-dev": {
-                "zetacomponents/unit-test": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Sergey Alexeev"
-                },
-                {
-                    "name": "Sebastian Bergmann"
-                },
-                {
-                    "name": "Jan Borsodi"
-                },
-                {
-                    "name": "Raymond Bosman"
-                },
-                {
-                    "name": "Frederik Holljen"
-                },
-                {
-                    "name": "Kore Nordmann"
-                },
-                {
-                    "name": "Derick Rethans"
-                },
-                {
-                    "name": "Vadym Savchuk"
-                },
-                {
-                    "name": "Tobias Schlitt"
-                },
-                {
-                    "name": "Alexandru Stanoi"
-                }
-            ],
-            "description": "This component handles parsing and creating RSS1, RSS2 and ATOM feeds, with support for different feed modules (dc, content, creativeCommons, geo, iTunes).",
-            "homepage": "https://github.com/zetacomponents",
-            "time": "2014-09-27 19:26:09"
         },
         {
             "name": "zetacomponents/mail",
