@@ -96,5 +96,8 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         }
-    }
+    },
+    "bin": [
+        "bin/vhost.sh"
+    ]
 }
