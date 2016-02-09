@@ -1053,17 +1053,17 @@
         },
         {
             "name": "ezsystems/flex-workflow",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/flex-workflow.git",
-                "reference": "ee0c3e4e7fb99344813dd4ec35e8cf8f7532d2a6"
+                "reference": "c6611da0a343ea8acd2756434a199026e39c6333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-ee0c3e4e7fb99344813dd4ec35e8cf8f7532d2a6-zip-2918cc.zip",
-                "reference": "ee0c3e4e7fb99344813dd4ec35e8cf8f7532d2a6",
-                "shasum": "c5bcc4e7c12cde964051a587278ef7c28989fd0e"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-c6611da0a343ea8acd2756434a199026e39c6333-zip-840b94.zip",
+                "reference": "c6611da0a343ea8acd2756434a199026e39c6333",
+                "shasum": "7d96421971a94fb0571283b0cc618e02a6428cfa"
             },
             "require": {
                 "ezsystems/ezpublish-kernel": "^6.1",
@@ -1095,10 +1095,10 @@
             ],
             "description": "Flex Workflow extension for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.1.0",
+                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.1.1",
                 "issues": "https://github.com/ezsystems/flex-workflow/issues"
             },
-            "time": "2016-02-08 10:02:04"
+            "time": "2016-02-09 10:29:29"
         },
         {
             "name": "ezsystems/landing-page-fieldtype-bundle",
