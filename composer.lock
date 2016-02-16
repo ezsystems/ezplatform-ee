@@ -1317,17 +1317,17 @@
         },
         {
             "name": "ezsystems/studio-ui-bundle",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/StudioUIBundle.git",
-                "reference": "0b2860d969dee0252ca969683dedbbdd14b54cd4"
+                "reference": "a4ffbf3f6c60fbd8ab11ce33fad20b77930ca651"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-0b2860d969dee0252ca969683dedbbdd14b54cd4-zip-88d56d.zip",
-                "reference": "0b2860d969dee0252ca969683dedbbdd14b54cd4",
-                "shasum": "4f8f56fcfc0ff547d1d93ed8d169c3dd283439e4"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-a4ffbf3f6c60fbd8ab11ce33fad20b77930ca651-zip-c59db1.zip",
+                "reference": "a4ffbf3f6c60fbd8ab11ce33fad20b77930ca651",
+                "shasum": "7965999aa505f607461f85a4531bc008bbc4248a"
             },
             "require": {
                 "ezsystems/ezpublish-kernel": "^6.1",
@@ -1350,10 +1350,10 @@
             ],
             "description": "eZ Studio UI Bundle",
             "support": {
-                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.1.0",
+                "source": "https://github.com/ezsystems/StudioUIBundle/tree/1.1",
                 "issues": "https://github.com/ezsystems/StudioUIBundle/issues"
             },
-            "time": "2016-02-08 09:54:23"
+            "time": "2016-02-16 09:37:10"
         },
         {
             "name": "friendsofsymfony/http-cache",
