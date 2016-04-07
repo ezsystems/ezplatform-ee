@@ -54,4 +54,4 @@ ezstudioui:
     system:
         default:
             # Default template for extending in Studio UI
-            studio_template: %ezpublish.content_view.viewbase_layout%
+            studio_template: "eZStudioDemoBundle::pagelayout.html.twig"
