@@ -41,3 +41,7 @@ _ezpublishFlexWorkflowRoutes:
 
 _ezpublishNotificationRoutes:
     resource: "@NotificationBundle/Resources/config/routing.yml"
+
+_contentOnTheFly:
+    resource: "@ContentOnTheFlyBundle/Resources/config/routing.yml"
+    prefix:   '%ezpublish_rest.path_prefix%'
