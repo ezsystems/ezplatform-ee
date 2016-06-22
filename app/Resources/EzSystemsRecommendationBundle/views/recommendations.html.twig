@@ -1,0 +1,35 @@
+<div class="container">
+    <script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
+        {% raw %}
+        <div class="row recommendations">
+            {{#each this}}
+            <a href="{{attr.url}}" onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')">
+                <article class="class-article col-sm-4 col-xs-12">
+                    <div class="recommendations-article">
+                        <div class="col-sm-4 recommendations-thumbnail" style="background-image: url({{attr.image}});">
+                        </div>
+                        <div class="col-sm-8 recommendations-data">
+                            <h3>{{attr.title}}</h3>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            {{else}}
+            <div class="recommendations-message">
+                {% endraw %}{{ 'No recommendations found'|trans }}{% raw %}
+            </div>
+            {{/each}}
+        </div>
+        {% endraw %}
+    </script>
+
+    <div id="recommendations-target-{{ templateId }}"></div>
+
+    {% include 'EzSystemsRecommendationBundle::show_recommendations.html.twig' with {
+        'templateId': templateId,
+        'scenario': scenario,
+        'limit': limit,
+        'contentType': contentType,
+        'contentId': contentId
+    } %}
+</div>
