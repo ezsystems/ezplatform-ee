@@ -45,3 +45,7 @@ _ezpublishNotificationRoutes:
 _contentOnTheFly:
     resource: "@ContentOnTheFlyBundle/Resources/config/routing.yml"
     prefix:   '%ezpublish_rest.path_prefix%'
+
+_recommendationBundleRestRoutes:
+     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
+     prefix:   %ezpublish_rest.path_prefix%
