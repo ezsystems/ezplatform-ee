@@ -83,19 +83,15 @@ if ($pool = getenv('CUSTOM_CACHE_POOL')) {
     $loader->load($pool . '.yml');
 }
 
-// Yoochoose settings
-if ($value = getenv('YOOCHOOSE_CUSTOMER_ID')) {
+// EzSystemsRecommendationsBundle settings
+if ($value = getenv('RECOMMENDATIONS_CUSTOMER_ID')) {
     $container->setParameter('ez_recommendation.default.yoochoose.customer_id', $value);
 }
 
-if ($value = getenv('YOOCHOOSE_LICENSE_KEY')) {
+if ($value = getenv('RECOMMENDATIONS_LICENSE_KEY')) {
     $container->setParameter('ez_recommendation.default.yoochoose.license_key', $value);
 }
 
-if ($value = getenv('YOOCHOOSE_SERVER_URI')) {
+if ($value = getenv('PUBLIC_SERVER_URI')) {
     $container->setParameter('ez_recommendation.default.server_uri', $value);
-}
-
-if ($value = getenv('YOOCHOOSE_INCLUDED_CONTENT_TYPES')) {
-    $container->setParameter('ez_recommendation.default.recommender.included_content_types', $value);
 }
