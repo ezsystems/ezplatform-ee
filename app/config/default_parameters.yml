@@ -25,3 +25,6 @@ parameters:
     cache_pool: "default"
 
     cache_host: 127.0.0.1
+
+    # Content types included in Recommendations from YooChoose account
+    ez_recommendation.default.recommender.included_content_types: [blog, article, place]
