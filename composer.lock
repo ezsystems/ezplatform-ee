@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dbeaca3e080844f6ed50309be93e941c",
-    "content-hash": "f947e349cf5038803dcd7684f135927f",
+    "hash": "a995d2f2013dac1e0bba1dd3ec3c69b3",
+    "content-hash": "32bcbc4b00d4009139d34822d0342ac5",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -1040,7 +1040,7 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "v6.4.1-rc2",
+            "version": "v6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
@@ -1256,23 +1256,23 @@
         },
         {
             "name": "ezsystems/flex-workflow",
-            "version": "v1.4.1-rc1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/flex-workflow.git",
-                "reference": "f799445032f6cc6916cbb1f3dc358c7b49cc84a8"
+                "reference": "9744dee60640b04cb6af2f6bc273fd80cd017af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-f799445032f6cc6916cbb1f3dc358c7b49cc84a8-zip-7cdc62.zip",
-                "reference": "f799445032f6cc6916cbb1f3dc358c7b49cc84a8",
-                "shasum": "3ac0098012446f552d7ee969a416655c6e1f0dbb"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-9744dee60640b04cb6af2f6bc273fd80cd017af5-zip-67fece.zip",
+                "reference": "9744dee60640b04cb6af2f6bc273fd80cd017af5",
+                "shasum": "d10a24de8b75abf63a9e1efe6ace1350166df822"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.4@rc",
+                "ezsystems/ezpublish-kernel": "^6.4",
                 "ezsystems/ezstudio-notifications": "^1.2",
                 "ezsystems/platform-ui-assets-bundle": "^2.0.0",
-                "ezsystems/platform-ui-bundle": "^1.4@rc",
+                "ezsystems/platform-ui-bundle": "^1.4",
                 "ezsystems/repository-forms": "^1.2",
                 "symfony/swiftmailer-bundle": "~2.3"
             },
@@ -1304,27 +1304,27 @@
             ],
             "description": "Flex Workflow extension for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.4.1-rc1",
+                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.4.1",
                 "issues": "https://github.com/ezsystems/flex-workflow/issues"
             },
-            "time": "2016-07-13 19:36:37"
+            "time": "2016-07-19 13:53:39"
         },
         {
             "name": "ezsystems/landing-page-fieldtype-bundle",
-            "version": "v1.4.1-rc1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/EzLandingPageFieldTypeBundle.git",
-                "reference": "9f7f674c905407f0aad15de04c1dc10e228474c8"
+                "reference": "495f7aa4ac9ee6278220a2b9a25dcbff3045e3f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-landing-page-fieldtype-bundle-9f7f674c905407f0aad15de04c1dc10e228474c8-zip-1adb69.zip",
-                "reference": "9f7f674c905407f0aad15de04c1dc10e228474c8",
-                "shasum": "b00b10771bb4952b2aa3a573ea6edf9cec1c1200"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-landing-page-fieldtype-bundle-495f7aa4ac9ee6278220a2b9a25dcbff3045e3f1-zip-18e9e5.zip",
+                "reference": "495f7aa4ac9ee6278220a2b9a25dcbff3045e3f1",
+                "shasum": "4c76bbd90228498cb3d0db9e88402bfb206ecfdd"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.4@rc",
+                "ezsystems/ezpublish-kernel": "^6.4",
                 "zetacomponents/feed": "1.4"
             },
             "require-dev": {
@@ -1352,10 +1352,10 @@
             ],
             "description": "eZ Platform Landing Page FieldType",
             "support": {
-                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.4.1-rc1",
+                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.4.1",
                 "issues": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/issues"
             },
-            "time": "2016-07-13 19:30:33"
+            "time": "2016-07-19 13:48:47"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
@@ -1395,23 +1395,23 @@
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.4.1-rc1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
-                "reference": "895c8a409b2de8667628b7c02a6f4d080c93ded8"
+                "reference": "5ebd6de53d7bd7ea3139ae3a38636f78f6f2347b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/895c8a409b2de8667628b7c02a6f4d080c93ded8",
-                "reference": "895c8a409b2de8667628b7c02a6f4d080c93ded8",
+                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/5ebd6de53d7bd7ea3139ae3a38636f78f6f2347b",
+                "reference": "5ebd6de53d7bd7ea3139ae3a38636f78f6f2347b",
                 "shasum": ""
             },
             "require": {
-                "ezsystems/ez-support-tools": "~0.1.0@dev",
-                "ezsystems/ezpublish-kernel": "^6.4@dev",
+                "ezsystems/ez-support-tools": "~0.1.0",
+                "ezsystems/ezpublish-kernel": "^6.4",
                 "ezsystems/platform-ui-assets-bundle": "^2.0.0",
-                "ezsystems/repository-forms": "^1.2@dev",
+                "ezsystems/repository-forms": "^1.2",
                 "zetacomponents/system-information": "^1.1"
             },
             "require-dev": {
@@ -1434,7 +1434,7 @@
                 "GPL-2.0"
             ],
             "description": "eZ Platform UI Bundle",
-            "time": "2016-07-11 12:58:45"
+            "time": "2016-07-19 10:08:33"
         },
         {
             "name": "ezsystems/platform-ui-search-prototype-bundle",
@@ -1628,22 +1628,22 @@
         },
         {
             "name": "ezsystems/studio-ui-bundle",
-            "version": "v1.4.1-rc1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/StudioUIBundle.git",
-                "reference": "646a7788d1371784d73c695effd15f0620456957"
+                "reference": "dc177ff9d87aae02731d8144f82d1f523406353e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-646a7788d1371784d73c695effd15f0620456957-zip-498222.zip",
-                "reference": "646a7788d1371784d73c695effd15f0620456957",
-                "shasum": "e9378d25ef14d31802da65829ee68399d3e79d20"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-dc177ff9d87aae02731d8144f82d1f523406353e-zip-ea297a.zip",
+                "reference": "dc177ff9d87aae02731d8144f82d1f523406353e",
+                "shasum": "2ceeabe7655fabfda0e045291d343541977e7b95"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.4@rc",
-                "ezsystems/landing-page-fieldtype-bundle": "^1.4@rc",
-                "ezsystems/platform-ui-bundle": "^1.4@rc"
+                "ezsystems/ezpublish-kernel": "^6.4",
+                "ezsystems/landing-page-fieldtype-bundle": "^1.4",
+                "ezsystems/platform-ui-bundle": "^1.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.7"
@@ -1664,10 +1664,10 @@
             ],
             "description": "eZ Studio UI Bundle",
             "support": {
-                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.4.1-rc1",
+                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.4.1",
                 "issues": "https://github.com/ezsystems/StudioUIBundle/issues"
             },
-            "time": "2016-07-13 19:26:40"
+            "time": "2016-07-19 13:42:34"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -1919,27 +1919,27 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.0",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "d094e337976dff9d8e2424e8485872194e768662"
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
-                "reference": "d094e337976dff9d8e2424e8485872194e768662",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/promises": "~1.0",
-                "guzzlehttp/psr7": "~1.1",
-                "php": ">=5.5.0"
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.3.1",
+                "php": ">=5.5"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "~4.0",
-                "psr/log": "~1.0"
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -1977,7 +1977,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-03-21 20:02:09"
+            "time": "2016-07-15 17:22:37"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2090,23 +2090,23 @@
         },
         {
             "name": "hautelook/templated-uri-bundle",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "target-dir": "Hautelook/TemplatedUriBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hautelook/TemplatedUriBundle.git",
-                "reference": "d5d32ca1c9f13ca170023fd7cb4f1c969d3fd1ad"
+                "reference": "abf784feea984783eab0a822541c7aa3f58d445e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hautelook/TemplatedUriBundle/zipball/d5d32ca1c9f13ca170023fd7cb4f1c969d3fd1ad",
-                "reference": "d5d32ca1c9f13ca170023fd7cb4f1c969d3fd1ad",
+                "url": "https://api.github.com/repos/hautelook/TemplatedUriBundle/zipball/abf784feea984783eab0a822541c7aa3f58d445e",
+                "reference": "abf784feea984783eab0a822541c7aa3f58d445e",
                 "shasum": ""
             },
             "require": {
                 "hautelook/templated-uri-router": "~2.0",
                 "php": ">=5.3.0",
-                "symfony/framework-bundle": "~2.1"
+                "symfony/framework-bundle": "~2.1|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2140,7 +2140,7 @@
                 "url",
                 "xml"
             ],
-            "time": "2014-07-28 21:56:22"
+            "time": "2016-04-28 22:18:53"
         },
         {
             "name": "hautelook/templated-uri-router",
@@ -6909,13 +6909,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ezsystems/ezpublish-kernel": 5,
-        "ezsystems/platform-ui-bundle": 5,
-        "ezsystems/studio-ui-bundle": 5,
-        "ezsystems/landing-page-fieldtype-bundle": 5,
-        "ezsystems/flex-workflow": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
