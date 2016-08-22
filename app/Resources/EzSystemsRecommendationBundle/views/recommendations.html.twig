@@ -1,35 +1,53 @@
-<div class="container">
-    <script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
-        {% raw %}
-        <div class="row recommendations">
-            {{#each this}}
-            <a href="{{attr.url}}" onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')">
-                <article class="class-article col-sm-4 col-xs-12">
-                    <div class="recommendations-article">
-                        <div class="col-sm-4 recommendations-thumbnail" style="background-image: url({{attr.image}});">
-                        </div>
-                        <div class="col-sm-8 recommendations-data">
-                            <h3>{{attr.title}}</h3>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            {{else}}
-            <div class="recommendations-message">
-                {% endraw %}{{ 'No recommendations found'|trans }}{% raw %}
+<script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
+    {% verbatim %}
+        <div class="recommendations hidden-xs">
+            <div class="recommendations-indicator col-sm-1">
+                <div class="recommendations-indicator-icon recommendations-indicator-icon-like">
+                </div>
+                <div class="recommendations-indicator-label">
+                    {% endverbatim %}{{ 'Recommended Articles'|trans }}{% verbatim %}
+                </div>
             </div>
-            {{/each}}
+
+            <div class="col-sm-11">
+                {{#each this}}
+                    <a href="{{attr.url}}" onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')">
+                        <article class="class-article col-sm-4">
+                            <div class="recommendations-article">
+                                <div class="col-sm-4 recommendations-thumbnail" style="background-image: url('{{attr.image}}');">
+                                </div>
+                                <div class="col-sm-8 recommendations-data">
+                                    <h3>{{attr.title}}</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                {{else}}
+                    {% endverbatim %}
+                        {{ render_esi(controller('ezstudiodemo.controller.recommendations:showRandom', {
+                            'template': 'EzSystemsRecommendationBundle::missing_recommendations.html.twig',
+                            'selectedContentTypes': [
+                                'article',
+                                'place',
+                                'blog_post',
+                            ],
+                            'limit': 3,
+                            'showOnlyRecommendations': true,
+                        })) }}
+                    {% verbatim %}
+                {{/each}}
+            </div>
         </div>
-        {% endraw %}
-    </script>
+    {% endverbatim %}
+</script>
 
-    <div id="recommendations-target-{{ templateId }}"></div>
-
-    {% include 'EzSystemsRecommendationBundle::show_recommendations.html.twig' with {
-        'templateId': templateId,
-        'scenario': scenario,
-        'limit': limit,
-        'contentType': contentType,
-        'contentId': contentId
-    } %}
+<div id="recommendations-target-{{ templateId }}">
 </div>
+
+{% include 'EzSystemsRecommendationBundle::show_recommendations.html.twig' with {
+    'templateId': templateId,
+    'scenario': scenario,
+    'limit': limit,
+    'contentType': contentType,
+    'contentId': contentId
+} %}
