@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "17ab3149e8e82fcfb41131316cbc7c31",
-    "content-hash": "21b777255de9a3a7b52c05991192c99e",
+    "hash": "6b109a983f9eb73fcbedf00cc7f56506",
+    "content-hash": "0ab521d7d9ae3cde75e5a0e6f68ab5bd",
     "packages": [
         {
             "name": "components/bootstrap",
@@ -996,16 +996,16 @@
         },
         {
             "name": "ezsystems/ezplatform-solr-search-engine",
-            "version": "v1.1.0-beta1",
+            "version": "v1.1.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezplatform-solr-search-engine.git",
-                "reference": "5799660c22e3a71ea26b80c01290de8cd031eee1"
+                "reference": "ca7ff6329b4aa83b8ab1c517214519db44b6ef42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezplatform-solr-search-engine/zipball/5799660c22e3a71ea26b80c01290de8cd031eee1",
-                "reference": "5799660c22e3a71ea26b80c01290de8cd031eee1",
+                "url": "https://api.github.com/repos/ezsystems/ezplatform-solr-search-engine/zipball/ca7ff6329b4aa83b8ab1c517214519db44b6ef42",
+                "reference": "ca7ff6329b4aa83b8ab1c517214519db44b6ef42",
                 "shasum": ""
             },
             "require": {
@@ -1042,20 +1042,20 @@
             ],
             "description": "Solr search engine implementation for eZ Platform",
             "homepage": "https://github.com/ezsystems/ezplatform-solr-search-engine",
-            "time": "2016-08-17 13:12:59"
+            "time": "2016-08-23 12:00:33"
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "v6.5.0-beta1",
+            "version": "v6.5.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
-                "reference": "206c9f43d4415b754d37c2e8d64b230d6083d4a1"
+                "reference": "5c2260b76acc11ce92db0c37a511ce35b1cdfe43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/206c9f43d4415b754d37c2e8d64b230d6083d4a1",
-                "reference": "206c9f43d4415b754d37c2e8d64b230d6083d4a1",
+                "url": "https://api.github.com/repos/ezsystems/ezpublish-kernel/zipball/5c2260b76acc11ce92db0c37a511ce35b1cdfe43",
+                "reference": "5c2260b76acc11ce92db0c37a511ce35b1cdfe43",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                 "sensio/distribution-bundle": "^3.0.36|^4.0.6|^5.0",
                 "sensio/framework-extra-bundle": "~3.0",
                 "symfony-cmf/routing": "~1.1",
-                "symfony/symfony": "~2.7",
+                "symfony/symfony": "^2.7 | ^3.1",
                 "tedivm/stash-bundle": "~0.6.1",
                 "zetacomponents/mail": "~1.8"
             },
@@ -1124,25 +1124,25 @@
             ],
             "description": "Kernel used by ezsystems/ezplatform and derivatives. Provides the Content Repository, its APIs, and the application's Symfony framework integration.",
             "homepage": "http://share.ez.no",
-            "time": "2016-08-18 08:35:31"
+            "time": "2016-08-25 10:41:58"
         },
         {
             "name": "ezsystems/ezstudio-demo-bundle",
-            "version": "v1.5.0-beta1",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/ezstudio-demo-bundle.git",
-                "reference": "5e4da721192a89babf74194f5c6f7e09302030b1"
+                "reference": "eb641573449d893071e71be88de402a41d8e9259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-demo-bundle-5e4da721192a89babf74194f5c6f7e09302030b1-zip-711283.zip",
-                "reference": "5e4da721192a89babf74194f5c6f7e09302030b1",
-                "shasum": "153d631ea89a57900b6f09f44c67c377d3c75d60"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-demo-bundle-eb641573449d893071e71be88de402a41d8e9259-zip-0ba65e.zip",
+                "reference": "eb641573449d893071e71be88de402a41d8e9259",
+                "shasum": "7d98024330ee021448cf11f745b3004c4c9a895d"
             },
             "require": {
                 "components/bootstrap": "3.3.5",
-                "ezsystems/ezstudio-demo-bundle-data": "^1.5@beta",
+                "ezsystems/ezstudio-demo-bundle-data": "^1.5@rc",
                 "knplabs/knp-menu-bundle": "1.*"
             },
             "type": "library",
@@ -1167,14 +1167,14 @@
             ],
             "description": "Demo bundle for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/ezstudio-demo-bundle/tree/v1.5.0-beta1",
+                "source": "https://github.com/ezsystems/ezstudio-demo-bundle/tree/v1.5.0-rc1",
                 "issues": "https://github.com/ezsystems/ezstudio-demo-bundle/issues"
             },
-            "time": "2016-08-22 22:25:55"
+            "time": "2016-08-25 18:24:57"
         },
         {
             "name": "ezsystems/ezstudio-demo-bundle-data",
-            "version": "v1.5.0-beta1",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/ezstudio-demo-bundle-data.git",
@@ -1258,23 +1258,23 @@
         },
         {
             "name": "ezsystems/flex-workflow",
-            "version": "v1.5.0-beta1",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/flex-workflow.git",
-                "reference": "03f757bb8b2ec4cddd3ab99d510b18656f60925e"
+                "reference": "3cd24da335906cb56dd553a33020f99376a4e004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-03f757bb8b2ec4cddd3ab99d510b18656f60925e-zip-534ef9.zip",
-                "reference": "03f757bb8b2ec4cddd3ab99d510b18656f60925e",
-                "shasum": "cb0f4555ea6e90c662fc9f4e858ea597225c606d"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-flex-workflow-3cd24da335906cb56dd553a33020f99376a4e004-zip-b00b88.zip",
+                "reference": "3cd24da335906cb56dd553a33020f99376a4e004",
+                "shasum": "8f6c12d64f6ad7f8433fd1ac5f98ecfbe3dadd50"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.5@beta",
+                "ezsystems/ezpublish-kernel": "^6.5@rc",
                 "ezsystems/ezstudio-notifications": "^1.2",
-                "ezsystems/platform-ui-bundle": "^1.5@beta",
-                "ezsystems/repository-forms": "^1.2@beta",
+                "ezsystems/platform-ui-bundle": "^1.5@rc",
+                "ezsystems/repository-forms": "^1.2@rc",
                 "symfony/swiftmailer-bundle": "~2.3"
             },
             "require-dev": {
@@ -1305,27 +1305,27 @@
             ],
             "description": "Flex Workflow extension for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/flex-workflow/tree/master",
+                "source": "https://github.com/ezsystems/flex-workflow/tree/v1.5.0-rc1",
                 "issues": "https://github.com/ezsystems/flex-workflow/issues"
             },
-            "time": "2016-08-22 21:00:43"
+            "time": "2016-08-25 17:07:33"
         },
         {
             "name": "ezsystems/landing-page-fieldtype-bundle",
-            "version": "v1.5.0-beta1",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/EzLandingPageFieldTypeBundle.git",
-                "reference": "4198231c91c0a2da5ee5948d1704318443b04973"
+                "reference": "58568db594589b9957afdda00a03c8bf8fd6fc5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-landing-page-fieldtype-bundle-4198231c91c0a2da5ee5948d1704318443b04973-zip-80dcd7.zip",
-                "reference": "4198231c91c0a2da5ee5948d1704318443b04973",
-                "shasum": "758249d901589e4e044d77ab49d52ca7c13c9372"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-landing-page-fieldtype-bundle-58568db594589b9957afdda00a03c8bf8fd6fc5b-zip-d63994.zip",
+                "reference": "58568db594589b9957afdda00a03c8bf8fd6fc5b",
+                "shasum": "3b95f744be2a08c84108e14d7ef0d82fb371a44b"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.5@beta",
+                "ezsystems/ezpublish-kernel": "^6.5@rc",
                 "zetacomponents/feed": "1.4"
             },
             "require-dev": {
@@ -1353,14 +1353,14 @@
             ],
             "description": "eZ Platform Landing Page FieldType",
             "support": {
-                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.5.0-beta1",
+                "source": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/tree/v1.5.0-rc1",
                 "issues": "https://github.com/ezsystems/EzLandingPageFieldTypeBundle/issues"
             },
-            "time": "2016-08-22 18:49:52"
+            "time": "2016-08-25 17:05:41"
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
-            "version": "v3.0.0-beta1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIAssetsBundle.git",
@@ -1396,23 +1396,23 @@
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.5.0-beta2",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
-                "reference": "aaeb34bfff9a9dde1445856c8d1ec7f7883013fd"
+                "reference": "5885c9d484f724032026e3a78669808267e8ff16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/aaeb34bfff9a9dde1445856c8d1ec7f7883013fd",
-                "reference": "aaeb34bfff9a9dde1445856c8d1ec7f7883013fd",
+                "url": "https://api.github.com/repos/ezsystems/PlatformUIBundle/zipball/5885c9d484f724032026e3a78669808267e8ff16",
+                "reference": "5885c9d484f724032026e3a78669808267e8ff16",
                 "shasum": ""
             },
             "require": {
                 "ezsystems/ez-support-tools": "~0.1.0",
-                "ezsystems/ezpublish-kernel": "^6.4@beta",
-                "ezsystems/platform-ui-assets-bundle": "^3.0.0@beta",
-                "ezsystems/repository-forms": "^1.2@beta",
+                "ezsystems/ezpublish-kernel": "^6.4@rc",
+                "ezsystems/platform-ui-assets-bundle": "^3.0.0@rc",
+                "ezsystems/repository-forms": "^1.2@rc",
                 "zetacomponents/system-information": "^1.1"
             },
             "require-dev": {
@@ -1438,7 +1438,7 @@
                 "GPL-2.0"
             ],
             "description": "eZ Platform UI Bundle",
-            "time": "2016-08-22 16:23:22"
+            "time": "2016-08-25 10:11:47"
         },
         {
             "name": "ezsystems/platform-ui-search-prototype-bundle",
@@ -1483,31 +1483,31 @@
         },
         {
             "name": "ezsystems/recommendation-bundle",
-            "version": "v1.0.2",
+            "version": "v1.0.3-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/EzSystemsRecommendationBundle.git",
-                "reference": "b7e6cac9914b88a4b50c2ffff57ed6051972bdb4"
+                "reference": "645e45ac32dbb1f8d2d02599962b6a4c50bce7d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/EzSystemsRecommendationBundle/zipball/b7e6cac9914b88a4b50c2ffff57ed6051972bdb4",
-                "reference": "b7e6cac9914b88a4b50c2ffff57ed6051972bdb4",
+                "url": "https://api.github.com/repos/ezsystems/EzSystemsRecommendationBundle/zipball/645e45ac32dbb1f8d2d02599962b6a4c50bce7d7",
+                "reference": "645e45ac32dbb1f8d2d02599962b6a4c50bce7d7",
                 "shasum": ""
             },
             "require": {
                 "components/handlebars.js": "~3.0.0",
                 "guzzlehttp/guzzle": "~5.0|~6.0",
-                "symfony/symfony": "~2.6"
+                "symfony/symfony": "^2.7.7"
             },
             "require-dev": {
-                "ezsystems/ezpublish-kernel": "~6.0.0@beta | ~5.1",
+                "ezsystems/ezpublish-kernel": "~6.0.0 | ~5.1",
                 "phpunit/phpunit": "~4.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
@@ -1523,24 +1523,24 @@
                 }
             ],
             "description": "Integration of the YooChoose recommender engine into eZ Publish Platform",
-            "time": "2016-07-07 15:46:35"
+            "time": "2016-08-25 18:35:57"
         },
         {
             "name": "ezsystems/repository-forms",
-            "version": "v1.4.0-beta1",
+            "version": "v1.4.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/repository-forms.git",
-                "reference": "6f2cffe1d8e5abca0bfeecf01319b7bfbd143048"
+                "reference": "ee5aca930d044a84e55b0b673d8cf6030efc600c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/repository-forms/zipball/6f2cffe1d8e5abca0bfeecf01319b7bfbd143048",
-                "reference": "6f2cffe1d8e5abca0bfeecf01319b7bfbd143048",
+                "url": "https://api.github.com/repos/ezsystems/repository-forms/zipball/ee5aca930d044a84e55b0b673d8cf6030efc600c",
+                "reference": "ee5aca930d044a84e55b0b673d8cf6030efc600c",
                 "shasum": ""
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.4@beta",
+                "ezsystems/ezpublish-kernel": "^6.4@rc",
                 "php": "~5.5|~7.0",
                 "symfony/form": "~2.8",
                 "symfony/validator": "~2.8"
@@ -1579,7 +1579,7 @@
                 }
             ],
             "description": "Use Symfony forms with eZ Platform repository objects",
-            "time": "2016-08-22 14:50:09"
+            "time": "2016-08-25 08:51:57"
         },
         {
             "name": "ezsystems/share-buttons-bundle",
@@ -1633,22 +1633,22 @@
         },
         {
             "name": "ezsystems/studio-ui-bundle",
-            "version": "v1.5.0-beta1",
+            "version": "v1.5.0-rc1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/StudioUIBundle.git",
-                "reference": "c6172df0e660f1b0c43590bb233791c74120a0f5"
+                "reference": "760c9951094b4ec0064e53e1fe400978b6c32ce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-c6172df0e660f1b0c43590bb233791c74120a0f5-zip-43423a.zip",
-                "reference": "c6172df0e660f1b0c43590bb233791c74120a0f5",
-                "shasum": "f84a5f9db4fbdbfd52b277d0f02981ef985e5c19"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-studio-ui-bundle-760c9951094b4ec0064e53e1fe400978b6c32ce4-zip-fa2f75.zip",
+                "reference": "760c9951094b4ec0064e53e1fe400978b6c32ce4",
+                "shasum": "ba5f7ff217f17bc4ad53a08897c84823a7d8d554"
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.5@beta",
-                "ezsystems/landing-page-fieldtype-bundle": "^1.5@beta",
-                "ezsystems/platform-ui-bundle": "^1.5@beta"
+                "ezsystems/ezpublish-kernel": "^6.5@rc",
+                "ezsystems/landing-page-fieldtype-bundle": "^1.5@rc",
+                "ezsystems/platform-ui-bundle": "^1.5@rc"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.7"
@@ -1669,10 +1669,10 @@
             ],
             "description": "eZ Studio UI Bundle",
             "support": {
-                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.5.0-beta1",
+                "source": "https://github.com/ezsystems/StudioUIBundle/tree/v1.5.0-rc1",
                 "issues": "https://github.com/ezsystems/StudioUIBundle/issues"
             },
-            "time": "2016-08-22 18:46:33"
+            "time": "2016-08-25 17:01:52"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -2499,7 +2499,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -6979,16 +6979,16 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ezsystems/ezpublish-kernel": 10,
-        "ezsystems/repository-forms": 10,
-        "ezsystems/ezplatform-solr-search-engine": 10,
-        "ezsystems/platform-ui-bundle": 10,
-        "ezsystems/platform-ui-assets-bundle": 10,
-        "ezsystems/studio-ui-bundle": 10,
-        "ezsystems/landing-page-fieldtype-bundle": 10,
-        "ezsystems/ezstudio-demo-bundle": 10,
-        "ezsystems/ezstudio-demo-bundle-data": 10,
-        "ezsystems/flex-workflow": 10
+        "ezsystems/ezpublish-kernel": 5,
+        "ezsystems/repository-forms": 5,
+        "ezsystems/ezplatform-solr-search-engine": 5,
+        "ezsystems/platform-ui-bundle": 5,
+        "ezsystems/studio-ui-bundle": 5,
+        "ezsystems/landing-page-fieldtype-bundle": 5,
+        "ezsystems/ezstudio-demo-bundle": 5,
+        "ezsystems/ezstudio-demo-bundle-data": 5,
+        "ezsystems/flex-workflow": 5,
+        "ezsystems/recommendation-bundle": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
