@@ -39,7 +39,7 @@
         "ezsystems/studio-ui-bundle": "~1.4.0@dev",
         "ezsystems/ezstudio-notifications": "^1.2",
         "ezsystems/landing-page-fieldtype-bundle": "~1.4.0@dev",
-        "ezsystems/ezstudio-demo-bundle": "^1.4",
+        "ezsystems/ezstudio-demo-bundle": "~1.4.0@dev",
         "ezsystems/ezstudio-demo-bundle-data": "^1.4",
         "ezsystems/share-buttons-bundle": "~1.1",
         "ezsystems/flex-workflow": "~1.4.0@dev",
