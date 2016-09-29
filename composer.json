@@ -50,7 +50,6 @@
         "symfony/expression-language": "~2.4",
         "sensio/framework-extra-bundle": "~3.0",
         "ezsystems/content-on-the-fly-prototype": "^0.1.6@dev",
-        "ezsystems/platform-ui-search-prototype-bundle": "^0.1.3@dev",
         "components/handlebars.js": "~3.0.0",
         "ezsystems/recommendation-bundle": "^1.0@dev"
     },
