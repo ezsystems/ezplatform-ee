@@ -51,7 +51,8 @@
         "sensio/framework-extra-bundle": "~3.0",
         "ezsystems/content-on-the-fly-prototype": "^0.1.6@dev",
         "components/handlebars.js": "~3.0.0",
-        "ezsystems/recommendation-bundle": "^1.0@dev"
+        "ezsystems/recommendation-bundle": "^1.0@dev",
+        "willdurand/js-translation-bundle": "^2.6"
     },
     "require-dev": {
         "behat/behat": "~3.0",
