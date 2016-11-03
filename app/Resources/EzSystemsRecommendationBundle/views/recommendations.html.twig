@@ -10,8 +10,21 @@
             </div>
 
             <div class="col-sm-11">
+                {{validateResults '{% endverbatim %}
+                    {{ render_esi(controller(
+                        'ezstudiodemo.controller.recommendations:getRandomJSON', {
+                            'selectedContentTypes': [
+                                'article',
+                                'place',
+                                'blog_post'
+                            ],
+                            'limit': 3
+                        }))
+                    }}
+                {% verbatim %}' this}}
+
                 {{#each this}}
-                    <a href="{{attr.url}}" onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')">
+                    <a href="{{attr.url}}"{{#unless attr.isRandom}} onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')"{{/unless}}>
                         <article class="class-article col-sm-4">
                             <div class="recommendations-article">
                                 <div class="col-sm-4 recommendations-thumbnail" style="background-image: url('{{attr.image}}');">
@@ -22,19 +35,6 @@
                             </div>
                         </article>
                     </a>
-                {{else}}
-                    {% endverbatim %}
-                        {{ render_esi(controller('ezstudiodemo.controller.recommendations:showRandom', {
-                            'template': 'EzSystemsRecommendationBundle::missing_recommendations.html.twig',
-                            'selectedContentTypes': [
-                                'article',
-                                'place',
-                                'blog_post',
-                            ],
-                            'limit': 3,
-                            'showOnlyRecommendations': true,
-                        })) }}
-                    {% verbatim %}
                 {{/each}}
             </div>
         </div>
