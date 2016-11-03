@@ -6,8 +6,7 @@
             'place',
             'blog_post',
         ],
-        'limit': 3,
-        'showOnlyRecommendations': false,
+        'limit': 3
     })) }}
 </script>
 
@@ -36,12 +35,34 @@
                 }),
                 compiledTemplate = Handlebars.compile(recommendationTemplateRenderer.recommendationsTemplate.innerHTML),
                 preloaderTemplate,
-                mockups = new Array(3);
+                mockups = new Array(3),
+                validationCount = 0;
+
+            // if some recommendations are missing replace them with random generated data
+            Handlebars.registerHelper('validateResults', function(jsonData, context) {
+                var mockups = JSON.parse(jsonData);
+
+                if (++validationCount > 1) {
+                    for (var idx in mockups.data) {
+                        if (context[idx] === undefined) {
+                            context[idx] = [];
+                            context[idx]['attr'] = [];
+                        }
+
+                        if (!context[idx].attr.title) {
+                            context[idx].attr.title = mockups.data[idx].name;
+                            context[idx].attr.image = mockups.data[idx].image;
+                            context[idx].attr.url = mockups.data[idx].url;
+                            context[idx].attr.isRandom = true;
+                        }
+                    }
+                }
+            });
 
             // display preloader before showing recommendations
             preloaderTemplate = compiledTemplate(mockups)
-                    .replace('-icon-like', '-icon-loading')
-                    .replace(/recommendations-data/g, 'recommendations-data-placeholder');
+                .replace('-icon-like', '-icon-loading')
+                .replace(/recommendations-data/g, 'recommendations-data-placeholder');
             recommendationTemplateRenderer.displayMessage(preloaderTemplate);
 
             recommendationRestClient.fetchRecommendations(
