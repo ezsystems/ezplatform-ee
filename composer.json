@@ -81,7 +81,10 @@
     },
     "config": {
         "process-timeout": 3000,
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "platform": {
+            "php": "5.5"
+        }
     },
     "extra": {
         "symfony-app-dir": "app",
