@@ -39,7 +39,6 @@ class AppKernel extends Kernel
             new eZ\Bundle\EzPublishRestBundle\EzPublishRestBundle(),
             new EzSystems\CommentsBundle\EzSystemsCommentsBundle(),
             new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
-            new EzSystems\FormBuilderBundle\EzSystemsFormBuilderBundle(),
             new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
             new EzSystems\StudioDemoBundle\EzSystemsStudioDemoBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
@@ -59,7 +58,6 @@ class AppKernel extends Kernel
             new EzSystems\EzContentOnTheFlyBundle\EzSystemsEzContentOnTheFlyBundle(),
             new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
             new AppBundle\AppBundle(),
-            new EzSystems\PersonalizedBlockBundle\EzSystemsPersonalizedBlockBundle(),
         );
 
         switch ($this->getEnvironment()) {
