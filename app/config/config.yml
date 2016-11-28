@@ -88,7 +88,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ eZStudioDemoBundle ]
+    bundles:        [ eZStudioDemoBundle, EzSystemsPersonalizedBlockBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
