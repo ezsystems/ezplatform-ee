@@ -3,7 +3,7 @@ ezpublish:
     repositories:
         default:
             fields_groups:
-                list: [content, seo]
+                list: [content, seo, meta]
                 default: content
             storage: ~
             search:
