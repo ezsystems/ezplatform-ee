@@ -47,5 +47,8 @@ _contentOnTheFly:
     prefix:   '%ezpublish_rest.path_prefix%'
 
 _recommendationBundleRestRoutes:
-     resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
-     prefix:   %ezpublish_rest.path_prefix%
+    resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
+    prefix:   %ezpublish_rest.path_prefix%
+
+_ezStudioFormBuilder:
+    resource: "@EzSystemsFormBuilderBundle/Resources/config/routing.yml"
