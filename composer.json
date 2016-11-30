@@ -54,7 +54,9 @@
         "components/handlebars.js": "~3.0.0",
         "ezsystems/recommendation-bundle": "^1.0@dev",
         "willdurand/js-translation-bundle": "^2.6",
-        "ramsey/uuid": "^3.5"
+        "ramsey/uuid": "^3.5",
+        "ezsystems/ezstudio-cron": "^1.0@dev",
+        "ezsystems/date-based-publisher": "^1.0@dev"
     },
     "require-dev": {
         "behat/behat": "~3.0",
