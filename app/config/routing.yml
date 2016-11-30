@@ -55,3 +55,6 @@ _ezStudioFormBuilder:
 
 _ezpublishDateBasedPublisher:
     resource: "@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yml"
+
+_personalizedBlockRoutes:
+     resource: "@EzSystemsPersonalizedBlockBundle/Resources/config/routing.yml"
