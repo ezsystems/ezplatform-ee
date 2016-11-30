@@ -56,7 +56,8 @@
         "willdurand/js-translation-bundle": "^2.6",
         "ramsey/uuid": "^3.5",
         "ezsystems/ezstudio-cron": "^1.0@dev",
-        "ezsystems/date-based-publisher": "^1.0@dev"
+        "ezsystems/date-based-publisher": "^1.0@dev",
+        "ezsystems/ezstudio-personalized-block": "^1.0@dev"
     },
     "require-dev": {
         "behat/behat": "~3.0",
