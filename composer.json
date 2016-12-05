@@ -30,12 +30,12 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "tedivm/stash-bundle": "~0.4",
-        "ezsystems/ezpublish-kernel": "~6.6.0",
+        "ezsystems/ezpublish-kernel": "~6.6.0@rc",
         "ezsystems/repository-forms": "~1.4.0",
         "ezsystems/ezplatform-solr-search-engine": "^1.1",
-        "ezsystems/platform-ui-bundle": "~1.6.0",
+        "ezsystems/platform-ui-bundle": "~1.6.0@rc",
         "ezsystems/ez-support-tools": "~0.1.0",
-        "ezsystems/studio-ui-bundle": "~1.6.0",
+        "ezsystems/studio-ui-bundle": "~1.6.0@rc",
         "ezsystems/ezstudio-notifications": "~1.2.0",
         "ezsystems/landing-page-fieldtype-bundle": "~1.6.0",
         "ezsystems/flex-workflow": "~1.6.0",
@@ -44,7 +44,7 @@
         "doctrine/doctrine-bundle": "~1.3",
         "symfony/expression-language": "~2.4",
         "sensio/framework-extra-bundle": "~3.0",
-        "ezsystems/ezstudio-installer": "~1.3.0"
+        "ezsystems/ezstudio-installer": "~1.3.0@rc"
     },
     "require-dev": {
         "behat/behat": "~3.0",
