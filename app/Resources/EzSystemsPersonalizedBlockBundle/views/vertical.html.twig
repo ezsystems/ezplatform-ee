@@ -1,0 +1,23 @@
+<script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
+    {% verbatim %}
+        <div class="recommendations vertical-demo">
+            {{#each this}}
+                <div class="row">
+                    <a href="{{attr.url}}" onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')">
+                        <article class="class-article">
+                            <div class="recommendations-thumbnail col-sm-5 hidden-xs" style="background-image: url('{{attr.image}}');"></div>
+                            <div class="recommendations-data col-sm-7 col-xs-12">
+                                <h3>{{attr.title}}</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    {% endverbatim %}
+</script>
+
+<div id="recommendations-target-{{ templateId }}">
+</div>
+
+{% include 'EzSystemsPersonalizedBlockBundle::script.html.twig' %}

@@ -1,0 +1,16 @@
+{% set template = (display == 'horizontal' and carousel) ? display ~ '_carousel' : display %}
+{% set template = lp_preview is defined ? 'preview/' ~ template : template %}
+
+<div class="personalized {{ template|replace({'_':'-'}) }}-view row">
+    <h4>{{ name }}</h4>
+
+    {{ ez_display_personalized_block(
+        content is defined ? content : 'preview',
+        scenario,
+        number,
+        output,
+        'EzSystemsPersonalizedBlockBundle::' ~ template ~ '.html.twig',
+        display,
+        ['title', 'intro', 'image', 'url']
+    ) }}
+</div>
