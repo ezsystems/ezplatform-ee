@@ -37,8 +37,7 @@ ls -al .
 ./bin/.travis/trusty/update_docker.sh
 
 echo "> Modify composer.json to point to local checkout"
-sed -i '$d' composer.json
-echo ',    "repositories": [{"type":"git","url":"'${HOME}'/build/ezplatform/tmp_travis_folder"}]}' >> composer.json
+composer config repositories.tmp_travis_folder git ${HOME}/build/ezplatform/tmp_travis_folder
 
 if [ "$RUN_INSTALL" = "1" ] ; then
   # TODO: avoid using composer on host so image don't need to be PHP image, needed atm as .
