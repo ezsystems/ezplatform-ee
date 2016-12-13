@@ -5,7 +5,7 @@
 <div class="form-group" data-field-id="{{ field.id }}" {{ params|raw }}>
     {% if not hideLabel %}
         <label class="ezform-label" for="{{ field.id }}">
-            {{ field.name ~ (field.isRequired ? '*'  : '' ~ ':') }}
+            {{ field.name ~ (field.isRequired ? '*:'  : ':') }}
         </label>
     {% endif %}
 
