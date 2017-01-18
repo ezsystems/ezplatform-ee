@@ -60,6 +60,7 @@
         "ezsystems/ezstudio-personalized-block": "^1.0@dev"
     },
     "require-dev": {
+        "ezsystems/ezplatform-i18n": "^1.0@dev",
         "behat/behat": "~3.0",
         "behat/symfony2-extension": "~2.0",
         "behat/mink-extension": "*",
