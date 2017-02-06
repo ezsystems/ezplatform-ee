@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9b7316d2fa202da8e8d8b9b39b61d1b",
+    "content-hash": "6d2ad6cbf1fd7addc5a9146cbff90a00",
     "packages": [
         {
             "name": "cron/cron",
@@ -1115,25 +1115,25 @@
         },
         {
             "name": "ezsystems/ezstudio-installer",
-            "version": "v1.2.1",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezstudio-installer.git",
-                "reference": "6a3299d23b0b8d39092f6e56b3b9b6793ea80020"
+                "reference": "82809b71424bb00053c2f52d940c7c1841d20b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/ezstudio-installer/zipball/6a3299d23b0b8d39092f6e56b3b9b6793ea80020",
-                "reference": "6a3299d23b0b8d39092f6e56b3b9b6793ea80020",
+                "url": "https://api.github.com/repos/ezsystems/ezstudio-installer/zipball/82809b71424bb00053c2f52d940c7c1841d20b26",
+                "reference": "82809b71424bb00053c2f52d940c7c1841d20b26",
                 "shasum": ""
             },
             "require": {
-                "ezsystems/ezpublish-kernel": "^6.5"
+                "ezsystems/ezpublish-kernel": "^6.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -1152,7 +1152,7 @@
                 }
             ],
             "description": "Installer for eZ Studio",
-            "time": "2016-09-12T14:17:25+00:00"
+            "time": "2016-12-14T11:07:19+00:00"
         },
         {
             "name": "ezsystems/ezstudio-notifications",
