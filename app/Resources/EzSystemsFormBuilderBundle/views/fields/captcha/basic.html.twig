@@ -1,0 +1,19 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+{% trans_default_domain "formcaptcha" %}
+
+{% set normalizedId = field.id|replace('-', '_') %}
+{% set imageId = 'captcha__' ~ normalizedId %}
+{% set captchaImage = ez_form_captcha_path(field) %}
+
+{% block input %}
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <img class="ezform-captcha-image" id="{{ imageId }}" src="{{ captchaImage }}" alt="" />
+            <p><a class="ezform-captcha-reload btn btn-default btn-sm" href="#">{{ 'formcaptcha.reload_image'|trans }}</a></p>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+            <input type="text" class="ezform-field ezform-captcha form-control" id="{{ field.id }}" placeholder="{{ field.placeholderText }}">
+        </div>
+    </div>
+{% endblock %}
+

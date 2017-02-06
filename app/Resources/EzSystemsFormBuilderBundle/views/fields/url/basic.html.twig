@@ -1,0 +1,5 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+
+{% block input %}
+    <input type="url" class="ezform-field ezform-url form-control" id="{{ field.id }}" placeholder="{{ field.placeholderText }}" value="http://">
+{% endblock %}
