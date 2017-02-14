@@ -1,0 +1,13 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+
+{% block input %}
+    {% for option in field.options.choices.value %}
+        {% set radioId = field.id ~ '-' ~ loop.index %}
+        <div class="radio">
+            <label for="{{ radioId }}">
+                <input type="radio" value="{{ option.value }}" {% if option.checked %}checked{% endif %} id="{{ radioId }}" name="{{ field.id }}" class="ezform-field ezform-radio">
+                {{ option.value }}
+            </label>
+        </div>
+    {% endfor %}
+{% endblock %}
