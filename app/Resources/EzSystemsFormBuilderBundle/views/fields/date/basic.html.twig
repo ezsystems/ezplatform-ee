@@ -1,6 +1,10 @@
 {% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
 
-{% block input %}
-    <input type="text" class="ezform-field ezform-date form-control" id="{{ field.id }}" placeholder="{{ field.validators[0].value.alias }}">
-{% endblock %}
+{% set placeholder = '' %}
+{% for validator in field.validators if validator.type == 'format' %}
+    {% set placeholder = validator.value.alias %}
+{% endfor %}
 
+{% block input %}
+    <input type="text" class="ezform-field ezform-date form-control" id="{{ field.id }}" placeholder="{{ placeholder }}">
+{% endblock %}
