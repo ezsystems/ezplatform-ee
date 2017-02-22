@@ -62,6 +62,8 @@ class AppKernel extends Kernel
             new EzSystems\CronBundle\EzSystemsCronBundle(),
             new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
             new EzSystems\PersonalizedBlockBundle\EzSystemsPersonalizedBlockBundle(),
+            new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
+            new Netgen\TagsBundle\NetgenTagsBundle(),
             new AppBundle\AppBundle(),
         );
 
