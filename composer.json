@@ -49,7 +49,7 @@
         "symfony/expression-language": "~2.4",
         "sensio/framework-extra-bundle": "~3.0",
         "ezsystems/ezstudio-installer": "~1.5.0",
-        "willdurand/js-translation-bundle": "dev-master#7e6839be69d7d5e0758ed0b014d13e1ff1e709d1",
+        "willdurand/js-translation-bundle": "^2.7@dev",
         "ramsey/uuid": "^3.5",
         "ezsystems/ezstudio-cron": "~1.0.0",
         "ezsystems/date-based-publisher": "~1.1.0",
