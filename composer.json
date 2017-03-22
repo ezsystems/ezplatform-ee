@@ -1,13 +1,13 @@
 {
-    "name": "ezsystems/ezstudio-demo",
-    "description": "eZ Studio distribution",
-    "homepage": "https://github.com/ezsystems/ezstudio",
+    "name": "ezsystems/ezplatform-ee-demo",
+    "description": "eZ Platform Enterprise Edition Demo distribution",
+    "homepage": "https://github.com/ezsystems/ezplatform-ee-demo",
     "license": "TTL-2.0",
     "type": "project",
     "authors": [
         {
             "name": "eZ dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezstudio/contributors"
+            "homepage": "https://github.com/ezsystems/ezplatform-ee-demo/contributors"
         }
     ],
     "repositories": [
