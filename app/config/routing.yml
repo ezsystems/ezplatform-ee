@@ -59,3 +59,6 @@ _ezpublishDateBasedPublisher:
 
 _personalizedBlockRoutes:
     resource: "@EzSystemsPersonalizedBlockBundle/Resources/config/routing.yml"
+
+_eztagsRoutes:
+    resource: "@NetgenTagsBundle/Resources/config/routing.yml"
