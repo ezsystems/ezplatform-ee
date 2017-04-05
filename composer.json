@@ -59,6 +59,7 @@
         "ezsystems/date-based-publisher": "^1.0@dev",
         "ezsystems/ezstudio-personalized-block": "^1.0@dev",
         "ezsystems/content-on-the-fly-prototype": "~0.1.7",
+        "ezsystems/ezplatform-multi-file-upload": "^0.1.0@dev",
         "willdurand/js-translation-bundle": "^2.6.4",
         "netgen/tagsbundle": "^3.0"
     },
@@ -108,7 +109,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "1.8.x-dev"
+            "dev-master": "1.9.x-dev"
         }
     },
     "bin": [

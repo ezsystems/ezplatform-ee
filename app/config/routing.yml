@@ -62,3 +62,8 @@ _personalizedBlockRoutes:
 
 _eztagsRoutes:
     resource: "@NetgenTagsBundle/Resources/config/routing.yml"
+
+_multiFileUpload:
+    resource: "@EzSystemsMultiFileUploadBundle/Resources/config/routing.yml"
+    prefix:   "%ezpublish_rest.path_prefix%"
+
