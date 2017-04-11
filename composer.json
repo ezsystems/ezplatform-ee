@@ -34,7 +34,7 @@
         "ezsystems/repository-forms": "^1.7@dev",
         "ezsystems/ezplatform-solr-search-engine": "^1.3@dev",
         "ezsystems/platform-ui-bundle": "^1.9@dev",
-        "ezsystems/ez-support-tools": "~0.1.0",
+        "ezsystems/ez-support-tools": "~0.1.0@dev",
         "ezsystems/ezplatform-http-cache": "^0.1@dev",
         "ezplatform-i18n/ezplatform-i18n-ach_ug": "^1.1@dev",
         "ezsystems/comments-bundle": "~6.0@dev",
@@ -58,7 +58,7 @@
         "ezsystems/ezstudio-cron": "^1.0@dev",
         "ezsystems/date-based-publisher": "^1.0@dev",
         "ezsystems/ezstudio-personalized-block": "^1.0@dev",
-        "ezsystems/content-on-the-fly-prototype": "~0.1.7",
+        "ezsystems/content-on-the-fly-prototype": "~0.1.7@dev",
         "ezsystems/ezplatform-multi-file-upload": "^0.1.0@dev",
         "willdurand/js-translation-bundle": "^2.6.4",
         "netgen/tagsbundle": "^3.0"
