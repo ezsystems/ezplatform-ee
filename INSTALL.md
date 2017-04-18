@@ -54,14 +54,14 @@ https://doc.ez.no/display/DEVELOPER/Step+1%3A+Installation
 
        ```bash
        $ curl -sS https://getcomposer.org/installer | php
-       $ php -d memory_limit=-1 composer.phar create-project --no-dev --repository-url=https://updates.ez.no/bul ezsystems/ezstudio-demo
-       $ cd /ezstudio-demo/
+       $ php -d memory_limit=-1 composer.phar create-project --no-dev ezsystems/ezplatform-ee-demo
+       $ cd /ezplatform-ee-demo/
        ```
 
      Arguments *(also see `php composer.phar create-project -h`)*:
        - `<package>`: Distribution to install, `ezsystems/ezplatform` is a clean installs of eZ Platform, others:
         - `ezsystems/ezplatform-demo`: Adds a demo site as an example of eZ Platform web site.
-        - `ezsystems/ezstudio`: Commercial flavour that adds additional capabilities, see [ezstudio.com](http://ezstudio.com/).
+        - `ezsystems/ezplatform-ee`: Commercial flavour that adds additional capabilities, see [https://ez.no/Products/eZ-Platform-Enterprise-Edition](https://ez.no/Products/eZ-Platform-Enterprise-Edition).
        - `<directory>`: Folder to extract to, if omitted same as package name so in example: `ezstudio`.
        - `<version>`: Optional, *when omitted you'll get latest stable*. Examples:
         - `~1.3.0`: To pick latests 1.3 release, to pick latests 1.x release use `~1.3`.
