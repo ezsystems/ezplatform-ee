@@ -10,9 +10,9 @@
 1. Fork [eZ Platform Enterprise Edition](https://github.com/ezsystems/ezplatform-ee/) and clone your fork locally.
 1. Add the platform remote of your project, and push your branch. The Platform.sh setup wizard tells you the command to use. Example:  
    `git remote add platform my_project@git.eu.platform.sh:my_project.git`
-   1. Set the environment variables for your eZ Network installation ID:
-      `export COMPOSER_KEY=my-installation-id`
-      ...and token password:
+   1. Set the environment variables for your eZ Network installation ID:  
+      `export COMPOSER_KEY=my-installation-id`  
+      and token password:  
       `export COMPOSER_PASSWORD=my-token-password`
    1. Optional: Set the SYMFONY_ENV environment variable to 'prod' or 'dev':  
       `export SYMFONY_ENV=dev`  
@@ -28,19 +28,19 @@
    1. Install the Platform.sh CLI according to https://docs.platform.sh/overview/cli.html
    1. Run `platform`  
       Run `platform get <your project id>`
-   1. Set the project variables for your eZ Network installation ID:
-      `platform project:variable:set env:composer_key my-installation-id --no-visible-runtime`
-      ...and token password:
+   1. Set the project variables for your eZ Network installation ID:  
+      `platform project:variable:set env:composer_key my-installation-id --no-visible-runtime`  
+      and token password:  
       `platform project:variable:set env:composer_password my-token-password --no-visible-runtime`
-   1. Optional: Set the SYMFONY_ENV environment variable to 'prod' or 'dev':
-      `platform project:variable:set env:symfony_env prod`
+   1. Optional: Set the SYMFONY_ENV environment variable to 'prod' or 'dev':  
+      `platform project:variable:set env:symfony_env prod`  
       If you don't do this, remote builds will default to 'prod'.
-1. Checkout the v1.9.0 tag (once it is released) as a new branch:
-   `git checkout -b ezplatform-ee-v1.9.0 v1.9.0`
-   Push the new branch:
-   `git push platform ezplatform-ee-v1.9.0`
-   This will result in "No package to build: environment is inactive." Activate the environment like this:
-   `platform environment:activate ezplatform-ee-v1.9.0`
+1. Checkout the v1.9.0 tag (once it is released) as a new branch:  
+   `git checkout -b ezplatform-ee-v1.9.0 v1.9.0`  
+   Push the new branch:  
+   `git push platform ezplatform-ee-v1.9.0`  
+   This will result in "No package to build: environment is inactive." Activate the environment like this:  
+   `platform environment:activate ezplatform-ee-v1.9.0`  
    This will trigger a new Platform.sh build.
 
 > **NB:** If you have installed eZ Platform or the Enterprise Edition on this Platform.sh instance before, you may need to remove the web/var/.platform.installed file to ensure the installation is performed in the deploy stage.
