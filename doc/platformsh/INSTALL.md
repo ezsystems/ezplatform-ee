@@ -35,12 +35,12 @@
    1. Optional: Set the SYMFONY_ENV environment variable to 'prod' or 'dev':  
       `platform project:variable:set env:symfony_env prod`  
       If you don't do this, remote builds will default to 'prod'.
-1. Checkout the v1.9.0 tag (once it is released) as a new branch:  
-   `git checkout -b ezplatform-ee-v1.9.0 v1.9.0`  
+1. Checkout the v1.9.1 tag (once it is released) as a new branch:  
+   `git checkout -b ezplatform-ee-v1.9.1 v1.9.1`  
    Push the new branch:  
-   `git push platform ezplatform-ee-v1.9.0`  
+   `git push platform ezplatform-ee-v1.9.1`  
    This will result in "No package to build: environment is inactive." Activate the environment like this:  
-   `platform environment:activate ezplatform-ee-v1.9.0`  
+   `platform environment:activate ezplatform-ee-v1.9.1`  
    This will trigger a new Platform.sh build.
 
 > **NB:** If you have installed eZ Platform or the Enterprise Edition on this Platform.sh instance before, you may need to remove the web/var/.platform.installed file to ensure the installation is performed in the deploy stage.
