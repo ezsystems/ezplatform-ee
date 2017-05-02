@@ -35,7 +35,7 @@
    1. Optional: Set the SYMFONY_ENV environment variable to 'prod' or 'dev':  
       `platform project:variable:set env:symfony_env prod`  
       If you don't do this, remote builds will default to 'prod'.
-1. Checkout the v1.9.1 tag (once it is released) as a new branch:  
+1. Checkout a stable tag (which includes this feature) as a new branch. Example using v1.9.1:  
    `git checkout -b ezplatform-ee-v1.9.1 v1.9.1`  
    Push the new branch:  
    `git push platform ezplatform-ee-v1.9.1`  
