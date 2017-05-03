@@ -1,4 +1,4 @@
-# Use eZ Platform Enterprise Edition on Platform.sh
+# Use eZ Platform on Platform.sh
 
 > **Beta**: Instructions and Tools *(Platform.sh configuration files, scripts, ...)* described on this page are currently in Beta for community testing & contribution, and may change without notice.
 
