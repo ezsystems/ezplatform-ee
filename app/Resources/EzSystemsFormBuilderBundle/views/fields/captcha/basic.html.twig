@@ -1,8 +1,7 @@
 {% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
 {% trans_default_domain "formcaptcha" %}
 
-{% set normalizedId = field.id|replace('-', '_') %}
-{% set imageId = 'captcha__' ~ normalizedId %}
+{% set imageId = 'captcha__' ~ field.id|replace({'-': '_'}) %}
 {% set captchaImage = ez_form_captcha_path(field) %}
 
 {% block input %}
