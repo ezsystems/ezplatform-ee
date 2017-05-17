@@ -41,6 +41,7 @@ class AppKernel extends Kernel
             new EzSystems\CommentsBundle\EzSystemsCommentsBundle(),
             new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
             new EzSystems\FormBuilderBundle\EzSystemsFormBuilderBundle(),
+            new EzSystems\PlatformEEAssetsBundle\EzSystemsPlatformEEAssetsBundle(),
             new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
             new EzSystems\StudioDemoBundle\EzSystemsStudioDemoBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
