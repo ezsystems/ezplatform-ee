@@ -61,7 +61,8 @@
         "ezsystems/content-on-the-fly-prototype": "~0.1.7@dev",
         "ezsystems/ezplatform-multi-file-upload": "^0.1.0@dev",
         "willdurand/js-translation-bundle": "^2.6.4",
-        "netgen/tagsbundle": "^3.0"
+        "netgen/tagsbundle": "^3.0",
+        "novactive/ezseobundle": "^2.0"
     },
     "require-dev": {
         "ezsystems/ezplatform-i18n": "^1.0@dev",
