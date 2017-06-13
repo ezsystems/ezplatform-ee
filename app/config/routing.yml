@@ -33,11 +33,22 @@ _landingPageBundleRoutes:
 _ezpublishStudioUIRoutes:
     resource: "@eZStudioUIBundle/Resources/config/routing.yml"
 
+_ezpublishStudioDemoRoutes:
+    resource: "@eZStudioDemoBundle/Resources/config/routing.yml"
+
 _ezpublishFlexWorkflowRoutes:
     resource: "@FlexWorkflowBundle/Resources/config/routing.yml"
 
 _ezpublishNotificationRoutes:
     resource: "@NotificationBundle/Resources/config/routing.yml"
+
+_contentOnTheFly:
+    resource: "@ContentOnTheFlyBundle/Resources/config/routing.yml"
+    prefix: "%ezpublish_rest.path_prefix%"
+
+_recommendationBundleRestRoutes:
+    resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
+    prefix: "%ezpublish_rest.path_prefix%"
 
 _ezStudioFormBuilder:
     resource: "@EzSystemsFormBuilderBundle/Resources/config/routing.yml"
@@ -46,11 +57,17 @@ _ezpublishDateBasedPublisher:
     resource: "@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yml"
     prefix: "%ez_systems_date_based_publisher_rest_prefix%"
 
-_contentOnTheFly:
-    resource: "@ContentOnTheFlyBundle/Resources/config/routing.yml"
-    prefix:   "%ezpublish_rest.path_prefix%"
+_personalizedBlockRoutes:
+    resource: "@EzSystemsPersonalizedBlockBundle/Resources/config/routing.yml"
+
+_eztagsRoutes:
+    resource: "@NetgenTagsBundle/Resources/config/routing.yml"
 
 _multiFileUpload:
     resource: "@EzSystemsMultiFileUploadBundle/Resources/config/routing.yml"
     prefix:   "%ezpublish_rest.path_prefix%"
 
+_novaezseoRoutes:
+    resource: "@NovaeZSEOBundle/Controller/"
+    type:     annotation
+    prefix:   /

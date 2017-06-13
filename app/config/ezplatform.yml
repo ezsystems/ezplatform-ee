@@ -2,6 +2,9 @@ ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
     repositories:
         default:
+            fields_groups:
+                list: [content, seo, meta]
+                default: content
             storage: ~
             search:
                 engine: "%search_engine%"
@@ -11,9 +14,15 @@ ezpublish:
     siteaccess:
         list:
           - site
+          - fr
+          - de
+          - no
         groups:
             site_group:
                 - site
+                - fr
+                - de
+                - no
         default_siteaccess: site
         match:
             URIElement: 1
@@ -29,4 +38,19 @@ ezpublish:
             var_dir: var/site
         site:
             languages:
+                - eng-GB
+                - fre-FR
+                - ger-DE
+                - nor-NO
+        fr:
+            languages:
+                - fre-FR
+                - eng-GB
+        de:
+            languages:
+                - ger-DE
+                - eng-GB
+        no:
+            languages:
+                - nor-NO
                 - eng-GB

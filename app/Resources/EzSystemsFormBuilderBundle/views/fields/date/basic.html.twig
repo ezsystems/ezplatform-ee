@@ -1,0 +1,22 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+{% trans_default_domain "formfield" %}
+
+{% set placeholder = '' %}
+{% for validator in field.validators if validator.type == 'format' %}
+    {% set placeholder = validator.value.alias %}
+{% endfor %}
+
+{% block input %}
+    <div class="ezform-field-group" data-error-message="{{ 'field.is.required'|trans }}">
+        <div class="ezform-field-indicator"></div>
+        <div class="ezform-field-wrapper">
+            <input
+                id="{{ field.id }}"
+                type="text"
+                class="ezform-field ezform-date form-control"
+                placeholder="{{ placeholder }}"
+                {% if field.isRequired %}required{% endif %}
+                >
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+{% trans_default_domain "formfield" %}
+
+{% set imageId = 'captcha__' ~ field.id|replace({'-': '_'}) %}
+{% set captchaImage = ez_form_captcha_path(field) %}
+
+{% block input %}
+    <div class="ezform-field-group" data-error-message="{{ 'field.is.required'|trans }}">
+        <span class="ezform-field-indicator"></span>
+        <span class="ezform-field-wrapper">
+            <input
+                id="{{ field.id }}"
+                type="text"
+                class="ezform-field ezform-captcha form-control"
+                placeholder="{{ field.placeholderText }}"
+                {% if field.isRequired %}required{% endif %}
+                >
+        </span>
+    </div>
+    <div class="ezform-captcha-image-wrapper">
+        <img class="ezform-captcha-image" id="{{ imageId }}" src="{{ captchaImage }}" alt="" />
+    </div>
+    <div class="ezform-captcha-reload-wrapper">
+        <a class="ezform-captcha-reload btn btn-default btn-sm" href="#">{{ 'formcaptcha.reload_image'|trans }}</a>
+    </div>
+{% endblock %}
+

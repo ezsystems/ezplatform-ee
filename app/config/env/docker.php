@@ -94,3 +94,16 @@ if ($pool = getenv('CUSTOM_CACHE_POOL')) {
     $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../cache_pool'));
     $loader->load($pool . '.yml');
 }
+
+// EzSystemsRecommendationsBundle settings
+if ($value = getenv('RECOMMENDATIONS_CUSTOMER_ID')) {
+    $container->setParameter('ez_recommendation.default.yoochoose.customer_id', $value);
+}
+
+if ($value = getenv('RECOMMENDATIONS_LICENSE_KEY')) {
+    $container->setParameter('ez_recommendation.default.yoochoose.license_key', $value);
+}
+
+if ($value = getenv('PUBLIC_SERVER_URI')) {
+    $container->setParameter('ez_recommendation.default.server_uri', $value);
+}

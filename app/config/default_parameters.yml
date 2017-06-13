@@ -28,3 +28,9 @@ parameters:
 
     cache_memcached_port: 11211
     cache_redis_port: 6379
+
+    # Content types included in Recommendations from YooChoose account
+    ez_recommendation.default.recommender.included_content_types: [blog, article, place]
+
+    # Location id of the content item for form uploads
+    form_builder.upload_folder.location_id: 250

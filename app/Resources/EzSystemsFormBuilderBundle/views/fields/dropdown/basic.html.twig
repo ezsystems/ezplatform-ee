@@ -1,0 +1,15 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+{% trans_default_domain "formfield" %}
+
+{% block input %}
+    <div class="ezform-field-group {% if field.isRequired %}ezform-field-dropdown--required{% endif %}" data-error-message="{{ 'field.is.required'|trans }}">
+        <div class="ezform-field-indicator"></div>
+        <div class="ezform-field-wrapper">
+            <select id="{{ field.id }}" class="ezform-field ezform-dropdown form-control">
+            {% for option in field.options.choices.value %}
+                <option value="{{ option.value }}" {% if option.checked %}selected{% endif %}>{{ option.value }}</option>
+            {% endfor %}
+            </select>
+        </div>
+    </div>
+{% endblock %}

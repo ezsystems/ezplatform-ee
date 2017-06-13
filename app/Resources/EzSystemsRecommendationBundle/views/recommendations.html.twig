@@ -1,0 +1,53 @@
+<script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
+    {% verbatim %}
+        <div class="recommendations hidden-xs">
+            <div class="recommendations-indicator col-sm-1">
+                <div class="recommendations-indicator-icon recommendations-indicator-icon-like">
+                </div>
+                <div class="recommendations-indicator-label">
+                    {% endverbatim %}{{ 'Recommended Articles'|trans }}{% verbatim %}
+                </div>
+            </div>
+
+            <div class="col-sm-11">
+                {{validateResults '{% endverbatim %}
+                    {{ render_esi(controller(
+                        'ezstudiodemo.controller.recommendations:getRandomJSON', {
+                            'selectedContentTypes': [
+                                'article',
+                                'place',
+                                'blog_post'
+                            ],
+                            'limit': 3
+                        }))
+                    }}
+                {% verbatim %}' this}}
+
+                {{#each this}}
+                    <a href="{{attr.url}}"{{#unless attr.isRandom}} onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')"{{/unless}}>
+                        <article class="class-article col-sm-4">
+                            <div class="recommendations-article">
+                                <div class="col-sm-4 recommendations-thumbnail" style="background-image: url('{{attr.image}}');">
+                                </div>
+                                <div class="col-sm-8 recommendations-data">
+                                    <h3>{{attr.title}}</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                {{/each}}
+            </div>
+        </div>
+    {% endverbatim %}
+</script>
+
+<div id="recommendations-target-{{ templateId }}">
+</div>
+
+{% include 'EzSystemsRecommendationBundle::show_recommendations.html.twig' with {
+    'templateId': templateId,
+    'scenario': scenario,
+    'limit': limit,
+    'contentType': contentType,
+    'contentId': contentId
+} %}

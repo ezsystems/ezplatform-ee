@@ -1,0 +1,19 @@
+{% set hideLabel = options.hideLabel is defined and options.hideLabel == true %}
+{% set hideName = options.hideName is defined and options.hideName == true %}
+{% set hideHelpText = options.hideHelpText is defined and options.hideHelpText == true %}
+
+<div class="form-group" data-field-id="{{ field.id }}" {{ params|raw }}>
+    {% if not hideLabel %}
+        <label class="ezform-label" for="{{ field.id }}">
+            {{ field.name ~ (field.isRequired ? '*:'  : ':') }}
+        </label>
+    {% endif %}
+
+    <div class="ezform-error"></div>
+
+    {% block input %}{% endblock %}
+
+    {% if not hideHelpText %}
+        <small class="ezform-helptext ">{{ field.helpText }}</small>
+    {% endif %}
+</div>

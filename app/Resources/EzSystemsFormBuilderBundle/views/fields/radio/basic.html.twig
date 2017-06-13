@@ -1,0 +1,26 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+{% trans_default_domain "formfield" %}
+
+{% block input %}
+    <div class="ezform-field-group {% if field.isRequired %}ezform-field-group--required{% endif %}" data-error-message="{{ 'field.is.required'|trans }}">
+        <div class="ezform-field-indicator"></div>
+        <div class="ezform-field-wrapper">
+        {% for option in field.options.choices.value %}
+            {% set radioId = field.id ~ '-' ~ loop.index %}
+            <div class="radio">
+                <label class="ezform-radio-label" for="{{ radioId }}">
+                    <input
+                        id="{{ radioId }}"
+                        name="{{ field.id }}"
+                        type="radio"
+                        class="ezform-field ezform-radio"
+                        value="{{ option.value }}"
+                        {% if option.checked %}checked{% endif %}
+                        >
+                    {{ option.value }}
+                </label>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,74 @@
+<script id="recommendations-template-default-{{ templateId }}" type="text/x-handlebars-template">
+    {{ render_esi(controller('ezstudiodemo.controller.recommendations:showRandom', {
+        'template': 'EzSystemsRecommendationBundle::missing_recommendations.html.twig',
+        'selectedContentTypes': [
+            'article',
+            'place',
+            'blog_post',
+        ],
+        'limit': 3
+    })) }}
+</script>
+
+<script>
+    {% autoescape 'js' %}
+        (function() {
+            var defaultArticlesListContent = document.getElementById('recommendations-template-default-{{ templateId }}').innerHTML,
+                recommendationTemplateRenderer = new eZ.RecommendationTemplateRenderer({
+                    templateId: '{{ templateId }}',
+                    feedbackUrl: '{{ feedbackUrl }}'
+                }),
+                recommendationRestClient = new eZ.RecommendationRestClient({
+                    scenario: '{{ scenario }}',
+                    limit: '{{ limit }}',
+                    endpointUrl: '{{ endpointUrl }}',
+                    language: '{{ language }}',
+                    contentType: '{{ contentType }}',
+                    outputTypeId: '{{ outputTypeId }}',
+                    contextItems: '{{ contentId }}',
+                    categoryPath: '{{ categoryPath }}',
+                    fields: [{% for entry in fields %}'{{ entry }}', {% endfor %}],
+                    errorMessage: defaultArticlesListContent,
+                    notSupportedMessage: '{{ 'Cannot display recommendations, your browser is not supported'|trans }}',
+                    unauthorizedMessage: '{{ 'Internal error, unauthorized access to recommender engine (code: 401)'|trans }}',
+                    internalServerErrorMessage: '{{ 'Internal server error, please validate your recommendation settings (code: 500)'|trans }}'
+                }),
+                compiledTemplate = Handlebars.compile(recommendationTemplateRenderer.recommendationsTemplate.innerHTML),
+                preloaderTemplate,
+                mockups = new Array(3),
+                validationCount = 0;
+
+            // if some recommendations are missing replace them with random generated data
+            Handlebars.registerHelper('validateResults', function(jsonData, context) {
+                var mockups = JSON.parse(jsonData);
+
+                if (++validationCount > 1) {
+                    for (var idx in mockups.data) {
+                        if (context[idx] === undefined) {
+                            context[idx] = [];
+                            context[idx]['attr'] = [];
+                        }
+
+                        if (!context[idx].attr.title) {
+                            context[idx].attr.title = mockups.data[idx].name;
+                            context[idx].attr.image = mockups.data[idx].image;
+                            context[idx].attr.url = mockups.data[idx].url;
+                            context[idx].attr.isRandom = true;
+                        }
+                    }
+                }
+            });
+
+            // display preloader before showing recommendations
+            preloaderTemplate = compiledTemplate(mockups)
+                .replace('-icon-like', '-icon-loading')
+                .replace(/recommendations-data/g, 'recommendations-data-placeholder');
+            recommendationTemplateRenderer.displayMessage(preloaderTemplate);
+
+            recommendationRestClient.fetchRecommendations(
+                recommendationTemplateRenderer.displayRecommendations.bind(recommendationTemplateRenderer),
+                recommendationTemplateRenderer.displayMessage.bind(recommendationTemplateRenderer)
+            );
+        }) ();
+    {% endautoescape %}
+</script>

@@ -1,0 +1,29 @@
+<div class="recommendations hidden-xs">
+    <div class="recommendations-indicator col-sm-1">
+        <div class="recommendations-indicator-icon recommendations-indicator-icon-like"></div>
+        <div class="recommendations-indicator-label">
+            {{ 'Recommended Articles'|trans }}
+        </div>
+    </div>
+
+    <div class="col-sm-11">
+        {% for content in randomRecommendations %}
+            <a href="{{ path('ez_urlalias', {'contentId': content.id}) }}">
+                <article class="class-article col-sm-4">
+                    <div class="recommendations-article">
+                        {% set thumbnail = '' %}
+                        {% if content.getFieldValue('image') is defined and content.getFieldValue('image') is not empty %}
+                            {% set thumbnail = content.getFieldValue('image').uri %}
+                        {% endif %}
+
+                        <div class="col-sm-4 recommendations-thumbnail" style="background-image: url('{{ thumbnail }}');">
+                        </div>
+                        <div class="col-sm-8 recommendations-data">
+                            <h3>{{ ez_content_name(content) }}</h3>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        {% endfor %}
+    </div>
+</div>

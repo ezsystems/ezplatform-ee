@@ -1,9 +1,19 @@
-cleanMeta:
+demoMeta:
       suites:
-          StudioUI:
-              paths: [ vendor/ezsystems/studio-ui-bundle/Features ]
-              filters:
-                  tags: "@clean"
+          FlexWorkflow:
+              paths: [ vendor/ezsystems/flex-workflow/bundle/Features ]
               contexts:
-                  - EzSystems\StudioUIBundle\Features\Context\StudioUI:
+                  - EzSystems\FlexWorkflowBundle\Features\Context\FlexWf:
+                      uri: /ez
+          DateBasedPublisher:
+              paths: [ vendor/ezsystems/date-based-publisher/bundle/Features ]
+              contexts:
+                  - EzSystems\DateBasedPublisherBundle\Features\Context\DateBasedPublisher:
+                      uri: /ez
+          FormBuilder:
+              paths: [ vendor/ezsystems/ezstudio-form-builder/bundle/Features ]
+              filters:
+                  tags: "@ezstudio-blocks"
+              contexts:
+                  - EzSystems\FormBuilderBundle\Features\Context\FormBuilder:
                       uri: /ez
