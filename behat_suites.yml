@@ -1,9 +1,7 @@
 cleanMeta:
       suites:
-          StudioUI:
-              paths: [ vendor/ezsystems/studio-ui-bundle/Features ]
-              filters:
-                  tags: "@clean"
+          DateBasedPublisher:
+              paths: [ vendor/ezsystems/date-based-publisher/bundle/Features ]
               contexts:
-                  - EzSystems\StudioUIBundle\Features\Context\StudioUI:
+                  - EzSystems\DateBasedPublisherBundle\Features\Context\DateBasedPublisher:
                       uri: /ez
