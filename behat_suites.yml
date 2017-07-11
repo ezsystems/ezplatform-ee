@@ -5,3 +5,8 @@ cleanMeta:
               contexts:
                   - EzSystems\DateBasedPublisherBundle\Features\Context\DateBasedPublisher:
                       uri: /ez
+          FlexWorkflow:
+              paths: [ vendor/ezsystems/flex-workflow/bundle/Features ]
+              contexts:
+                  - EzSystems\FlexWorkflowBundle\Features\Context\FlexWf:
+                      uri: /ez
