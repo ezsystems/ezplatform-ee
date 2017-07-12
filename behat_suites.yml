@@ -10,3 +10,8 @@ cleanMeta:
               contexts:
                   - EzSystems\FlexWorkflowBundle\Features\Context\FlexWf:
                       uri: /ez
+          FormBuilder:
+              paths: [ vendor/ezsystems/ezstudio-form-builder/bundle/Features ]
+              contexts:
+                  - EzSystems\FormBuilderBundle\Features\Context\FormBuilder:
+                      uri: /ez
