@@ -15,3 +15,8 @@ cleanMeta:
               contexts:
                   - EzSystems\FormBuilderBundle\Features\Context\FormBuilder:
                       uri: /ez
+          DynamicLandingPage:
+              paths: [ vendor/ezsystems/studio-ui-bundle/Features/DynamicLandingPage ]
+              contexts:
+                  - EzSystems\StudioUIBundle\Features\Context\StudioUI:
+                      uri: /ez
