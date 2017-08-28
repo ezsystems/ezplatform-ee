@@ -9,7 +9,7 @@ default:
             selenium2:
                 wd_host: 'http://localhost:4444/wd/hub'
             javascript_session: selenium2
-            browser_name: firefox
+            browser_name: chrome
 
         Behat\Symfony2Extension:
             kernel:
