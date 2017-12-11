@@ -50,3 +50,20 @@ ezplatform.ee.landing_page:
 
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
+
+# Redirect v1 /ez routes to /admin
+ez:
+    path: /ez
+    controller: FrameworkBundle:Redirect:urlRedirect
+    defaults:
+        path: /admin
+        permanent: true
+
+ez_mask:
+    path: /ez/{mask}
+    controller: FrameworkBundle:Redirect:urlRedirect
+    defaults:
+        path: /admin
+        permanent: true
+    requirements:
+          mask: ".*"
