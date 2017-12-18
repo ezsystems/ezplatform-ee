@@ -10,6 +10,8 @@ logout:
 
 kernel.internal:
     resource: '@EzPublishCoreBundle/Resources/config/routing/internal.yml'
+    options:
+        expose: true
 
 kernel.rest:
     resource: '@EzPublishRestBundle/Resources/config/routing.yml'
