@@ -1,0 +1,172 @@
+ezplatform_page_fieldtype:
+    layouts:
+        '1':
+            identifier: '1'
+            name: '1 Zone, 1 Column'
+            description: 'One zone in one column'
+            thumbnail: '/bundles/app/images/layouts/1.png'
+            template: '@ezdesign/layouts/1.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+
+        '1_2':
+            identifier: '1_2'
+            name: '2 Zone, 2 Column'
+            description: 'Two zones in columns, narrow left, wide right'
+            thumbnail: '/bundles/app/images/layouts/1_2.png'
+            template: '@ezdesign/layouts/1_2.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+                second:
+                    name: 'Second zone'
+
+        '1_2__1':
+            identifier: '1_2__1'
+            name: '3 Zone, 2+1 Column'
+            description: 'Three zones, two columns, narrow left, wide right in first row and one row'
+            thumbnail: '/bundles/app/images/layouts/1_2__1.png'
+            template: '@ezdesign/layouts/1_2__1.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+                second:
+                    name: 'Second zone'
+                third:
+                    name: 'Third zone'
+
+        '2_1':
+            identifier: '2_1'
+            name: '2 Zone, 2 Column'
+            description: 'Two zones in columns, wide left, narrow right'
+            thumbnail: '/bundles/app/images/layouts/2_1.png'
+            template: '@ezdesign/layouts/2_1.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+                second:
+                    name: 'Second zone'
+
+        '2_1__1':
+            identifier: '2_1__1'
+            name: '3 Zone, 2+1 Column'
+            description: 'Three zones, two columns, wide left, narrow right in first row and one row'
+            thumbnail: '/bundles/app/images/layouts/2_1__1.png'
+            template: '@ezdesign/layouts/2_1__1.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+                second:
+                    name: 'Second zone'
+                third:
+                    name: 'Third zone'
+
+
+    blocks:
+        schedule:
+            views:
+              schedule_hero:
+                  template: '@ezdesign/blocks/schedule_hero.html.twig'
+                  name: 'Platform EE Demo schedule hero'
+
+              schedule_grid:
+                  template: '@ezdesign/blocks/schedule_grid.html.twig'
+                  name: 'Platform EE Demo schedule special grid'
+
+              schedule-list:
+                  template: '@ezdesign/blocks/schedule_list.html.twig'
+                  name: 'Platform EE Demo schedule list'
+
+              schedule_grid-4:
+                  template: '@ezdesign/blocks/schedule_grid-4.html.twig'
+                  name: 'Platform EE Demo schedule grid 2x2'
+
+        contentlist:
+            views:
+                contentlist:
+                    template: '@ezdesign/blocks/contentlist.html.twig'
+                    name: 'Platform EE Demo contentlist'
+
+                schedule_hero:
+                    template: '@ezdesign/blocks/schedule_hero.html.twig'
+                    name: 'Platform EE Demo schedule hero'
+
+        banner:
+            views:
+                banner:
+                    template: '@ezdesign/blocks/banner.html.twig'
+                    name: 'Platform EE Demo banner'
+
+                banner_container:
+                    template: '@ezdesign/blocks/banner_container.html.twig'
+                    name: 'Platform EE Demo banner in container div'
+
+        embed:
+            views:
+                embed:
+                    template: '@ezdesign/blocks/embed.html.twig'
+                    name: 'Platform EE Demo embed block'
+
+                blog:
+                    template: '@ezdesign/blocks/blog.html.twig'
+                    name: 'Platform EE Demo blog block'
+
+        places:
+            views:
+                map:
+                    template: '@ezdesign/blocks/map.html.twig'
+                    name: 'Platform EE Demo places map'
+
+                places:
+                    template: '@ezdesign/blocks/places.html.twig'
+                    name: 'Platform EE Demo places'
+
+        gallery:
+            views:
+                gallery:
+                    template: '@ezdesign/blocks/gallery.html.twig'
+                    name: 'Default Gallery Block template'
+
+        keyword:
+            views:
+                keyword:
+                    template: '@ezdesign/blocks/keyword.html.twig'
+                    name: 'Default Keyword Block template'
+
+        maform:
+            views:
+                maform:
+                    template: '@ezdesign/blocks/maform.html.twig'
+                    name: 'Default Marketing Automation Block template'
+
+        rss:
+            views:
+                rss:
+                    template: '@ezdesign/blocks/rss.html.twig'
+                    name: 'Default RSS Block template'
+
+        tag:
+            views:
+                tag:
+                    template: '@ezdesign/blocks/tag.html.twig'
+                    name: 'Default Code Block template'
+
+        video:
+            views:
+                video:
+                    template: '@ezdesign/blocks/video.html.twig'
+                    name: 'Default Video Block template'
+
+        collection:
+            views:
+                content:
+                    template: '@ezdesign/blocks/collection.content.html.twig'
+                    name: 'Content List View'
+                    options:
+                        match: [article, blog_post]
+                gallery:
+                    template: '@ezdesign/blocks/collection.content.html.twig'
+                    name: 'Gallery View'
+                    options:
+                        match: [image]

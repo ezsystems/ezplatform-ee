@@ -28,6 +28,17 @@ ezplatform.admin_ui:
 _ezplatformRepositoryFormsRoutes:
     resource: '@EzSystemsRepositoryFormsBundle/Resources/config/routing.yml'
 
+ezplatform.fieldtype.page:
+    resource: '@EzPlatformPageFieldTypeBundle/Resources/config/routing.yml'
+
+ezplatform.page_builder:
+    resource: '@EzPlatformPageBuilderBundle/Resources/config/routing.yml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
+
+ezplatform.ee.notifications:
+    resource: '@NotificationBundle/Resources/config/routing.yml'
+
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
 

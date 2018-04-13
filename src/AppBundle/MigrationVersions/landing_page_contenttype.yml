@@ -1,0 +1,35 @@
+# landing_page content type
+-
+    type: content_type
+    mode: create
+    content_type_group: 1
+    identifier: landing_page
+    name: Landing page
+    name_pattern: <name>
+    is_container: true
+    default_sort_field: published
+    default_sort_order: DESC
+    attributes:
+        -
+            type: ezstring
+            name: Title
+            identifier: name
+            description: Title
+            required: true
+            searchable: true
+            category: content
+        -
+            type: ezstring
+            name: Description
+            identifier: description
+            description: Landing page description
+            required: true
+            searchable: true
+            category: content
+        -
+            type: ezlandingpage
+            name: Landing page
+            identifier: page
+            searchable: false
+            required: false
+            category: content

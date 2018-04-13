@@ -1,0 +1,8 @@
+<div class="block-collection">
+    {% for location in locationlist %}
+        {{ render(controller('ez_content:viewLocation', {
+            'locationId': location.locationId,
+            'viewType': 'embed'
+        })) }}
+    {% endfor %}
+</div>

@@ -1,0 +1,28 @@
+<div data-studio-zones-container>
+    <div class="landing-page__zone landing-page__zone--{{ zones[0].id }}" data-studio-zone="{{ zones[0].id }}">
+        {% if zones[0].blocks %}
+            {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[0].blocks} %}
+        {% endif %}
+    </div>
+</div>
+
+<div class="row" data-studio-zones-container>
+    <div class="landing-page__zone landing-page__zone--{{ zones[1].id }} landing-page__zone--left col-xs-6" data-studio-zone="{{ zones[1].id }}">
+        {% if zones[1].blocks %}
+            {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[1].blocks} %}
+        {% endif %}
+    </div>
+    <div class="landing-page__zone landing-page__zone--{{ zones[2].id }} landing-page__zone--right col-xs-6" data-studio-zone="{{ zones[2].id }}">
+        {% if zones[2].blocks %}
+            {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[2].blocks} %}
+        {% endif %}
+    </div>
+</div>
+
+<div data-studio-zones-container>
+    <div class="landing-page__zone landing-page__zone--{{ zones[3].id }}" data-studio-zone="{{ zones[3].id }}">
+        {% if zones[3].blocks %}
+            {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[3].blocks} %}
+        {% endif %}
+    </div>
+</div>

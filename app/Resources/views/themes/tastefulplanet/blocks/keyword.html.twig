@@ -1,0 +1,21 @@
+<div class="keyword">
+    {% if contentArray|length > 0 %}
+        {% for content in contentArray %}
+            <a href="{{ path(content.location) }}" class="row">
+                <div class="col-md-3">
+                    {{ ez_render_field(content.content, 'image', {
+                        'parameters': {
+                            'width': '100%'
+                        }
+                    }) }}
+                </div>
+                <div class="col-md-9">
+                    <h5>{{ ez_content_name(content.content) }}</h5>
+                    {% if content.content.fields.intro is defined and not ez_is_field_empty(content.content, 'intro') %}
+                        <p>{{ ez_render_field(content.content, 'intro') }}</p>
+                    {% endif %}
+                </div>
+            </a>
+        {% endfor %}
+    {% endif %}
+</div>

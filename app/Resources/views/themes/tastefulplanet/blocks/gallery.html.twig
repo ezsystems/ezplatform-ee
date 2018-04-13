@@ -1,0 +1,40 @@
+<div class="row block-gallery">
+    <div class="col-md-10 col-md-offset-1">
+        <h4 class="header">{{ location.contentinfo.name }}</h4>
+        <div id="gallery-{{ folder }}" class="gallery carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                {% for i in 0..contentArray|length-1 %}
+                    <li data-target="#gallery-{{ folder }}" data-slide-to="{{ i }}" {{ loop.index == 1 ? 'class="active"' : '' }}></li>
+                {% endfor %}
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                {% for content in contentArray %}
+                    <div class="carousel-item{{ loop.index == 1 ? ' active' : '' }}">
+                        {{ ez_render_field(content, 'image', {
+                            'parameters': {
+                                'width': '100%',
+                                'alias': 'gallery'
+                            }
+                        }) }}
+
+                        <div class="carousel-caption">
+                            <h3>{{ ez_render_field(content, "name") }}</h3>
+                            <p>{{ ez_render_field(content, "caption") }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a class="carousel-control-prev" href="#gallery-{{ folder }}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">{{ 'Previous'|trans }}</span>
+            </a>
+
+            <a class="carousel-control-next" href="#gallery-{{ folder }}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">{{ 'Next'|trans }}</span>
+            </a>
+        </div>
+    </div>
+</div>

@@ -29,10 +29,11 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new Novactive\Bundle\eZSEOBundle\NovaeZSEOBundle(),
-            new \Kaliop\eZMigrationBundle\EzMigrationBundle(),
+            new Kaliop\eZMigrationBundle\EzMigrationBundle(),
             new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
             // eZ Systems
             new EzSystems\PlatformHttpCacheBundle\EzSystemsPlatformHttpCacheBundle(),
+            new EzSystems\PlatformFastlyCacheBundle\EzSystemsPlatformFastlyCacheBundle(),
             new eZ\Bundle\EzPublishCoreBundle\EzPublishCoreBundle(),
             new eZ\Bundle\EzPublishLegacySearchEngineBundle\EzPublishLegacySearchEngineBundle(),
             new eZ\Bundle\EzPublishIOBundle\EzPublishIOBundle(),
@@ -42,12 +43,19 @@ class AppKernel extends Kernel
             new EzSystems\RepositoryFormsBundle\EzSystemsRepositoryFormsBundle(),
             new EzSystems\EzPlatformSolrSearchEngineBundle\EzSystemsEzPlatformSolrSearchEngineBundle(),
             new EzSystems\EzPlatformDesignEngineBundle\EzPlatformDesignEngineBundle(),
+            new EzSystems\CommentsBundle\EzSystemsCommentsBundle(),
             // Dependencies
             new Netgen\TagsBundle\NetgenTagsBundle(),
+            // Application
             new EzSystems\EzPlatformAdminUiBundle\EzPlatformAdminUiBundle(),
             new EzSystems\EzPlatformAdminUiModulesBundle\EzPlatformAdminUiModulesBundle(),
             new EzSystems\EzPlatformAdminUiAssetsBundle\EzPlatformAdminUiAssetsBundle(),
-            // Application
+            // eZ Studio
+            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
+            new EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle(),
+            new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
+            new EzSystems\CronBundle\EzSystemsCronBundle(),
+            // AppBundle
             new AppBundle\AppBundle(),
         ];
 

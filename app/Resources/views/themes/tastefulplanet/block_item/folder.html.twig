@@ -1,0 +1,12 @@
+{% block content %}
+    <a href="{{ path(location) }}">
+        {% if not ez_is_field_empty(content, 'image') %}
+            {% set imageAlias = ez_image_alias(content.getField('image'), content.versionInfo, 'embed-header') %}
+            <div class="col-md-12 section-header" style="background-image: url('{{ imageAlias.uri }}');">
+        {% else %}
+            <div class="col-md-12 section-header">
+        {% endif %}
+                <div class="header-title embed-header">{{ ez_content_name(content) }}</div>
+            </div>
+    </a>
+{% endblock %}

@@ -1,0 +1,70 @@
+{%  set wrapper = 'map' %}
+
+<div class="row">
+    {% if contentArray|length > 0 %}
+        {% for content in contentArray %}
+            <a href="#">
+                <div class="col-sm-3">
+                    <div class="place">
+                        {{ ez_render_field(content, 'image', {
+                            'template': ':fields:ezobjectrelation_image.html.twig',
+                            'parameters': {
+                                'alias': 'place',
+                                'class': 'place-list-image'
+                            }
+                        }) }}
+                        <h3>{{ ez_content_name(content) }}</h3>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    {% endif %}
+</div>
+
+<div class="col-md-12">
+    <div id="{{ wrapper }}"></div>
+</div>
+
+<div class="col-md-12">
+    <a href="{{ path(location) }}" class="btn btn-primary btn-lg btn-block">{{ 'See locations'|trans }}</a>
+</div>
+
+<script>
+    function initMap() {
+        var myLatLngs = [
+            {% if contentArray|length > 0 %}
+                {% for content in contentArray %}
+                    [
+                                '{{ ez_render_field(content, "name") }}',
+                                {{ ez_field_value( content, 'location' ).latitude }},
+                                {{ ez_field_value( content, 'location' ).longitude }}
+
+                    ]{% if loop.index < contentArray|length %},{% endif %}
+                {% endfor %}
+            {% endif %}
+            ],
+            bounds = new google.maps.LatLngBounds(),
+            infowindow = new google.maps.InfoWindow(),
+            map = new google.maps.Map(document.getElementById('{{ wrapper }}'), {
+                zoom: 4,
+                center: {lat: myLatLngs[0][1], lng: myLatLngs[0][2]}
+            });
+
+        for (var i = 0; i < myLatLngs.length; i++) {
+            var marker = new google.maps.Marker({
+                position: {lat: myLatLngs[i][1], lng: myLatLngs[i][2]},
+                map: map,
+                title: myLatLngs[i][0]
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent(myLatLngs[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+        map.fitBounds(bounds);
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>

@@ -1,0 +1,280 @@
+# references
+-
+    type: reference
+    mode: load
+    file: 'src/AppBundle/MigrationVersions/References/references_tags.yml'
+    overwrite: true
+-
+    type: reference
+    mode: load
+    file: 'src/AppBundle/MigrationVersions/References/references_all.yml'
+    overwrite: true
+
+## Home page content
+-
+    type: content
+    mode: create
+    content_type: landing_page
+    parent_location: 2
+    section: 1
+    owner: admin
+    attributes:
+        name: Home
+        description: Home page
+        page: >- #json
+            {
+              "layout":"1",
+              "zones":[
+                 {
+                    "id":"z-b92bce84-97f8-4f22-a539-5ba47db391bb",
+                    "name":"first",
+                    "blocks":[
+                       {
+                          "id":"b-294fbffd-744a-6ac6-3f29-9783799c10f6",
+                          "type":"banner",
+                          "name":"Banner Block",
+                          "view":"banner_container",
+                          "attributes":[
+                             {
+                                "id": "",
+                                "name": "contentId",
+                                "value": [reference:ref_content_image__media__images__paris_banner]
+                             },
+                             {
+                                "id": "",
+                                "name": "url",
+                                "value": "http://ez.no"
+                             }
+                          ]
+                       },
+                       {
+                          "id":"b-96ba244b-c72d-740d-0ccd-fdcec4e23af4",
+                          "type":"embed",
+                          "name":"Embed Block",
+                          "view":"embed",
+                          "attributes":[
+                             {
+                                "id": "",
+                                "name": "contentId",
+                                "value": [reference:ref_content_image__media__images__visual_travels]
+                             }
+                          ]
+                       },
+                       {
+                          "id":"b-b27742d1-628f-0c8c-a48b-0b1dd0d7e5f9",
+                          "type":"gallery",
+                          "name":"Gallery Block",
+                          "view":"gallery",
+                          "attributes":[
+                             {
+                                "id": "",
+                                "name": "contentId",
+                                "value": [reference:ref_content_gallery__media__gallery]
+                             }
+                          ]
+                       },
+                       {
+                          "id":"b-bf850b3f-e770-6e8f-46d0-ceff8d0c94f4",
+                          "type":"embed",
+                          "name":"Embed Block",
+                          "view":"embed",
+                          "attributes":[
+                             {
+                                "id": "",
+                                "name": "contentId",
+                                "value": [reference:ref_content_image__media__images__places_to_visit]
+                             }
+                          ]
+                       },
+                       {
+                          "id":"b-b3a66965-cec8-8c27-bb5c-a773e26bad3a",
+                          "type":"places",
+                          "name":"Places Block",
+                          "view":"map",
+                          "attributes":[
+                             {
+                                "id": "",
+                                "name": "contentId",
+                                "value": [reference:ref_content_folder__home__places_and_tastes__tastes]
+                             }
+                          ]
+                       }
+                    ]
+                 }
+              ]
+            }
+    references:
+        -
+            identifier: ref_content_landing_page__home
+            attribute: content_id
+        -
+            identifier: ref_location_landing_page__home
+            attribute: location_id
+
+-
+    type: location
+    mode: update
+    match:
+        location_id: reference:ref_location_folder__home
+    swap_with_location: reference:ref_location_landing_page__home
+
+
+## Places & Tastes landing page
+-
+    type: content
+    mode: create
+    content_type: landing_page
+    #parent_location: [reference:ref_location_landing_page__home]
+    parent_location: 2
+    section: 1
+    owner: admin
+    attributes:
+        name: Places & Tastes
+        description: Places & Tastes
+        page: >- #json
+            {
+              "layout": "2_1",
+              "title": "Places & Tastes",
+              "zones": [
+                {
+                  "id": "z-92f425d0-b199-445b-85fd-c79a0b9ae80c",
+                  "name": "first",
+                  "blocks": [
+                    {
+                      "id": "b-36ce56c4-e5be-eb6b-bab7-efd483d622c1",
+                      "type": "embed",
+                      "name": "Embed Block",
+                      "view": "embed",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "contentId",
+                            "value": [reference:ref_content_place_list__home__places_and_tastes__places]
+                         }
+                      ]
+                    },
+                    {
+                      "id": "b-36ce56c4-e5be-eb6b-bab7-efd483d622c0",
+                      "type": "embed",
+                      "name": "Embed Block",
+                      "view": "embed",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "contentId",
+                            "value": [reference:ref_content_folder__home__places_and_tastes__tastes]
+                         }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "second",
+                  "name": "Second zone",
+                  "blocks": [
+                    {
+                      "id": "b-3b73fd28-389a-d261-7e87-689757944c9c",
+                      "type": "banner",
+                      "name": "Banner Block",
+                      "view": "banner",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "contentId",
+                            "value": [reference:ref_content_image__media__images__contact_us]
+                         },
+                         {
+                            "id": "",
+                            "name": "url",
+                            "value": "http://ez.no"
+                         }
+                      ]
+                    },
+                    {
+                      "id": "b-e200906e-3ec9-ad1e-2e8b-32c713002547",
+                      "type": "rss",
+                      "name": "RSS Block",
+                      "view": "rss",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "url",
+                            "value": "http://ez.no/rss/feed/blog"
+                         },
+                         {
+                            "id": "",
+                            "name": "limit",
+                            "value": "6"
+                         },
+                         {
+                            "id": "",
+                            "name": "offset",
+                            "value": "0"
+                         }
+                      ]
+                    },
+                    {
+                      "id": "b-3d66d5af-57f9-1e3c-f3e2-9f26af4fb7a4",
+                      "type": "contentlist",
+                      "name": "Content List Block",
+                      "view": "contentlist",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "contentId",
+                            "value": [reference:ref_content_blog__home__blog]
+                         },
+                         {
+                            "id": "",
+                            "name": "contentType",
+                            "value": "blog_post"
+                         },
+                         {
+                            "id": "",
+                            "name": "limit",
+                            "value": "5"
+                         }
+                      ]
+                    },
+                    {
+                      "id": "b-eb59c8f9-b1b2-9651-473b-a897ee3d6aba",
+                      "type": "banner",
+                      "name": "Banner Block",
+                      "view": "banner",
+                      "attributes": [
+                         {
+                            "id": "",
+                            "name": "contentId",
+                            "value": [reference:ref_content_image__media__images__bottom_right_banner]
+                         },
+                         {
+                            "id": "",
+                            "name": "url",
+                            "value": "http://ez.no"
+                         }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+    references:
+        -
+            identifier: ref_content_landing_page__home__places_and_tastes
+            attribute: content_id
+        -
+            identifier: ref_location_landing_page__home__places_and_tastes
+            attribute: location_id
+
+-
+    type: location
+    mode: update
+    match:
+        location_id: reference:ref_location_folder__home__places_and_tastes
+    swap_with_location: reference:ref_location_landing_page__home__places_and_tastes
+
+-
+    type: reference
+    mode: save
+    file: 'src/AppBundle/MigrationVersions/References/references_landing_page.yml'
+    overwrite: true

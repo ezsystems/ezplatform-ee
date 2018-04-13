@@ -1,0 +1,17 @@
+.embed {
+    background: #fff;
+}
+
+.embed .thumb i {
+    top: 20px;
+    position: absolute;
+}
+
+.ebmed a {
+    display: block;
+}
+
+.block-embed {
+    padding: 0;
+    margin-bottom: 20px;
+}

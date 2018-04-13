@@ -1,0 +1,15 @@
+<div class="row block-contentlist">
+    <h3>{{ parentName }}</h3>
+    {% if contentArray|length > 0 %}
+        <div class="block-contentlist-items">
+            {% for content in contentArray %}
+                <div class="block-contentlist-child">
+                    <h4><a href="{{ path(content.location) }}">{{ ez_content_name(content.content) }}</a></h4>
+                    {% if content.content.getField('intro') %}
+                        <p>{{ ez_render_field(content.content, 'intro') }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

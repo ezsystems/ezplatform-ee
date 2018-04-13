@@ -1,0 +1,18 @@
+{% spaceless %}
+    {%  set render_empty = render_empty|default(false) %}
+
+    <div class="schedule-layout schedule-layout--list" data-studio-slots-container>
+        {% for i in 0..3 %}
+            {% if items[i] is defined or render_empty %}
+                <div class="schedule-layout--list__slot schedule-layout__slot" data-studio-slot>
+                    {% if items[i] is defined %}
+                        {{ render(controller('ez_content:viewAction', {
+                            'locationId': items[i],
+                            'viewType': 'grid-list'
+                        })) }}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endspaceless %}

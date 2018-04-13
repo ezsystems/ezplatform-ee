@@ -1,0 +1,36 @@
+# references
+-
+    type: reference
+    mode: load
+    file: 'src/AppBundle/MigrationVersions/References/references_tags.yml'
+    overwrite: true
+-
+    type: reference
+    mode: load
+    file: 'src/AppBundle/MigrationVersions/References/references_all.yml'
+    overwrite: true
+-
+    type: reference
+    mode: load
+    file: 'src/AppBundle/MigrationVersions/References/references_landing_page.yml'
+    overwrite: true
+
+-
+    type: content
+    mode: delete
+    match:
+      content_id: reference:ref_content_folder__home
+-
+    type: content
+    mode: delete
+    match:
+      content_id: reference:ref_content_folder__home__places_and_tastes
+
+# set the new url without '2'
+-
+    type: content
+    mode: update
+    match:
+      content_id: reference:ref_content_landing_page__home__places_and_tastes
+    attributes:
+        - name: Places & Tastes

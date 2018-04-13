@@ -1,0 +1,18 @@
+<article class="embed tastes-list-item-container">
+    <a href="{{ path(location) }}" class="row">
+        <div class="col-md-3">
+            <div class="thumb">
+                {{ ez_render_field(content, 'image', {
+                    'parameters': { 'class': 'img-fluid' }
+                }) }}
+                <i>{{ 'Tastes'|trans }}</i>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h5>{{ ez_content_name(content) }}</h5>
+            <div class="places-list-item-description">
+                {{ ez_render_field(content, 'intro') }}
+            </div>
+        </div>
+    </a>
+</article>

@@ -1,16 +1,20 @@
 {
-    "name": "ezsystems/ezplatform-demo",
-    "description": "eZ Platform distribution",
-    "homepage": "https://github.com/ezsystems/ezplatform-demo",
-    "license": "GPL-2.0-only",
+    "name": "ezsystems/ezplatform-ee-demo",
+    "description": "eZ Platform Enterprise Edition Demo distribution",
+    "homepage": "https://github.com/ezsystems/ezplatform-ee-demo",
+    "license": "proprietary",
     "type": "project",
     "authors": [
         {
             "name": "eZ dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezplatform-demo/contributors"
+            "homepage": "https://github.com/ezsystems/ezplatform-ee-demo/contributors"
         }
     ],
+    "repositories": [
+        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+    ],
     "replace": {
+        "ezsystems/ezstudio-demo": "*",
         "ezsystems/ezpublish-community": "*"
     },
     "autoload": {
@@ -43,20 +47,26 @@
         "ezsystems/ezplatform-admin-ui": "^1.1@dev",
         "ezsystems/ezplatform-admin-ui-modules": "^1.1@dev",
         "ezsystems/ezplatform-admin-ui-assets": "^2.0@dev",
-        "ezsystems/ezplatform-design-engine": "^1.1",
+        "ezsystems/ezplatform-design-engine": "^1.2@dev",
+        "ezsystems/ezstudio-notifications": "^2.1@dev",
+        "ezsystems/ezstudio-cron": "^1.0@dev",
+        "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
+        "ezsystems/ezplatform-demo-assets": "^1.0@beta",
+        "ezsystems/ezplatform-page-fieldtype": "^1.0@dev",
+        "ezsystems/ezplatform-page-builder": "^1.0@dev",
+        "ezsystems/comments-bundle": "^6.0@dev",
         "knplabs/knp-menu-bundle": "^2.1",
         "willdurand/js-translation-bundle": "^2.6.4",
         "friendsofsymfony/jsrouting-bundle": "^1.4",
         "white-october/pagerfanta-bundle": "^1.1",
         "roave/security-advisories": "dev-master",
         "leafo/scssphp": "^0.7",
-        "novactive/ezseobundle": "^3.0.0@rc",
-        "symfony/thanks": "^1.0",
-        "sensio/framework-extra-bundle": "^5.1",
-        "oneup/flysystem-bundle": "^3.0",
-        "ezsystems/ezplatform-demo-assets": "^1.0@dev",
+        "ramsey/uuid": "^3.5",
+        "gregwar/captcha": "^1.1",
         "kaliop/ezmigrationbundle": "^4.0",
-        "netgen/tagsbundle": "^3.0"
+        "netgen/tagsbundle": "^3.1@dev",
+        "novactive/ezseobundle": "^3.0.0@rc",
+        "symfony/thanks": "^1.0"
     },
     "require-dev": {
         "behat/behat": "~3.2",
@@ -70,7 +80,7 @@
         "symfony/phpunit-bridge": "~3.2"
     },
     "conflict": {
-        "symfony/symfony": "3.4.7",
+        "symfony/symfony": "3.4.9",
         "doctrine/dbal": "2.7.0"
     },
     "scripts": {
@@ -92,7 +102,10 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "preferred-install": {
+            "ezsystems/*": "dist"
+        }
     },
     "extra": {
         "symfony-app-dir": "app",

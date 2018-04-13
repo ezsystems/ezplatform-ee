@@ -6,3 +6,11 @@ services:
             - [setEnvironment, ["%kernel.environment%"]]
         tags:
             - { name: ezplatform.installer, type: platform-demo }
+
+    app.installer.ee-demo_installer:
+        parent: ezplatform.installer.db_based_installer
+        class: AppBundle\Installer\PlatformEEDemoInstaller
+        calls:
+            - [setEnvironment, ["%kernel.environment%"]]
+        tags:
+            - { name: ezplatform.installer, type: platform-ee-demo }

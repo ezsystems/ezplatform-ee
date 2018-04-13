@@ -1,0 +1,15 @@
+{% extends "@ezdesign/pagelayout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-12 main-content">
+            <section class="content-type-landing-page full-view">
+                {{ ez_render_field(content, 'page', {
+                    'attr': {
+                        'class': 'landing-page--dynamic landing-page'
+                    }
+                }) }}
+            </section>
+        </div>
+    </div>
+{% endblock %}

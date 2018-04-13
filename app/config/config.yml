@@ -1,6 +1,7 @@
 imports:
     - { resource: default_parameters.yml }
     - { resource: parameters.yml }
+    - { resource: default_layouts.yml }
     - { resource: field_templates.yml }
     - { resource: security.yml }
     - { resource: env/generic.php }

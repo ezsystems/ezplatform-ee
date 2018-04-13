@@ -1,0 +1,111 @@
+.block_formbuilder {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    background: #fff;
+    padding: 1rem 2rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: -.5px;
+    font-size: 15px;
+}
+
+.block_formbuilder .form-group {
+    margin-bottom: 0;
+}
+
+.block_formbuilder .ezform-label {
+    color: #000000;
+}
+
+.block_formbuilder .ezform-field {
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+}
+
+.block_formbuilder .ezform-captcha-image {
+    display: block;
+    margin: 10px 0;
+}
+
+.block_formbuilder .ezform-checkbox-label,
+.block_formbuilder .ezform-radio-label {
+    color: #6D6D6D;
+}
+
+.block_formbuilder .ezform-date,
+.block_formbuilder .ezform-captcha {
+    max-width: 50%;
+}
+
+.block_formbuilder .ezform-helptext {
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.25,.8,.25,1);
+}
+
+.block_formbuilder .ezform-field-group:hover ~ .ezform-helptext {
+    opacity: 1;
+}
+
+.block_formbuilder .ezform-summary {
+    text-align: center;
+}
+
+.block_formbuilder .ezform-field.ezform-file,
+.block_formbuilder .is-field-invalid .ezform-field.ezform-file {
+    background: initial;
+    border: none;
+    box-shadow: none;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field {
+    background: #FCEAEC;
+    border: 1px solid #D92D42;
+    border-radius: 4px;
+}
+
+.block_formbuilder .is-field-invalid .ezform-label,
+.block_formbuilder .is-field-invalid .ezform-field-group::before,
+.block_formbuilder .is-field-invalid .ezform-field-group--required .ezform-field-wrapper {
+    color: #D92D42;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-group::before {
+    content: attr(data-error-message);
+    flex: 1 1 100%;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-indicator {
+    flex: 0 0 10px;
+    color: #fff;
+    background: #D92D42;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-group--required .ezform-field-indicator {
+    display: none;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-indicator::before {
+    content: '!';
+    display: block;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field-wrapper {
+    flex: 1 1 auto;
+}
+
+.block_formbuilder .is-field-invalid .ezform-field {
+    border-radius: 0 4px 4px 0;
+}

@@ -1,0 +1,68 @@
+{%  set wrapper = 'map' %}
+
+<div class="row block-map">
+    <div class="col-md-10 col-md-offset-1">
+        <div id="{{ wrapper }}"></div>
+        <a href="{{ path(location) }}" class="btn btn-primary btn-lg btn-block">{{ 'See locations'|trans }}</a>
+    </div>
+</div>
+
+<script>
+    {% autoescape 'js' %}
+        function initMap() {
+            var latLngs = [
+                {% if contentArray|length > 0 %}
+                {% for content in contentArray %}
+                {
+                    id: {{ content.versionInfo.contentInfo.id }},
+                    name: '{{ ez_render_field(content, "name") }}',
+                    lat: {{ ez_field_value( content, 'location' ).latitude }},
+                    lng: {{ ez_field_value( content, 'location' ).longitude }}
+                }{% if loop.index < contentArray|length %}, {% endif %}
+                {% endfor %}
+                {% endif %}
+            ],
+            bounds = new google.maps.LatLngBounds(),
+            infowindow = new google.maps.InfoWindow(),
+            map = new google.maps.Map(document.getElementById('{{ wrapper }}'), {
+                zoom: 2,
+                center: {lat: 0, lng: 0}
+            }),
+            markers = [];
+
+            for (var i = 0; i < latLngs.length; i++) {
+                placeMarker(latLngs[i], i);
+            }
+            map.fitBounds(bounds);
+
+            function placeMarker(place, i) {
+                var marker = new google.maps.Marker({
+                    position: {lat: place.lat, lng: place.lng},
+                    map: map,
+                    title: place.name,
+                    animation: google.maps.Animation.DROP
+                });
+
+                bounds.extend(marker.position);
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(place.name);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+
+                markers.push(marker);
+            }
+
+            google.maps.event.addDomListener(window, "resize", function() {
+                var center = map.getCenter();
+
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(center);
+                map.fitBounds(bounds);
+            });
+        }
+    {% endautoescape %}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>

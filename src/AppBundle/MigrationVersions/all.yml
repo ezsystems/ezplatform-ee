@@ -164,6 +164,10 @@
             disable-translation: false
             position: 100
             category: metadata
+    references:
+        -
+            identifier: ref_content_type_id__folder
+            attribute: content_type_id
 
 # Gallery content type
 -
@@ -191,6 +195,10 @@
             required: false
             searchable: true
             category: content
+    references:
+        -
+            identifier: ref_content_type_id__gallery
+            attribute: content_type_id
 
 # Image content type
 -
@@ -1416,32 +1424,32 @@
 
 # places and tastes container
 # TODO: change it for LP - temporary folder for 'Home / Places & Tastes'
-#-
-#    type: content
-#    mode: create
-#    content_type: folder
-#    parent_location: 2
-#    section: reference:ref_section__standard
-#    owner: 14
-#    priority: 50
-#    attributes:
-#        name: 'Places & Tastes'
-#        short_name: 'Places & Tastes'
-#        show_children: true
-#    references:
-#        -
-#            identifier: ref_location_folder__home__places_and_tastes
-#            attribute: location_id
-#        -
-#            identifier: ref_content_folder__home__places_and_tastes
-#            attribute: content_id
+-
+    type: content
+    mode: create
+    content_type: folder
+    parent_location: 2
+    section: reference:ref_section__standard
+    owner: 14
+    priority: 50
+    attributes:
+        name: 'Places & Tastes'
+        short_name: 'Places & Tastes'
+        show_children: true
+    references:
+        -
+            identifier: ref_location_folder__home__places_and_tastes
+            attribute: location_id
+        -
+            identifier: ref_content_folder__home__places_and_tastes
+            attribute: content_id
 
 # folder: / Home / Places & Tastes / Tastes (Section: cuisines)
 -
     type: content
     mode: create
     content_type: folder
-    parent_location: reference:ref_location_folder__home
+    parent_location: reference:ref_location_folder__home__places_and_tastes
     section: reference:ref_section__cuisines
     owner: 14
     attributes:
@@ -4158,8 +4166,8 @@
     type: content
     mode: create
     content_type: place_list
-    parent_location: reference:ref_location_folder__home
-    priority: 10
+    parent_location: reference:ref_location_folder__home__places_and_tastes
+    priority: 99
     is_hidden: false
     sort_field: path
     sort_order: ASC
@@ -4170,7 +4178,7 @@
         name: Places
         short_name: Places
         #description:
-        #image: 
+        image: 'vendor/ezsystems/ezplatform-demo-assets/images/places-tastes/places/Paris_sunset.jpg'
     references:
         -
             identifier: ref_location_place_list__home__places_and_tastes__places

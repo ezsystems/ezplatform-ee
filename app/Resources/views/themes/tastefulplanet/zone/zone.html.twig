@@ -1,0 +1,12 @@
+{% set locationId = parameters.location is not null ? parameters.location.id : contentInfo.mainLocationId %}
+
+{% for block in blocks %}
+    <div class="landing-page__block block_{{ block.type }}" data-block-id="{{ block.id }}">
+        {{ render_esi(controller('EzPlatformPageFieldTypeBundle:Block:render', {
+            'locationId': locationId,
+            'blockId': block.id,
+            'versionNo': versionInfo.versionNo,
+            'languageCode': field.languageCode
+        })) }}
+    </div>
+{% endfor %}

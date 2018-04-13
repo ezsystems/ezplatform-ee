@@ -1,0 +1,12 @@
+<div class="row block-rss">
+    <h3><a href="{{ link }}" target="_blank">{{ title }}</a></h3>
+    {% if feeds %}
+        <ul class="block-rss-items">
+            {% for item in feeds %}
+                <li>
+                    <a href="{{ item.links[0] }}" title="{{ item.title }}" target="_blank">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>

@@ -54,6 +54,9 @@ ezpublish:
             # HttpCache purge server(s) setting, eg Varnish, for when ezpublish.http_cache.purge_type is set to 'http'.
             http_cache:
                 purge_servers: ['%purge_server%']
+                fastly:
+                    service_id: '%fastly_service_id%'
+                    key: '%fastly_key%'
             design: main
         # WARNING: Do not remove or rename this group.
         admin_group:
@@ -68,6 +71,9 @@ ezpublish:
                 default_ttl: '%httpcache_default_ttl%'
             http_cache:
                 purge_servers: ['%purge_server%']
+                fastly:
+                    service_id: '%fastly_service_id%'
+                    key: '%fastly_key%'
             design: admin
         site:
             cache_service_name: '%cache_pool%'
@@ -115,6 +121,8 @@ assetic:
                 - 'assets/css/blog_post.css'
                 - 'assets/css/subscribe.css'
                 - 'assets/css/tags.css'
+                - 'assets/css/landing_page.css'
+                - 'assets/css/blocks/*.css'
 
 nova_ezseo:
     system:

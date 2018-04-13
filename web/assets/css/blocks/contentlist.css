@@ -1,0 +1,42 @@
+.block-contentlist h3 {
+    box-shadow: 5px 5px 10px #ccc;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.block-contentlist-items {
+    height: 495px;
+    box-shadow: 5px 5px 10px #ccc;
+    background: #fff;
+    padding: 20px;
+    overflow: auto;
+}
+
+.block-contentlist-child {
+    border-bottom: 1px solid #CFCFCF;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.block-contentlist-child:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.block-contentlist-child h4 a:link,
+.block-contentlist-child h4 a:visited {
+    font-weight: bold;
+    color: #4F504E;
+}
+
+.block-contentlist-child p {
+    font-size: 12px;
+    color: #A9AEB4;
+}

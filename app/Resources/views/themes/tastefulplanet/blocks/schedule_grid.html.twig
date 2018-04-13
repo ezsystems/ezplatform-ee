@@ -1,0 +1,55 @@
+{% spaceless %}
+    {%  set render_empty = render_empty|default(false) %}
+
+    <div class="schedule-layout schedule-layout--grid">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-sm-12">
+                <div class="row" data-studio-slots-container>
+                    <div class="col-sm-12 schedule-layout__slot" data-studio-slot>
+                        {% if items[0] is defined %}
+                            {{ render(controller('ez_content:viewAction', {
+                                'locationId': items[0],
+                                'viewType': 'grid-main'
+                            })) }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row" data-studio-slots-container>
+                    <div class="col-md-6 col-sm-12 schedule-layout__slot" data-studio-slot>
+                        {% if items[1] is defined %}
+                            {{ render(controller('ez_content:viewAction', {
+                                'locationId': items[1],
+                                'viewType': 'grid-2'
+                            })) }}
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6 col-sm-12 schedule-layout__slot" data-studio-slot>
+                        {% if items[2] is defined %}
+                            {{ render(controller('ez_content:viewAction', {
+                                'locationId': items[2],
+                                'viewType': 'grid-2'
+                            })) }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <h4 class="header" data-studio-hidden>{{ 'Latest updates'|trans }}</h4>
+                <div class="schedule-layout--grid-list grid-list-container" data-studio-slots-container>
+                    <ul class="media-list">
+                        {% for i in 3..7 %}
+                            {% if render_empty %}
+                                <div class="schedule-layout__slot" data-studio-slot></div>
+                            {% elseif items[i] is defined %}
+                                {{ render(controller('ez_content:viewAction', {
+                                    'locationId': items[i],
+                                    'viewType': 'grid-list'
+                                })) }}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endspaceless %}

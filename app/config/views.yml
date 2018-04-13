@@ -106,6 +106,10 @@ ezpublish:
                         template: "@ezdesign/full/product_list.html.twig"
                         match:
                             Identifier\ContentType: [product_list]
+                    landing_page:
+                        template: "@ezdesign/full/landing_page.html.twig"
+                        match:
+                            Identifier\ContentType: "landing_page"
 
                 home:
                     place_list:
@@ -183,3 +187,41 @@ ezpublish:
                         template: "@ezdesign/search_result_item/default.html.twig"
                         match:
                             Identifier\ContentType: [image, blog, folder, place_list, video, article, place, product, blog_post]
+
+                block_item:
+                    article:
+                        template: "@ezdesign/block_item/article.html.twig"
+                        match:
+                            Identifier\ContentType: [article]
+                    place:
+                        template: "@ezdesign/block_item/place.html.twig"
+                        match:
+                            Identifier\ContentType: [place]
+                    blog_post:
+                        template: "@ezdesign/block_item/blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: [blog_post]
+                    image:
+                        template: "@ezdesign/block_item/image.html.twig"
+                        match:
+                            Identifier\ContentType: [image]
+                    folder:
+                        template: "@ezdesign/block_item/folder.html.twig"
+                        match:
+                            Identifier\ContentType: [folder]
+                    place_list:
+                        template: "@ezdesign/block_item/place_list.html.twig"
+                        match:
+                            Identifier\ContentType: [place_list]
+                    video:
+                        template: "@ezdesign/block_item/video.html.twig"
+                        match:
+                            Identifier\ContentType: [video]
+                    product:
+                        template: "@ezdesign/block_item/product.html.twig"
+                        match:
+                            Identifier\ContentType: [product]
+                    default:
+                        template: "@ezdesign/default/default.html.twig"
+                        match:
+                            Identifier\ContentType: [landing_page, blog, frontpage, about]

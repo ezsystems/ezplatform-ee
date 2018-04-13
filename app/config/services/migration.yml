@@ -1,0 +1,8 @@
+services:
+    ez_migration_bundle.complex_field.ezlandingpage:
+        parent: ez_migration_bundle.complex_field
+        class: '%ez_migration_bundle.complex_field.ezxmltext.class%'
+        arguments:
+            - '@ez_migration_bundle.reference_resolver.customreference'
+        tags:
+            - { name: ez_migration_bundle.complex_field, fieldtype: ezlandingpage, priority: 0 }

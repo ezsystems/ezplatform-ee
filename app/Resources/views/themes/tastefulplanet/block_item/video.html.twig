@@ -1,0 +1,7 @@
+<div class="col-md-12">
+    <video width="100%" controls>
+        <source src="{{ ez_field_value(content,"file")}}" type="video/mp4">
+        <source src="{{ ez_field_value(content,"file")}}" type="video/ogg">
+        {{ 'Your browser doesn\'t support HTML5 video.'|trans }}
+    </video>
+</div>
