@@ -40,10 +40,6 @@ class AppKernel extends Kernel
             new EzSystems\RepositoryFormsBundle\EzSystemsRepositoryFormsBundle(),
             new EzSystems\EzPlatformSolrSearchEngineBundle\EzSystemsEzPlatformSolrSearchEngineBundle(),
             new EzSystems\EzPlatformDesignEngineBundle\EzPlatformDesignEngineBundle(),
-            // Application
-            new EzSystems\EzPlatformAdminUiBundle\EzPlatformAdminUiBundle(),
-            new EzSystems\EzPlatformAdminUiModulesBundle\EzPlatformAdminUiModulesBundle(),
-            new EzSystems\EzPlatformAdminUiAssetsBundle\EzPlatformAdminUiAssetsBundle(),
             // eZ Studio
             new EzSystems\FormBuilderBundle\EzSystemsFormBuilderBundle(),
             new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
@@ -56,6 +52,10 @@ class AppKernel extends Kernel
             new EzSystems\PlatformEEAssetsBundle\EzSystemsPlatformEEAssetsBundle(),
             new EzSystems\CronBundle\EzSystemsCronBundle(),
             new EzSystems\StudioInstallerBundle\EzSystemsStudioInstallerBundle(),
+            // Application
+            new EzSystems\EzPlatformAdminUiBundle\EzPlatformAdminUiBundle(),
+            new EzSystems\EzPlatformAdminUiModulesBundle\EzPlatformAdminUiModulesBundle(),
+            new EzSystems\EzPlatformAdminUiAssetsBundle\EzPlatformAdminUiAssetsBundle(),
             // AppBundle
             new AppBundle\AppBundle(),
         ];
