@@ -42,6 +42,13 @@ ezplatform.ee.notifications:
 ezplatform.ee.fieldtype.page:
     resource: '@EzPlatformPageFieldTypeBundle/Resources/config/routing.yml'
 
+ezplatform.ee.date_based_publisher:
+    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yml'
+    prefix: '%ez_systems_date_based_publisher_rest_prefix%'
+
+ezplatform.ee.flex_workflow:
+    resource: '@FlexWorkflowBundle/Resources/config/routing.yml'
+
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
 

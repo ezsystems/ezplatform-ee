@@ -48,6 +48,8 @@ class AppKernel extends Kernel
             new EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle(),
             new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
+            new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
+            new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
             new EzSystems\CronBundle\EzSystemsCronBundle(),
             new EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle(),
             // AppBundle
