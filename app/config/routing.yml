@@ -25,33 +25,22 @@ ezplatform.admin_ui:
     defaults:
         siteaccess_group_whitelist: '%admin_group_name%'
 
+ezplatform.ee.page_builder:
+    resource: '@EzPlatformPageBuilderBundle/Resources/config/routing.yml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
+
 _ezplatformRepositoryFormsRoutes:
     resource: '@EzSystemsRepositoryFormsBundle/Resources/config/routing.yml'
 
 ezplatform.ee.dependencies.bazinga:
     resource: '@BazingaJsTranslationBundle/Resources/config/routing/routing.yml'
 
-ezplatform.ee.dependencies.platform_ui:
-    resource: '@eZPlatformUIBundle/Resources/config/routing.yml'
-
-ezplatform.ee.admin_ui:
-    resource: '@eZStudioUIBundle/Resources/config/routing.yml'
-
-ezplatform.ee.form_builder:
-    resource: '@EzSystemsFormBuilderBundle/Resources/config/routing.yml'
-
-ezplatform.ee.date_based_publisher:
-    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yml'
-    prefix: '%ez_systems_date_based_publisher_rest_prefix%'
-
-ezplatform.ee.flex_workflow:
-    resource: '@FlexWorkflowBundle/Resources/config/routing.yml'
-
 ezplatform.ee.notifications:
     resource: '@NotificationBundle/Resources/config/routing.yml'
 
-ezplatform.ee.landing_page:
-    resource: '@EzSystemsLandingPageFieldTypeBundle/Resources/config/routing.yml'
+ezplatform.ee.fieldtype.page:
+    resource: '@EzPlatformPageFieldTypeBundle/Resources/config/routing.yml'
 
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
