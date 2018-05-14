@@ -56,7 +56,7 @@
         "ezsystems/landing-page-fieldtype-bundle": "^2.1@dev",
         "ezsystems/flex-workflow": "^2.1@dev",
         "ezsystems/ezstudio-cron": "^1.0@dev",
-        "ezsystems/ezstudio-installer": "^2.1@dev",
+        "ezsystems/ezplatform-ee-installer": "^2.2@dev",
         "ezsystems/platform-ui-assets-bundle": "^5.0.0",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "knplabs/knp-menu-bundle": "^2.1",
