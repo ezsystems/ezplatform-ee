@@ -45,15 +45,9 @@ class AppKernel extends Kernel
             new EzSystems\EzPlatformAdminUiModulesBundle\EzPlatformAdminUiModulesBundle(),
             new EzSystems\EzPlatformAdminUiAssetsBundle\EzPlatformAdminUiAssetsBundle(),
             // eZ Studio
-            new EzSystems\FormBuilderBundle\EzSystemsFormBuilderBundle(),
-            new EzSystems\StudioUIBundle\EzSystemsStudioUIBundle(),
-            new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
-            new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
+            new EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle(),
+            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
-            new EzSystems\PlatformUIBundle\EzSystemsPlatformUIBundle(),
-            new EzSystems\PlatformUIAssetsBundle\EzSystemsPlatformUIAssetsBundle(),
-            new EzSystems\LandingPageFieldTypeBundle\EzSystemsLandingPageFieldTypeBundle(),
-            new EzSystems\PlatformEEAssetsBundle\EzSystemsPlatformEEAssetsBundle(),
             new EzSystems\CronBundle\EzSystemsCronBundle(),
             new EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle(),
             // AppBundle
