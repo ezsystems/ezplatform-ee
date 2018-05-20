@@ -29,7 +29,7 @@ To install the Enterprise Edition you need an eZ Enterprise subscription and hav
 Once you've got all the required PHP extensions installed, you can get eZ Platform Enterprise Edition up and running with the following commands:
 
 ``` bash
-composer create-project --keep-vcs ezsystems/ezplatform-ee ezplatform-ee ^2
+composer create-project --keep-vcs ezsystems/ezplatform-ee ezplatform ^2
 cd ezplatform-ee
 ```
 
