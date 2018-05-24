@@ -50,7 +50,7 @@ class AppKernel extends Kernel
             new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
             new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
             new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
-            new EzSystems\CronBundle\EzSystemsCronBundle(),
+            new EzSystems\EzPlatformCronBundle\EzPlatformCronBundle(),
             new EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle(),
             // AppBundle
             new AppBundle\AppBundle(),
