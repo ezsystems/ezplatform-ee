@@ -1,4 +1,9 @@
-<div class="row block-contentlist">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}contentlist{% endblock %}
+{% block block_class %}row {{ block_class }}{% endblock %}
+
+{% block block_content %}
     <h3>{{ parentName }}</h3>
     {% if contentArray|length > 0 %}
         <div class="block-contentlist-items">
@@ -12,4 +17,4 @@
             {% endfor %}
         </div>
     {% endif %}
-</div>
+{% endblock %}

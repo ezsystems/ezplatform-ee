@@ -1,4 +1,9 @@
-<div class="row block-banner">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}banner{% endblock %}
+{% block block_class %}row {{ block_class }}{% endblock %}
+
+{% block block_content %}
     <div class="col-md-10 col-md-offset-1">
         <a href="{{ url }}" title="{{ url }}" target="_blank">
             {{ ez_render_field(content,'image', {
@@ -6,4 +11,4 @@
             }) }}
         </a>
     </div>
-</div>
+{% endblock %}

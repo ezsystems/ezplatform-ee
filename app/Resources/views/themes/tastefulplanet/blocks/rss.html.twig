@@ -1,4 +1,9 @@
-<div class="row block-rss">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}rss{% endblock %}
+{% block block_class %}row {{ block_class }}{% endblock %}
+
+{% block block_content %}
     <h3><a href="{{ link }}" target="_blank">{{ title }}</a></h3>
     {% if feeds %}
         <ul class="block-rss-items">
@@ -9,4 +14,4 @@
             {% endfor %}
         </ul>
     {% endif %}
-</div>
+{% endblock %}

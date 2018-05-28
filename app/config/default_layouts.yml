@@ -64,23 +64,23 @@ ezplatform_page_fieldtype:
 
 
     blocks:
-        schedule:
-            views:
-              schedule_hero:
-                  template: '@ezdesign/blocks/schedule_hero.html.twig'
-                  name: 'Platform EE Demo schedule hero'
-
-              schedule_grid:
-                  template: '@ezdesign/blocks/schedule_grid.html.twig'
-                  name: 'Platform EE Demo schedule special grid'
-
-              schedule-list:
-                  template: '@ezdesign/blocks/schedule_list.html.twig'
-                  name: 'Platform EE Demo schedule list'
-
-              schedule_grid-4:
-                  template: '@ezdesign/blocks/schedule_grid-4.html.twig'
-                  name: 'Platform EE Demo schedule grid 2x2'
+#        schedule:
+#            views:
+#              schedule_hero:
+#                  template: '@ezdesign/blocks/schedule_hero.html.twig'
+#                  name: 'Platform EE Demo schedule hero'
+#
+#              schedule_grid:
+#                  template: '@ezdesign/blocks/schedule_grid.html.twig'
+#                  name: 'Platform EE Demo schedule special grid'
+#
+#              schedule-list:
+#                  template: '@ezdesign/blocks/schedule_list.html.twig'
+#                  name: 'Platform EE Demo schedule list'
+#
+#              schedule_grid-4:
+#                  template: '@ezdesign/blocks/schedule_grid-4.html.twig'
+#                  name: 'Platform EE Demo schedule grid 2x2'
 
         contentlist:
             views:

@@ -1,8 +1,12 @@
-<div class="block-collection">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}collection{% endblock %}
+
+{% block block_content %}
     {% for location in locationlist %}
         {{ render(controller('ez_content:viewLocation', {
             'locationId': location.locationId,
             'viewType': 'embed'
         })) }}
     {% endfor %}
-</div>
+{% endblock %}

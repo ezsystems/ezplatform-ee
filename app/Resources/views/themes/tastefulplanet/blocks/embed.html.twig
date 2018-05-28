@@ -1,6 +1,11 @@
-<div class="col-md-12 block-embed">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}embed{% endblock %}
+{% block block_class %}col-md-12 {{ block_class }}{% endblock %}
+
+{% block block_content %}
     {{ render(controller('ez_content:viewAction', {
         'locationId': locationId,
         'viewType': 'block_item'
     })) }}
-</div>
+{% endblock %}
