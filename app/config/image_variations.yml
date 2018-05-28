@@ -27,3 +27,9 @@ ezpublish:
                     filters:
                         - {name: geometry/scalewidth, params: [281]}
                         - {name: geometry/crop, params: [281, 181, 0, 0]}
+
+                embed-header:
+                    reference: null
+                    filters:
+                        - {name: geometry/scaleheight, params: [500]}
+                        - {name: geometry/crop, params: [1100, 500, 650, 0]}
