@@ -75,6 +75,8 @@ ezpublish:
                     service_id: '%fastly_service_id%'
                     key: '%fastly_key%'
             design: admin
+            page_builder:
+                siteaccess_list: [site, fr, de, no]
         site:
             cache_service_name: '%cache_pool%'
             languages:
