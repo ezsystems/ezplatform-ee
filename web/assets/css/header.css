@@ -29,6 +29,7 @@ a.navbar-brand {
     padding: 6px 0;
     color: #63605d;
     line-height: 18px;
+    background: initial;
 }
 
 .top-menu .languages .btn:active,

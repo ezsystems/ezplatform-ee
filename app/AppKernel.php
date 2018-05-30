@@ -51,10 +51,12 @@ class AppKernel extends Kernel
             new EzSystems\EzPlatformAdminUiModulesBundle\EzPlatformAdminUiModulesBundle(),
             new EzSystems\EzPlatformAdminUiAssetsBundle\EzPlatformAdminUiAssetsBundle(),
             // eZ Studio
-            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle(),
+            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\NotificationBundle\EzSystemsNotificationBundle(),
-            new EzSystems\CronBundle\EzSystemsCronBundle(),
+            new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
+            new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
+            new EzSystems\EzPlatformCronBundle\EzPlatformCronBundle(),
             // AppBundle
             new AppBundle\AppBundle(),
         ];
