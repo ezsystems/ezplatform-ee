@@ -101,6 +101,9 @@
         ],
         "post-create-project-cmd": [
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::installWelcomeText"
+        ],
+        "install-ee-demo": [
+            "@php bin/console ezplatform:install ezplatform-ee-demo"
         ]
     },
     "config": {
