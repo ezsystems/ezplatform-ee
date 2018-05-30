@@ -102,7 +102,7 @@
         "post-create-project-cmd": [
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::installWelcomeText"
         ],
-        "install-ee-demo": [
+        "ezplatform-install": [
             "@php bin/console ezplatform:install ezplatform-ee-demo"
         ]
     },
