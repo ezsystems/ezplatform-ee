@@ -1,0 +1,30 @@
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}userprofiling{% endblock %}
+
+{% block block_content %}
+    {% set renderDefaultContent = true %}
+
+    {% if app.user %}
+        {% for item in items if item.tag.id in get_user_tags() %}
+            {% if loop.first %}
+                {% set renderDefaultContent = false %}
+                <div class="user-profiled-content" data-matched-tag="{{ item.tag.getKeyword() }}">
+                    {{ render(controller('ez_content:viewLocation', {
+                        'locationId': item.content.contentInfo.mainLocationId,
+                        'viewType': 'block_item'
+                    })) }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% if renderDefaultContent %}
+        <div class="default-content">
+            {{ render(controller('ez_content:viewLocation', {
+                'contentId': defaultContent,
+                'viewType': 'block_item'
+            })) }}
+        </div>
+    {% endif %}
+{% endblock %}

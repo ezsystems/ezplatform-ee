@@ -1,4 +1,8 @@
-<div class="keyword">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}keyword{% endblock %}
+
+{% block block_content %}
     {% if contentArray|length > 0 %}
         {% for content in contentArray %}
             <a href="{{ path(content.location) }}" class="row">
@@ -18,4 +22,4 @@
             </a>
         {% endfor %}
     {% endif %}
-</div>
+{% endblock %}

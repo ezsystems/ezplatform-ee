@@ -78,6 +78,8 @@ CREATE TABLE `ezpage_blocks` (
   `type` varchar(255) NOT NULL DEFAULT '',
   `view` varchar(255) NOT NULL DEFAULT '',
   `name` varchar(255) NOT NULL DEFAULT '',
+  `class` varchar(255) DEFAULT NULL,
+  `style` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 

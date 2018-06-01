@@ -1,4 +1,9 @@
-<div class="row block-gallery">
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}gallery{% endblock %}
+{% block block_class %}row {{ block_class }}{% endblock %}
+
+{% block block_content %}
     <div class="col-md-10 col-md-offset-1">
         <h4 class="header">{{ location.contentinfo.name }}</h4>
         <div id="gallery-{{ folder }}" class="gallery carousel slide" data-ride="carousel">
@@ -37,4 +42,4 @@
             </a>
         </div>
     </div>
-</div>
+{% endblock %}

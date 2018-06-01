@@ -1,1 +1,7 @@
-{{ code|raw }}
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}tag{% endblock %}
+
+{% block block_content %}
+    {{ content|raw }}
+{% endblock %}

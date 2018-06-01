@@ -1,4 +1,10 @@
-{{ render(controller('ez_content:viewAction', {
-    'locationId': locationId,
-    'viewType': 'block_item'
-})) }}
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}video{% endblock %}
+
+{% block block_content %}
+    {{ render(controller('ez_content:viewAction', {
+        'locationId': locationId,
+        'viewType': 'block_item'
+    })) }}
+{% endblock %}

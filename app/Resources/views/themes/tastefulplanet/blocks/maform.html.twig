@@ -1,8 +1,14 @@
-<script id="__maSrc" type="text/javascript" data-pid="{{ integrationId }}">
-    (function () {
-        var d=document,t='script',c=d.createElement(t),s=(d.URL.indexOf('https:')==0?'s':''),p;
-        c.type = 'text/java'+t;
-        c.src = 'http'+s+'://'+s+'c.cdnma.com/apps/capture.js';
-        p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(c,p);
-    }());
-</script>
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}maform{% endblock %}
+
+{% block block_content %}
+    <script id="__maSrc" type="text/javascript" data-pid="{{ integrationId }}">
+        (function () {
+            var d=document,t='script',c=d.createElement(t),s=(d.URL.indexOf('https:')==0?'s':''),p;
+            c.type = 'text/java'+t;
+            c.src = 'http'+s+'://'+s+'c.cdnma.com/apps/capture.js';
+            p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(c,p);
+        }());
+    </script>
+{% endblock %}
