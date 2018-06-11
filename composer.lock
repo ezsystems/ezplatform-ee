@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d67af46be05234f10735d7091d75b7dd",
+    "content-hash": "da08e5b497f1746e1174d0e98f488743",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1276,7 +1276,7 @@
         },
         {
             "name": "ezsystems/ezpublish-kernel",
-            "version": "v6.13.3-rc1",
+            "version": "v6.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/ezpublish-kernel.git",
@@ -1423,17 +1423,17 @@
         },
         {
             "name": "ezsystems/ezstudio-form-builder",
-            "version": "v1.3.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/ezstudio-form-builder.git",
-                "reference": "115a762d72ea208d39059f27af9dbadb5f45e668"
+                "reference": "10f59b51b6c38a49c62296c0350b0b73b5df9837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-form-builder-115a762d72ea208d39059f27af9dbadb5f45e668-zip-fc51d5.zip",
-                "reference": "115a762d72ea208d39059f27af9dbadb5f45e668",
-                "shasum": "11b095555ec6fd9c4b8ecc50f87362fd99f3c793"
+                "url": "https://updates.ez.no/ttl/dist/ezsystems-ezstudio-form-builder-10f59b51b6c38a49c62296c0350b0b73b5df9837-zip-03b3db.zip",
+                "reference": "10f59b51b6c38a49c62296c0350b0b73b5df9837",
+                "shasum": "776081714313fab6e938627ff5ffb84ba7188bf4"
             },
             "require": {
                 "ezsystems/ezpublish-kernel": "^6.8",
@@ -1477,7 +1477,7 @@
             "support": {
                 "source": "https://github.com/ezsystems/ezstudio-form-builder/tree/1.3"
             },
-            "time": "2018-03-23T16:07:54+00:00"
+            "time": "2018-06-05T17:14:00+00:00"
         },
         {
             "name": "ezsystems/ezstudio-installer",
@@ -1563,8 +1563,7 @@
             ],
             "description": "Notification extension for eZ Studio",
             "support": {
-                "source": "https://github.com/ezsystems/ezstudio-notifications/tree/v1.2.0",
-                "issues": "https://github.com/ezsystems/ezstudio-notifications/issues"
+                "source": "https://github.com/ezsystems/ezstudio-notifications/tree/v1.2.0"
             },
             "time": "2016-06-29T11:17:19+00:00"
         },
@@ -1688,16 +1687,16 @@
         },
         {
             "name": "ezsystems/platform-ui-assets-bundle",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIAssetsBundle.git",
-                "reference": "83663a5bb95d91299040ebe94e53fb0c348a4e20"
+                "reference": "623ca66dc0c1f40722781321180724974dc17a36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezsystems/PlatformUIAssetsBundle/zipball/83663a5bb95d91299040ebe94e53fb0c348a4e20",
-                "reference": "83663a5bb95d91299040ebe94e53fb0c348a4e20",
+                "url": "https://api.github.com/repos/ezsystems/PlatformUIAssetsBundle/zipball/623ca66dc0c1f40722781321180724974dc17a36",
+                "reference": "623ca66dc0c1f40722781321180724974dc17a36",
                 "shasum": ""
             },
             "require": {
@@ -1720,11 +1719,11 @@
                 }
             ],
             "description": "External assets dependencies for PlatformUIBundle",
-            "time": "2018-05-08T09:17:23+00:00"
+            "time": "2018-06-11T08:22:04+00:00"
         },
         {
             "name": "ezsystems/platform-ui-bundle",
-            "version": "v1.13.3-rc1",
+            "version": "v1.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/PlatformUIBundle.git",
@@ -1775,7 +1774,7 @@
         },
         {
             "name": "ezsystems/repository-forms",
-            "version": "v1.11.2-rc1",
+            "version": "v1.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezsystems/repository-forms.git",
@@ -1833,7 +1832,7 @@
         },
         {
             "name": "ezsystems/studio-ui-bundle",
-            "version": "v1.13.3-rc1",
+            "version": "v1.13.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ezsystems/StudioUIBundle.git",
@@ -8084,10 +8083,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ezsystems/ezpublish-kernel": 5,
-        "ezsystems/repository-forms": 5,
-        "ezsystems/platform-ui-bundle": 5,
-        "ezsystems/studio-ui-bundle": 5,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
