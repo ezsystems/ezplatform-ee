@@ -1,10 +1,10 @@
 <div class="row" data-studio-zones-container>
-    <div class="landing-page__zone landing-page__zone--{{ zones[0].id }} landing-page__zone--left col-xs-9" data-studio-zone="{{ zones[0].id }}">
+    <div class="landing-page__zone landing-page__zone--{{ zones[0].id }} landing-page__zone--left col-9" data-studio-zone="{{ zones[0].id }}">
         {% if zones[0].blocks %}
             {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[0].blocks} %}
         {% endif %}
     </div>
-    <div class="landing-page__zone landing-page__zone--{{ zones[1].id }} landing-page__zone--right col-xs-3" data-studio-zone="{{ zones[1].id }}">
+    <div class="landing-page__zone landing-page__zone--{{ zones[1].id }} landing-page__zone--right col-3" data-studio-zone="{{ zones[1].id }}">
         {% if zones[1].blocks %}
             {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[1].blocks} %}
         {% endif %}
