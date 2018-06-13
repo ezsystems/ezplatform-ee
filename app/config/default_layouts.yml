@@ -110,18 +110,6 @@ ezplatform_page_fieldtype:
                     template: '@ezdesign/blocks/gallery.html.twig'
                     name: 'Default Gallery Block template'
 
-        keyword:
-            views:
-                keyword:
-                    template: '@ezdesign/blocks/keyword.html.twig'
-                    name: 'Default Keyword Block template'
-
-        maform:
-            views:
-                maform:
-                    template: '@ezdesign/blocks/maform.html.twig'
-                    name: 'Default Marketing Automation Block template'
-
         rss:
             views:
                 rss:
