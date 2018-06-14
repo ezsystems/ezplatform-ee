@@ -1,8 +1,14 @@
+# Page content type group
+-
+    type: content_type_group
+    mode: create
+    identifier: Page
+
 # landing_page content type
 -
     type: content_type
     mode: create
-    content_type_group: 1
+    content_type_group: Page
     identifier: landing_page
     name: Landing page
     name_pattern: <name>
