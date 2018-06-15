@@ -5,19 +5,6 @@
     {{ parent() }}
 {% endblock %}
 
-{% form_theme form _self %}
-
-{%- block choice_widget_expanded -%}
-    <div {{ block('widget_container_attributes') }}>
-        {%- for child in form %}
-            <div class="element">
-                {{- form_widget(child) -}}
-                {{- form_label(child, null, {translation_domain: choice_translation_domain}) -}}
-            </div>
-        {% endfor -%}
-    </div>
-{%- endblock choice_widget_expanded -%}
-
 {% block content %}
     {% include '@ezdesign/parts/product_modal_dialog.html.twig' %}
 
@@ -47,7 +34,7 @@
                             {{ form_widget(form.searchText, {'attr': {'class': 'search', 'placeholder': 'Search Recipes...'}}) }}
                             {{ form_widget(form.save, {'attr': {'class': 'btn btn-search'}}) }}
                             <div class="filter-button">
-                                <button class="btn btn-filters">{{ 'Filters'|trans }} <span class="fa fa-filter"></span></button>
+                                <span class="btn btn-filters">{{ 'Filters'|trans }} <span class="badge badge-secondary badge-pill"></span> <span class="fa fa-filter"></span></span>
                             </div>
                         </div>
                     </div>
@@ -57,11 +44,16 @@
                             <div class="filter-container">
                                 <div class="column">
                                     <b>{{ 'Allergies'|trans }}:</b>
-                                    {{ form_row(form.dairy) }}
-                                    {{ form_row(form.egg) }}
-                                    {{ form_row(form.nuts) }}
-                                    {{ form_row(form.seafood) }}
-                                    {{ form_row(form.gluten) }}
+                                    {{ form_widget(form.dairy) }}
+                                    {{ form_label(form.dairy) }}
+                                    {{ form_widget(form.egg) }}
+                                    {{ form_label(form.egg) }}
+                                    {{ form_widget(form.nuts) }}
+                                    {{ form_label(form.nuts) }}
+                                    {{ form_widget(form.seafood) }}
+                                    {{ form_label(form.seafood) }}
+                                    {{ form_widget(form.gluten) }}
+                                    {{ form_label(form.gluten) }}
                                 </div>
                                 <div class="column">
                                     <b>{{ 'Spicyness'|trans }}: </b>

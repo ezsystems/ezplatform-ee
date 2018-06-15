@@ -153,7 +153,6 @@
 }
 
 .section-search .input-group input.search {
-    width: 39vw;
     border-radius: 5px 0 0 5px;
     border: 1px solid #d4d4d4;
     border-right-width: 0;
@@ -175,7 +174,7 @@
 .section-search .btn-filters {
     border-radius: 5px;
     border: 1px solid #d4d4d4;
-    line-height: 30px;
+    line-height: 35px;
     color: #7e7e7e;
     margin-left: 15px;
 }
@@ -198,7 +197,7 @@
 .section-filter .filter-container label {
     font-weight: 500;
     order: 1;
-    padding-left: 5px;
+    padding-left: 22px;
 }
 
 .section-filter .filter-container label input {

@@ -9,7 +9,9 @@
 
 a.navbar-brand {
     height: 36px;
-    width: 235px;
+    width: 268px;
+    padding-left: 30px;
+    padding-top: 0;
 }
 
 .top-menu,
@@ -26,7 +28,7 @@ a.navbar-brand {
 .top-menu .languages .btn {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     border: none;
-    padding: 6px 0;
+    padding: 8px 0;
     color: #63605d;
     line-height: 18px;
     background: initial;
