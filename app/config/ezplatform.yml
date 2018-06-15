@@ -60,6 +60,7 @@ ezpublish:
                     service_id: '%fastly_service_id%'
                     key: '%fastly_key%'
             design: main
+            pagelayout: '@ezdesign/pagelayout.html.twig'
         # WARNING: Do not remove or rename this group.
         admin_group:
             cache_service_name: '%cache_pool%'
