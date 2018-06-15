@@ -65,3 +65,7 @@ ezpublish:
                     key: '%fastly_key%'
             page_builder:
                 siteaccess_list: [site]
+
+    url_alias:
+        slug_converter:
+            transformation: 'urlalias_lowercase'
