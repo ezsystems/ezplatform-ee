@@ -102,6 +102,10 @@ ezpublish:
                 - nor-NO
                 - eng-GB
 
+    url_alias:
+        slug_converter:
+            transformation: 'urlalias_lowercase'
+
 ezdesign:
     design_list:
         main: [tastefulplanet]

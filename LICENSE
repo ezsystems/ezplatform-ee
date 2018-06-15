@@ -1,10 +1,10 @@
 Copyright (C) 1999-2017 eZ Systems AS. All rights reserved.
 This source code is provided under the license bundled below.
 
-The source code is available separately under the eZ BUL 2.1 License,
+The source code is available separately under the eZ BUL 2.2 License,
 granted by having a valid eZ Platform Enterprise subscription:
 - https://ez.no/Products/eZ-Platform-Enterprise-Edition
-- https://ez.no/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.1
+- https://ez.no/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.2
 
 To get access to the full source code under TTL license below,
 reach out to eZ Systems AS for evaluation access:
@@ -12,7 +12,7 @@ reach out to eZ Systems AS for evaluation access:
 
 ----------------------------------------------------------
 
-eZ Trial and Test License Agreement ("eZ TTL") Version 2.0
+eZ Trial and Test License Agreement ("eZ TTL") Version 2.1
 
 
 IMPORTANT: Please read the following license agreement carefully.
@@ -36,8 +36,8 @@ The parties hereby agree to the following software license terms:
 
 1. Definitions
 
-"Licensed Software" means the eZ Publish Enterprise Edition content
-management system or other software product downloaded, ordered or
+"Licensed Software" means the eZ Platform Enterprise Edition content
+management system or other software product (such as eZ Commerce) downloaded, ordered or
 otherwise legally acquired (licensed) by Licensee from Licensor (or
 other party authorized by the Licensor) under these terms.
 
@@ -279,8 +279,8 @@ representative) at the time of order, and to Licensor at
 
 Attn: Software Licensing Dept/CLA,
 eZ Systems AS,
-Klostergata 30,
-N-3732 Skien,
+Porselensvegen 18,
+3920 Porsgrunn
 Norway
 
 Notices are deemed received by any party: (a) on the day given, if
