@@ -1,6 +1,6 @@
 <div class="block-{% block block_identifier %}{% endblock %} {% block block_class %}{{ block_class }}{% endblock %}">
     {% block block_content %}{% endblock %}
     {% if block_style is not empty %}
-    <style type="text/css">{% block block_style %}{{ block_style }}{% endblock %}</style>
+    <style type="text/css">{% block block_style %}{{ block_style|raw }}{% endblock %}</style>
     {% endif %}
 </div>
