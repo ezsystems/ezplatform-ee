@@ -111,6 +111,10 @@ ezdesign:
         main: [tastefulplanet]
         admin: [admin, tastefulplanet]
 
+ez_platform_standard_design:
+    # makes Kernel default templates (in EzPublishCoreBundle/Resources/views) part of standard Design
+    override_kernel_templates: false
+
 assetic:
     assets:
         css_default:
