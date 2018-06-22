@@ -95,8 +95,8 @@ DROP TABLE IF EXISTS `ezpage_blocks_visibility`;
 CREATE TABLE `ezpage_blocks_visibility` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `block_id` INT(11) NOT NULL,
-  `since` DATETIME DEFAULT NULL,
-  `till` DATETIME DEFAULT NULL,
+  `since` INT(11) DEFAULT NULL,
+  `till` INT(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
