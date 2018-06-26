@@ -96,6 +96,9 @@
         ],
         "post-create-project-cmd": [
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::installWelcomeText"
+        ],
+        "ezplatform-install": [
+            "@php bin/console ezplatform:install ezplatform-ee-clean"
         ]
     },
     "config": {
