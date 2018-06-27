@@ -36,9 +36,6 @@ _ezplatformRepositoryFormsRoutes:
 ezplatform.ee.dependencies.bazinga:
     resource: '@BazingaJsTranslationBundle/Resources/config/routing/routing.yml'
 
-ezplatform.ee.notifications:
-    resource: '@NotificationBundle/Resources/config/routing.yml'
-
 ezplatform.ee.fieldtype.page:
     resource: '@EzPlatformPageFieldTypeBundle/Resources/config/routing.yml'
 
