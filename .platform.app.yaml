@@ -74,7 +74,6 @@ hooks:
         fi
 
         composer config http-basic.updates.ez.no $COMPOSER_KEY $COMPOSER_PASSWORD
-        composer install --no-dev --prefer-dist --no-progress --no-interaction --optimize-autoloader
         rm web/app_dev.php
         if [ "$SYMFONY_ENV" = "dev" ] ; then
             composer install --prefer-dist --no-progress --no-interaction --optimize-autoloader
