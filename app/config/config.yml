@@ -145,3 +145,9 @@ jms_translation:
             output_dir: '%kernel.root_dir%/../vendor/ezsystems/ezplatform-admin-ui-modules/Resources/translations/'
             excluded_dirs: [Behat, Tests]
             output_format: "xliff"
+        page_builder:
+            dirs:
+                - '%kernel.root_dir%/../vendor/ezsystems/ezplatform-page-builder/src'
+            output_dir: '%kernel.root_dir%/../vendor/ezsystems/ezplatform-page-builder/src/bundle/Resources/translations/'
+            excluded_dirs: [Behat, Tests]
+            output_format: "xlf"
