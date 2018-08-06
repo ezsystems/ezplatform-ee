@@ -30,6 +30,8 @@ branches:
   only:
     - master
     - /^\d.\d+$/
+    # build tags (vX.Y.Z)
+    - /^v\d+.\d+.\d+$/
 
 # Update Docker and Docker Compose
 before_install: ./bin/.travis/trusty/update_docker.sh
