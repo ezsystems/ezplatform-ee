@@ -57,14 +57,9 @@ after_failure:
   # Will show us what is up, and how long it's been up
   - docker ps -s
 
+# disable mail notifications
 notifications:
-  slack:
-    rooms:
-      - secure: ESkZY5bzNWua0eHc9rBkuE7AZrCNzLeCV1Rtn97h9KIBeuxsiB3heDUAOi3xZkqO4AyKD5AitAM2k7dTdQKvC8WMooHFWFdjlsSepUvjJISy8keY9kiXywUJ1S/YCwMPwT+HAWB4Qk2zyKmlLmZ8IfAK5aBtndXFQFQCqyeW4PE=
-      - secure: NlXxYbeVV7mWDTUgeFK0VrUdXGBF4lPVpMLZ3WXYDTUWfFyM8tiChENo/u/9n7tSz6KIxdWpy0j7h8+EjVUVCGxS+4q+kdzkfm1Vwq3ANhMsGBDcwdm7gYWhdd43aXV9ZaZPVUWv5C3yizzmYXeuNtviFDA5DEvrE5Rdp6sBsRE=
-    on_success: change
-    on_failure: always
-    on_pull_requests: false
+  email: false
 
 # reduce depth (history) of git checkout
 git:
