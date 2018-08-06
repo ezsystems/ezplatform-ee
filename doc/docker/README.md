@@ -36,6 +36,7 @@ The current Docker Compose files are made to be mixed and matched together for Q
 - demo.yml _(optional, to be used together with base-prod.yml in order to set up db and vardir)_
 - blackfire.yml _(optional, adds blackfire service and lets you trigger profiling against the setup)_
 - redis.yml _(optional, adds redis service and appends config to app)_
+- redis-session.yml _(optional, stores sessions in a separate redis instance)_
 - varnish.yml _(optional, adds varnish service and appends config to app)_
 - solr.yml _(optional, add solr service and configure app for it)_
 - selenium.yml _(optional, always needs to be last, adds selenium service and appends config to app)_
@@ -106,7 +107,7 @@ After some 5-10 seconds you should be able to browse the site on `localhost:8080
 ### Behat and Selenium use
 
 *Docker-Compose setup for Behat use is provided and used internally to test eZ Platform, this can be combined with most
-setups, here shown in combination with production setup which is what you1'll typically need to test before pushing your
+setups, here shown in combination with production setup which is what you'll typically need to test before pushing your
 image to Docker Hub/Registry.*
 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
