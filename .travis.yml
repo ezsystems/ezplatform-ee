@@ -1,66 +1,8 @@
-sudo: required
-dist: trusty
-language: generic
+# Tests cannot be run from metarepo - it's a public repository, which doesn't have access to private repositories on Travis (for security reasons).
+# The actual test setup is in StudioUI bundle.
+language: php
+php:
+  - '5.6'
 
-services:
-  - docker
-
-cache:
-  directories:
-    - $HOME/.composer/cache/files
-
-env:
-  global:
-    - COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/selenium.yml"
-    - SYMFONY_ENV=behat
-    - SYMFONY_DEBUG=1
-  # list of behat arguments to test
-  matrix:
-    - TEST_CMD="bin/behat -vv --profile=rest --suite=fullJson --tags=~@broken" COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/varnish.yml:doc/docker/selenium.yml" WEB_HOST="varnish"
-    - TEST_CMD="bin/behat -vv --profile=rest --suite=fullXml --tags=~@broken"
-    - TEST_CMD="bin/behat -vv --profile=core --tags=~@broken"
-    - TEST_CMD="bin/phpunit -v vendor/ezsystems/ezpublish-kernel/eZ/Bundle/EzPublishRestBundle/Tests/Functional"
-    - TEST_CMD="bin/behat -vv --profile=platformui --tags='@common'" COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/selenium.yml"
-    - TEST_CMD="bin/behat -vv --profile=platformui --tags='@common'" COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml" WEB_HOST="varnish"
-
-
-# test only master (+ Pull requests)
-branches:
-  only:
-    - master
-    - /^\d.\d+$/
-    # build tags (vX.Y.Z)
-    - /^v\d+.\d+.\d+$/
-
-# Update Docker and Docker Compose
-before_install: ./bin/.travis/trusty/update_docker.sh
-
-before_script:
-  # Internal auth token dedicated to testing with travis+composer on ezsystems repos, not for reuse!
-  - echo "{\"github-oauth\":{\"github.com\":\"d0285ed5c8644f30547572ead2ed897431c1fc09\"}}" > auth.json
-  # In case of dev mode we'll need to install composer packages first
-  - docker-compose -f doc/docker/install.yml up --abort-on-container-exit
-  # Run (start containers and execute install command)
-  - docker-compose up -d
-  #- docker ps
-  #- docker-compose logs
-
-# Execute test command, need to use sh to get right exit code (docker/compose/issues/3379)
-# Behat will use behat.yml which is a copy of behat.yml.dist with hostnames update by doc/docker/selenium.yml
-script: docker-compose exec --user www-data app sh -c "php /scripts/wait_for_db.php; php $TEST_CMD"
-
-after_failure:
-  # Will show us the last bit of the log of container's main processes
-  # (not counting shell process above running php and behat)
-  # NOTE: errors during docker setup of travis build won't show up here (can't output all as it is too much in debug/verbose mode)
-  - docker-compose logs -t --tail=15
-  # Will show us what is up, and how long it's been up
-  - docker ps -s
-
-# disable mail notifications
-notifications:
-  email: false
-
-# reduce depth (history) of git checkout
-git:
-  depth: 30
+script:
+  - echo 'Test suite moved to StudioUI bundle'
