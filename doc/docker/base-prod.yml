@@ -6,6 +6,8 @@ services:
     build:
       context: ../../
       dockerfile: ${APP_DOCKER_FILE}
+      args:
+       - PHP_IMAGE
     depends_on:
      - db
     environment:
@@ -29,6 +31,8 @@ services:
     build:
       context: ../../
       dockerfile: doc/docker/Dockerfile-nginx
+      args:
+       - PHP_IMAGE
     depends_on:
      - app
     ports:
