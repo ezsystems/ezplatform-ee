@@ -30,6 +30,11 @@ ezplatform.ee.page_builder:
     defaults:
         siteaccess_group_whitelist: '%admin_group_name%'
 
+ezplatform.ee.form_builder:
+    resource: '@EzPlatformFormBuilderBundle/Resources/config/routing.yml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
+
 _ezplatformRepositoryFormsRoutes:
     resource: '@EzSystemsRepositoryFormsBundle/Resources/config/routing.yml'
 
