@@ -54,6 +54,7 @@
         "ezsystems/flex-workflow": "^3.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^1.1@dev",
         "ezsystems/ezplatform-page-builder": "^1.1@dev",
+        "ezsystems/ezplatform-form-builder": "^1.0@dev",
         "ezsystems/ezplatform-ee-installer": "^2.2@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "knplabs/knp-menu-bundle": "^2.2.1",
