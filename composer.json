@@ -61,6 +61,7 @@
         "willdurand/js-translation-bundle": "^2.6.6",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
         "white-october/pagerfanta-bundle": "^1.2",
+        "gregwar/captcha-bundle": "^2.0",
         "roave/security-advisories": "dev-master",
         "leafo/scssphp": "^0.7.6",
         "symfony/thanks": "^1.0.7"
