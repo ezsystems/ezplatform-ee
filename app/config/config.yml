@@ -157,3 +157,5 @@ jms_translation:
             output_dir: '%kernel.root_dir%/../vendor/ezsystems/ezplatform-page-builder/src/bundle/Resources/translations/'
             excluded_dirs: [Behat, Tests]
             output_format: "xlf"
+
+gregwar_captcha: ~
