@@ -73,7 +73,9 @@
         "ezsystems/behatbundle": "^6.5.3",
         "phpunit/phpunit": "^6.4.4",
         "sensio/generator-bundle": "^3.1.7",
-        "symfony/phpunit-bridge": "^3.4.11"
+        "symfony/phpunit-bridge": "^3.4.11",
+        "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.0",
+        "bex/behat-screenshot": "^1.2"
     },
     "conflict": {
         "symfony/symfony": "3.4.9||3.4.12",
