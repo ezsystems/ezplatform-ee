@@ -158,4 +158,5 @@ jms_translation:
             excluded_dirs: [Behat, Tests]
             output_format: "xlf"
 
-gregwar_captcha: ~
+gregwar_captcha:
+    as_url: true
