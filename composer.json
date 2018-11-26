@@ -45,7 +45,7 @@
         "ezsystems/ezplatform-page-builder": "^1.2@dev",
         "ezsystems/ezplatform-page-fieldtype": "^1.2@dev",
         "ezsystems/ezplatform-richtext": "^1.0@dev",
-        "ezsystems/ezplatform-solr-search-engine": "~1.5.4@dev",
+        "ezsystems/ezplatform-solr-search-engine": "^1.5.4@dev",
         "ezsystems/ezplatform-standard-design": "^0.1@dev",
         "ezsystems/ezpublish-kernel": "^7.4@dev",
         "ezsystems/flex-workflow": "^3.2@dev",
