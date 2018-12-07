@@ -51,6 +51,9 @@ ezplatform.ee.date_based_publisher:
 ezplatform.ee.flex_workflow:
     resource: '@FlexWorkflowBundle/Resources/config/routing.yml'
 
+ezplatform.ee.workflow:
+    resource: '@EzPlatformWorkflowBundle/Resources/config/routing.yml'
+
 fos.js_routing:
     resource: '@FOSJsRoutingBundle/Resources/config/routing/routing.xml'
 

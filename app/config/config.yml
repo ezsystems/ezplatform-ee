@@ -75,6 +75,8 @@ framework:
     assets: true
     php_errors:
         log: true
+    workflow:
+        enabled: true
 
 # Twig Configuration
 twig:
