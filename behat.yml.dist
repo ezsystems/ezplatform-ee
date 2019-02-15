@@ -36,6 +36,8 @@ default:
                     mode: normal
                     limit: 10
 
+        Liuggio\Fastest\Behat\ListFeaturesExtension\Extension: ~
+
     suites: ~
 
 imports:
