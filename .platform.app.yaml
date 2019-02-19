@@ -76,6 +76,12 @@ hooks:
         fi
 
         composer config http-basic.updates.ez.no $COMPOSER_KEY $COMPOSER_PASSWORD
+
+        # Inject GITHUB token if provided. Handy if you need to download things from github
+        if [ -n "$GITHUB_TOKEN" ]; then
+            composer config github-oauth.github.com $GITHUB_TOKEN
+        fi
+
         rm web/app_dev.php
         if [ "$SYMFONY_ENV" = "dev" ] ; then
             composer install --prefer-dist --no-progress --no-interaction --optimize-autoloader
