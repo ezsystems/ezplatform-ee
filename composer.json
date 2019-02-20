@@ -34,7 +34,7 @@
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/ez-support-tools": "^0.2@dev",
         "ezsystems/ezplatform-admin-ui": "^1.4@dev",
-        "ezsystems/ezplatform-admin-ui-assets": "^4.0@dev",
+        "ezsystems/ezplatform-admin-ui-assets": "^4.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.4@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
         "ezsystems/ezplatform-cron": "^2.0@dev",
