@@ -3,6 +3,7 @@
     "@babel/preset-react": "^7.0.0",
     "@symfony/webpack-encore": "^0.22.4",
     "node-sass": "^4.11.0",
+    "react-collapsible": "^2.5.0",
     "sass-loader": "^7.0.1"
   }
 }
