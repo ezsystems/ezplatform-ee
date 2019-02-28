@@ -52,6 +52,7 @@
         "ezsystems/ezpublish-kernel": "^7.4@dev",
         "ezsystems/flex-workflow": "^3.2@dev",
         "ezsystems/repository-forms": "^2.4@dev",
+        "ezsystems/ezplatform-user": "^1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
         "gregwar/captcha-bundle": "^2.0",
         "incenteev/composer-parameter-handler": "^2.1.3",
