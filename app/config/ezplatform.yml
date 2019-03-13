@@ -47,6 +47,7 @@ ezpublish:
             http_cache:
                 # If using fastly, 'purge_server' must be set to 'https://api.fastly.com'
                 purge_servers: ['%purge_server%']
+                varnish_invalidate_token: '%varnish_invalidate_token%'
                 fastly:
                     service_id: '%fastly_service_id%'
                     key: '%fastly_key%'
@@ -60,6 +61,7 @@ ezpublish:
                 default_ttl: '%httpcache_default_ttl%'
             http_cache:
                 purge_servers: ['%purge_server%']
+                varnish_invalidate_token: '%varnish_invalidate_token%'
                 fastly:
                     service_id: '%fastly_service_id%'
                     key: '%fastly_key%'
