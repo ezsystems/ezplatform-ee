@@ -66,11 +66,14 @@ mounts:
     'web/var':
         source: local
         source_path: var
+# Uncomment if you need to use Kaliop Migrations on your setup and not able to get it to write to "var" dir.
+#    'src/AppBundle/MigrationVersions/References':
+#        source: local
+#        source_path: MigrationVersionsReferences
 # Uncomment if you want to use DFS clustering, WARNING: Needs to be shared, contact Platform.sh support to set this up
 #    'dfsdata':
 #        source: shared
 #        source_path: dfsdata
-
 
 # The hooks that will be performed when the package is deployed.
 hooks:
@@ -115,11 +118,17 @@ hooks:
     #    set -e
 
 # The configuration of scheduled execution.
-# see http://symfony.com/doc/current/components/console/introduction.html
-#crons:
-#    symfony:
-#        spec: "*/20 * * * *"
-#        cmd: "php app/console ezpublish:cron:run"
+# see https://docs.platform.sh/configuration/app/cron.html#cron-jobs
+crons:
+    frequent:
+        # NOTE: The minimum interval between cron runs is 5 minutes, even if specified as less.
+        # Except for PE. There crons can be run every minute.
+        # So if you are not on PE please change specs to "*/5 * * * *" to avoid warning on each deploy.
+        spec: "* * * * *"
+        cmd: "php app/console ezpublish:cron:run"
+    weekly:
+        spec: "0 0 * * 0"
+        cmd: "php app/console ezplatform:check-urls --quiet"
 
 runtime:
     extensions:
@@ -132,4 +141,3 @@ runtime:
         #  configuration:
         #      server_id: 'xxxx-xxx-xxx-xxx-xxxx'
         #      server_token: 'xxxx'
-
