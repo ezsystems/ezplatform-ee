@@ -89,6 +89,12 @@ hooks:
         fi
 
         composer config http-basic.updates.ez.no $COMPOSER_KEY $COMPOSER_PASSWORD
+
+        # Configure GITHUB token if set. For use if you have own private repos, or to avoid API rate limits.
+        if [ -n "$GITHUB_TOKEN" ]; then
+            composer config github-oauth.github.com $GITHUB_TOKEN
+        fi
+
         rm web/app_dev.php
         composer install --no-dev --prefer-dist --no-progress --no-interaction --optimize-autoloader
 
