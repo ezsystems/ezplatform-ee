@@ -11,7 +11,16 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder.git"
+        }
+
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
@@ -145,4 +154,3 @@
         }
     }
 }
-
