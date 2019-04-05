@@ -41,7 +41,7 @@
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
-        "ezsystems/ezplatform-form-builder": "^2.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-EZP-30410 as 2.0.x-dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^0.10@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.0@dev",
@@ -145,4 +145,3 @@
         }
     }
 }
-
