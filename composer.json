@@ -19,6 +19,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/ezsystems/ezplatform-page-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/flex-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow.git"
         }
 
     ],
@@ -61,9 +69,9 @@
         "ezsystems/ezplatform-solr-search-engine": "^2.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
-        "ezsystems/ezplatform-workflow": "^2.0@dev",
+        "ezsystems/ezplatform-workflow": "dev-EZP-30410 as 2.0.x-dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
-        "ezsystems/flex-workflow": "^4.0@dev",
+        "ezsystems/flex-workflow": "dev-EZP-30410 as 4.0.x-dev",
         "ezsystems/repository-forms": "^3.0@dev",
         "ezsystems/symfony-tools": "~2.0.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
