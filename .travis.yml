@@ -2,7 +2,7 @@
 # The actual test setup is in Page Builder bundle.
 language: php
 php:
-  - '5.6'
+  - '7.1'
 
 script:
   - echo 'Test suite moved to PageBuilder bundle'
