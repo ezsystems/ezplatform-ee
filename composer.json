@@ -54,6 +54,7 @@
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
+        "ezsystems/ezplatform-rest": "^1.0@dev",
         "ezsystems/flex-workflow": "^4.0@dev",
         "ezsystems/repository-forms": "^3.0@dev",
         "ezsystems/symfony-tools": "~2.0.0@dev",
