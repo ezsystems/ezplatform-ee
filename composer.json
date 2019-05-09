@@ -34,7 +34,7 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "EZP-30397-unify-JS-events-names as 2.0.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-30397-unify-JS-events-names as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
