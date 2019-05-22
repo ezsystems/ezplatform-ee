@@ -27,6 +27,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/ezsystems/ezplatform-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/flex-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher.git"
         }
 
     ],
