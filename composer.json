@@ -30,7 +30,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/ezsystems/flex-workflow.git"
+            "url": "https://github.com/ezsystems/ezplatform-page-fieldtype.git"
         },
         {
             "type": "vcs",
@@ -76,7 +76,7 @@
         "ezsystems/ezplatform-richtext": "^2.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "^2.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
-        "ezsystems/ezplatform-user": "dev-EZP-30473 as 2.0.x-dev",
+            "ezsystems/ezplatform-user": "dev-EZP-30473 as 2.0.x-dev",
         "ezsystems/ezplatform-workflow": "dev-EZP-30473 as 2.0.x-dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
         "ezsystems/flex-workflow": "dev-EZP-30473 as 4.0.x-dev",
