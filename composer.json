@@ -11,7 +11,11 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher.git"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
@@ -31,10 +35,10 @@
         "php": "^7.1.3",
         "doctrine/doctrine-bundle": "^1.9.1",
         "doctrine/orm": "^2.6.3",
-        "ezsystems/date-based-publisher": "^4.0@dev",
+        "ezsystems/date-based-publisher": "dev-EZP-28032-rest-common as ^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
-        "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ez-support-tools": "dev-EZP-28032-extract-rest as ^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-28032-extract-rest-common as ^2.0@dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
@@ -42,16 +46,16 @@
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
-        "ezsystems/ezplatform-graphql": "^2.0@dev",
-        "ezsystems/ezplatform-http-cache": "^0.10@dev",
+        "ezsystems/ezplatform-graphql": "dev-EZP-28032-extract-rest as ^2.0@dev",
+        "ezsystems/ezplatform-http-cache": "dev-EZP-28032-rest-common as 0.10@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-richtext": "^2.0@dev",
+        "ezsystems/ezplatform-richtext": "dev-EZP-28032-rest-common as 2.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "^2.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
-        "ezsystems/ezplatform-user": "^2.0@dev",
+        "ezsystems/ezplatform-user": "dev-EZP-28032-extract-rest-common as ^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
