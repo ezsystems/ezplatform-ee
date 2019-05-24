@@ -48,7 +48,7 @@
         "ezsystems/flex-workflow": "^1.9@dev",
         "ezsystems/landing-page-fieldtype-bundle": "^1.12@dev",
         "ezsystems/platform-ui-bundle": "^1.13.5@dev",
-        "ezsystems/repository-forms": "^1.11.5@dev",
+        "ezsystems/repository-forms": "^1.11.3@dev",
         "ezsystems/studio-ui-bundle": "^1.13@dev",
         "gregwar/captcha": "^1.1.7",
         "hautelook/templated-uri-bundle": "^1.0 | ^2.1",
