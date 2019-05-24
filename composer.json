@@ -11,7 +11,31 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" }, {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/flex-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-user.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/repository-forms.git"
+        }
+
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
