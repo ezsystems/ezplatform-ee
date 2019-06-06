@@ -11,7 +11,35 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-form-builder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-richtext.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-http-cache.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/repository-forms.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher.git"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
@@ -34,28 +62,28 @@
         "ezsystems/date-based-publisher": "^4.0@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-30627 as 2.0.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
-        "ezsystems/ezplatform-form-builder": "^2.0@dev",
+        "ezsystems/ezplatform-form-builder": "dev-EZP-30627 as 2.0.x-dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
-        "ezsystems/ezplatform-http-cache": "^0.10@dev",
+        "ezsystems/ezplatform-http-cache": "dev-EZP-30627 as 0.10.x-dev",
         "ezsystems/ezplatform-http-cache-fastly": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-page-builder": "^2.0@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZP-30627 as 2.0.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
-        "ezsystems/ezplatform-richtext": "^2.0@dev",
+        "ezsystems/ezplatform-richtext": "dev-EZP-30627 as 2.0.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^2.0@dev",
         "ezsystems/ezplatform-standard-design": "^0.3@dev",
         "ezsystems/ezplatform-user": "^2.0@dev",
-        "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/ezpublish-kernel": "^8.0@dev",
+        "ezsystems/ezplatform-workflow": "dev-EZP-30627 as 2.0.x-dev",
+        "ezsystems/ezpublish-kernel": "dev-EZP-30627 as 8.0.x-dev",
         "ezsystems/flex-workflow": "^4.0@dev",
-        "ezsystems/repository-forms": "^3.0@dev",
+        "ezsystems/repository-forms": "dev-EZP-30627 as 3.0.x-dev",
         "ezsystems/symfony-tools": "~2.0.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
