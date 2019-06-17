@@ -1,3 +1,6 @@
+parameters:
+    page_builder.token_authenticator.enabled: true
+
 jms_translation:
     configs:
         page_builder:
