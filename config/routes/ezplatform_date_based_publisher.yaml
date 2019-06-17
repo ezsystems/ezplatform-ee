@@ -1,0 +1,3 @@
+ezplatform.ee.date_based_publisher:
+    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yaml'
+    prefix: '%ez_systems_date_based_publisher_rest_prefix%'

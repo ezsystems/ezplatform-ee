@@ -1,0 +1,2 @@
+ezplatform.ee.workflow:
+    resource: '@EzPlatformWorkflowBundle/Resources/config/routing.yaml'

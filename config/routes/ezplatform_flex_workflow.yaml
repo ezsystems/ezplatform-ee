@@ -1,0 +1,2 @@
+ezplatform.ee.flex_workflow:
+    resource: '@FlexWorkflowBundle/Resources/config/routing.yaml'

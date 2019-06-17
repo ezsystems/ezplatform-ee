@@ -75,6 +75,21 @@ ezpublish:
         site:
             languages: [eng-GB]
 
+        admin_group:
+            # System languages. Note that by default, content, content types, and other data are in eng-GB locale,
+            # so removing eng-GB from this list may lead to errors or content not being shown, unless you change
+            # all eng-GB data to other locales first.
+            # For admin this needs to contain all languages you want to translate content to on the given repository.
+            languages: [eng-GB]
+            page_builder:
+                siteaccess_list: [site]
+            content_tree_module:
+                contextual_tree_root_location_ids:
+                    - 2 # Home (Content structure)
+                    - 5 # Users
+                    - 43 # Media
+                    - 48 # Setup
+                    - 55 # Forms
     url_alias:
         slug_converter:
             transformation: 'urlalias_lowercase'
@@ -94,6 +109,8 @@ framework:
     http_method_override: true
     templating:
         engines: [twig]
+    esi: true
+    fragments: true
     cache:
         pools:
             cache.array:
