@@ -55,4 +55,5 @@ return [
     EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle::class => ['all' => true],
     EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle::class => ['all' => true],
     EzSystems\EzPlatformWorkflowBundle\EzPlatformWorkflowBundle::class => ['all' => true],
+    EzSystems\EzPlatformCalendarBundle\EzPlatformCalendarBundle::class => ['all' => true],
 ];
