@@ -26,6 +26,7 @@
         "ezsystems/ezplatform-admin-ui": "^2.0@dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.0@dev",
         "ezsystems/ezplatform-admin-ui-modules": "^2.0@dev",
+        "ezsystems/ezplatform-calendar": "^1.0@dev",
         "ezsystems/ezplatform-core": "^2.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
