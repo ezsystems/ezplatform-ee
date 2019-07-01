@@ -13,6 +13,7 @@ return [
     Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
     Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle::class => ['all' => true],
     Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
+    Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
     FOS\JsRoutingBundle\FOSJsRoutingBundle::class => ['all' => true],
     JMS\TranslationBundle\JMSTranslationBundle::class => ['all' => true],
@@ -49,7 +50,6 @@ return [
     EzSystems\EzPlatformMatrixFieldtypeBundle\EzPlatformMatrixFieldtypeBundle::class => ['all' => true],
     EzSystems\BehatBundle\EzSystemsBehatBundle::class => ['behat' => true],
     EzSystems\PlatformHttpCacheBundle\EzSystemsPlatformHttpCacheBundle::class => ['all' => true],
-    EzSystems\BehatBundle\EzSystemsBehatBundle::class => ['behat' => true],
     // eZ Platform EE
     EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle::class => ['all' => true],
     EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle::class => ['all' => true],
@@ -59,5 +59,4 @@ return [
     EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle::class => ['all' => true],
     EzSystems\EzPlatformWorkflowBundle\EzPlatformWorkflowBundle::class => ['all' => true],
     EzSystems\EzPlatformCalendarBundle\EzPlatformCalendarBundle::class => ['all' => true],
-    Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
 ];
