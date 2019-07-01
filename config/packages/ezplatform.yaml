@@ -111,8 +111,6 @@ framework:
     http_method_override: true
     templating:
         engines: [twig]
-    esi: true
-    fragments: true
     cache:
         pools:
             cache.array:
