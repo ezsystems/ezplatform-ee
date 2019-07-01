@@ -27,7 +27,6 @@ return [
     Gregwar\CaptchaBundle\GregwarCaptchaBundle::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     FOS\HttpCacheBundle\FOSHttpCacheBundle::class => ['all' => true],
-    // eZ Platform
     eZ\Bundle\EzPublishCoreBundle\EzPublishCoreBundle::class => ['all' => true],
     eZ\Bundle\EzPublishLegacySearchEngineBundle\EzPublishLegacySearchEngineBundle::class => ['all' => true],
     EzSystems\EzPlatformSolrSearchEngineBundle\EzSystemsEzPlatformSolrSearchEngineBundle::class => ['all' => true],
@@ -50,7 +49,6 @@ return [
     EzSystems\EzPlatformMatrixFieldtypeBundle\EzPlatformMatrixFieldtypeBundle::class => ['all' => true],
     EzSystems\BehatBundle\EzSystemsBehatBundle::class => ['behat' => true],
     EzSystems\PlatformHttpCacheBundle\EzSystemsPlatformHttpCacheBundle::class => ['all' => true],
-    // eZ Platform EE
     EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle::class => ['all' => true],
     EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformFormBuilderBundle\EzPlatformFormBuilderBundle::class => ['all' => true],
@@ -60,7 +58,6 @@ return [
     EzSystems\EzPlatformWorkflowBundle\EzPlatformWorkflowBundle::class => ['all' => true],
     EzSystems\EzPlatformCalendarBundle\EzPlatformCalendarBundle::class => ['all' => true],
     EzSystems\EzPlatformGraphQL\EzSystemsEzPlatformGraphQLBundle::class => ['all' => true],
-    // GraphQL bundles have to be loaded after EzSystemsEzPlatformGraphQLBundle
     Overblog\GraphQLBundle\OverblogGraphQLBundle::class => ['all' => true],
     Overblog\GraphiQLBundle\OverblogGraphiQLBundle::class => ['dev' => true],
 ];
