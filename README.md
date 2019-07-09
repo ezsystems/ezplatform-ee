@@ -76,7 +76,7 @@ eZ Platform aims to be **100% content compatible** with eZ Publish 5.x, 4.x and 
 Unlike eZ Publish Platform 5.x, eZ Platform does not ship with eZ Publish Legacy (4.x). But this is available by optional installing [LegacyBridge](https://github.com/ezsystems/LegacyBridge/releases/) to allow eZ Platform and eZ Publish Legacy to run together, this is only recommended for migration use cases and not for new installations.
 
 ## COPYRIGHT
-Copyright (C) 1999-2018 eZ Systems AS. All rights reserved.
+Copyright (C) 1999-2019 eZ Systems AS. All rights reserved.
 
 ## LICENSE
 - http://ez.no/Products/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.1 eZ Business Use License Agreement eZ BUL Version 2.1
