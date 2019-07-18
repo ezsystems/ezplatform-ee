@@ -53,7 +53,7 @@
         "ezsystems/ezplatform-standard-design": "^0.2@dev",
         "ezsystems/ezplatform-user": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^1.1@dev",
-        "ezsystems/ezpublish-kernel": "^7.5@dev",
+        "ezsystems/ezpublish-kernel": "deferred_cache_invalidation as 7.5.x-dev",
         "ezsystems/flex-workflow": "^3.2@dev",
         "ezsystems/repository-forms": "^2.5@dev",
         "ezsystems/symfony-tools": "~1.0.0@dev",
