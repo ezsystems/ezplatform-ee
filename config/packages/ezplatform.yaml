@@ -90,6 +90,8 @@ ezpublish:
                     - 43 # Media
                     - 48 # Setup
                     - 55 # Forms
+            pagination:
+                user_settings_limit: 10
     url_alias:
         slug_converter:
             transformation: 'urlalias_lowercase'
