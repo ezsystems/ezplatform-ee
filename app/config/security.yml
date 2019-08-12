@@ -26,6 +26,7 @@ security:
                 authenticator: 'EzSystems\EzPlatformPageBuilder\Security\EditorialMode\TokenAuthenticator'
             form_login:
                 require_previous_session: false
+                csrf_token_generator: security.csrf.token_manager
             logout: ~
 
         main:
