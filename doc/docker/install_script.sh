@@ -3,6 +3,8 @@
 # Dumping autoload using --optimize-autoloader to keep performenace on a usable level, not needed on linux host.
 # Second chown line:  For dev and behat tests we give a bit extra rights, never do this for prod.
 
+php -i;
+
 for i in $(seq 1 3); do composer install --no-progress --no-interaction --prefer-dist --no-suggest --optimize-autoloader && s=0 && break || s=$? && sleep 1; done; (exit $s);
 mkdir -p web/var;
 
