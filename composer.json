@@ -11,11 +11,7 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" },
-        {
-            "type": "vcs",
-            "url": "https://github.com/ViniTou/ezplatform-admin-ui"
-        }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
