@@ -11,7 +11,19 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ViniTou/ezplatform-admin-ui"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/flex-workflow"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/date-based-publisher"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
