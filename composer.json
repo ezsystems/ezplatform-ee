@@ -132,8 +132,9 @@
             "@auto-scripts"
         ],
         "ezplatform-install": [
-            "@php bin/console ezplatform:install clean",
-            "@php bin/console ezplatform:graphql:generate-schema"
+            "@php bin/console ezplatform:install ezplatform-ee-clean",
+            "@php bin/console ezplatform:graphql:generate-schema",
+            "@auto-scripts"
         ]
     },
     "config": {
