@@ -46,6 +46,7 @@
 !bin/.ci/
 !bin/.travis/
 !bin/console
+!bin/platformsh_prestart_cacheclear.sh
 !bin/vhost.sh
 
 .php~
