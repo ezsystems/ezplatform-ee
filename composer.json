@@ -11,7 +11,15 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+          "type": "vcs",
+          "url": "https://github.com/m-tyrala/allure-behat"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/m-tyrala/allure-php-commons"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
@@ -90,7 +98,8 @@
         "sensio/generator-bundle": "^3.1.7",
         "symfony/phpunit-bridge": "^3.4.18",
         "liuggio/fastest": "^1.6",
-        "allure-framework/allure-behat": "^1.1.0"
+        "allure-framework/allure-behat": "^2.0",
+        "allure-framework/allure-php-api": "^2.0"
     },
     "conflict": {
         "symfony/symfony": "3.4.9||3.4.12||3.4.16",
