@@ -19,6 +19,10 @@
         {
           "type": "vcs",
           "url": "https://github.com/m-tyrala/allure-php-commons"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ezsystems/ezplatform-page-builder"
         }
     ],
     "replace": {
