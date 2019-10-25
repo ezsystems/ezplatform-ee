@@ -54,5 +54,6 @@ imports:
     - vendor/ezsystems/behatbundle/EzSystems/BehatBundle/behat_suites.yml
     - vendor/ezsystems/ezplatform-page-builder/behat_suites.yml
     - vendor/ezsystems/ezplatform-form-builder/behat_suites.yml
+    - vendor/ezsystems/ezplatform-workflow/behat_suites.yml
     - vendor/ezsystems/flex-workflow/behat_suites.yml
     - vendor/ezsystems/date-based-publisher/behat_suites.yml
