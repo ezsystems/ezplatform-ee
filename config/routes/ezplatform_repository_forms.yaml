@@ -1,2 +1,2 @@
-ezplatform_repository_forms:
-    resource: '@EzSystemsRepositoryFormsBundle/Resources/config/routing.yaml'
+ezplatform_content_forms:
+    resource: '@EzPlatformContentFormsBundle/Resources/config/routing.yaml'
