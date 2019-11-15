@@ -11,7 +11,8 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        { "type": "vcs", "url": "https://github.com/ezsystems/ezplatform-form-builder.git" }
     ],
     "replace": {
         "ezsystems/ezstudio": "*",
@@ -34,19 +35,19 @@
         "ezsystems/date-based-publisher": "^3.2@dev",
         "ezsystems/doctrine-dbal-schema": "^0.1@dev",
         "ezsystems/ez-support-tools": "^1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "^1.5@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-29112 as 1.5.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "^4.1.0",
         "ezsystems/ezplatform-admin-ui-modules": "^1.5@dev",
         "ezsystems/ezplatform-core": "^1.0@dev",
         "ezsystems/ezplatform-cron": "^2.0@dev",
         "ezsystems/ezplatform-design-engine": "^2.0@dev",
         "ezsystems/ezplatform-ee-installer": "^2.5@dev",
-        "ezsystems/ezplatform-form-builder": "^1.2@dev",
+        "ezsystems/ezplatform-form-builder": "dev-EZP-29112 as 1.2.x-dev",
         "ezsystems/ezplatform-graphql": "^1.0@dev",
         "ezsystems/ezplatform-http-cache": "^0.9@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.1@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^1.0@dev",
-        "ezsystems/ezplatform-page-builder": "^1.3@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZP-29112 as 1.3.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^1.3@dev",
         "ezsystems/ezplatform-richtext": "^1.1@dev",
         "ezsystems/ezplatform-solr-search-engine": "^1.6@dev",
@@ -86,7 +87,7 @@
         "bex/behat-screenshot": "^1.2.7",
         "ezsystems/allure-behat": "^2.0",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1.0@dev",
-        "ezsystems/behatbundle": "^7.0.0@dev",
+        "ezsystems/behatbundle": "dev-EZP-29112 as 7.0.x-dev",
         "liuggio/fastest": "^1.6",
         "overblog/graphiql-bundle": "^0.1.2",
         "phpunit/phpunit": "^6.5.13",
