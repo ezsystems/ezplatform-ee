@@ -19,6 +19,7 @@ default:
                             args:
                                 - "--window-size=1440,1080"
                                 - "--no-sandbox"
+                                - "--disable-features=site-per-process"
 
         Behat\Symfony2Extension:
             kernel:
