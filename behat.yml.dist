@@ -19,6 +19,7 @@ default:
                             args:
                                 - "--window-size=1440,1080"
                                 - "--no-sandbox"
+                                # https://bugs.chromium.org/p/chromedriver/issues/detail?id=2758&q=iframe&colspec=ID%20Status%20Pri%20Owner%20Summary
                                 - "--disable-features=site-per-process"
 
         Behat\Symfony2Extension:
