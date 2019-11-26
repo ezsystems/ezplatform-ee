@@ -10,3 +10,8 @@ services:
           - site.example.com
           - admin.example.com
           - test.example.com
+      backend:
+        aliases:
+          - site.example.com
+          - admin.example.com
+          - test.example.com
