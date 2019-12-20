@@ -34,6 +34,7 @@
         "ezsystems/ezplatform-page-builder": "^2.0@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.0@dev",
+        "ezsystems/ezplatform-query-fieldtype": "^2.0@dev",
         "ezsystems/ezplatform-rest": "^1.0@dev",
         "ezsystems/ezplatform-richtext": "^2.0@dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.0@dev",
