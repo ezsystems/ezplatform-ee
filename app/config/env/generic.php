@@ -136,6 +136,9 @@ if ($pool = getenv('CUSTOM_CACHE_POOL')) {
 // HttpCache setting (for configuring http cache purging)
 if ($purgeType = getenv('HTTPCACHE_PURGE_TYPE')) {
     $container->setParameter('purge_type', $purgeType);
+    if ($purgeType === 'fastly') {
+        $container->setParameter('purge_server', 'https://api.fastly.com');
+    }
 }
 
 if ($purgeServer = getenv('HTTPCACHE_PURGE_SERVER')) {
