@@ -201,3 +201,7 @@ lexik_jwt_authentication:
             enabled: false
         query_parameter:
             enabled: false
+
+liip_imagine:
+    # valid drivers options include "gd" or "gmagick" or "imagick"
+    driver: "%liip_imagine_driver%"
