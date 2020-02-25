@@ -33,8 +33,8 @@ eZ Platform is 100% open source and is the foundation for the commercial *eZ Pla
 NOTE: *For simplified installation, consider using community supported [eZ Launchpad](https://ezsystems.github.io/launchpad/) which takes care of the whole server setup for you.*
 
 Installation instructions below are for installing a clean installation of eZ Platform Enterprise Edition in latest version with _no_ demo content or demo website.
-Full installation documentation is kept current [in the online docs](https://doc.ezplatform.com/en/latest/getting_started/install_using_composer/), and includes
-instructions on installing other distributions _(like [ezplatform "clean"](https://github.com/ezsystems/ezplatform) and [ezplatform-ee-demo](https://github.com/ezsystems/ezplatform-ee-demo) enterprise edition)_, or other versions.
+Full installation documentation is [in the online docs](https://doc.ezplatform.com/en/latest/getting_started/install_using_composer/).
+It includes instructions on installing other distributions _(like [ezplatform "clean"](https://github.com/ezsystems/ezplatform) and [ezplatform-ee-demo](https://github.com/ezsystems/ezplatform-ee-demo) enterprise edition)_, or other versions.
 
 #### Prerequisites
 
