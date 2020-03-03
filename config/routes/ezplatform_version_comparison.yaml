@@ -1,0 +1,2 @@
+ezplatform_version_comparison:
+    resource: '@EzPlatformVersionComparisonBundle/Resources/config/routing.yaml'
