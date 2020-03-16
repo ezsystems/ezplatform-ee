@@ -46,7 +46,6 @@ return [
     EzSystems\EzPlatformMatrixFieldtypeBundle\EzPlatformMatrixFieldtypeBundle::class => ['all' => true],
     EzSystems\BehatBundle\EzSystemsBehatBundle::class => ['behat' => true],
     EzSystems\PlatformHttpCacheBundle\EzSystemsPlatformHttpCacheBundle::class => ['all' => true],
-    // eZ Platform EE
     EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle::class => ['all' => true],
     EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformFormBuilderBundle\EzPlatformFormBuilderBundle::class => ['all' => true],
@@ -58,7 +57,6 @@ return [
     EzSystems\EzPlatformGraphQL\EzSystemsEzPlatformGraphQLBundle::class => ['all' => true],
     EzSystems\EzPlatformQueryFieldType\Symfony\EzSystemsEzPlatformQueryFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformVersionComparisonBundle\EzPlatformVersionComparisonBundle::class => ['all' => true],
-    // GraphQL bundles have to be loaded after EzSystemsEzPlatformGraphQLBundle
     Overblog\GraphQLBundle\OverblogGraphQLBundle::class => ['all' => true],
     Overblog\GraphiQLBundle\OverblogGraphiQLBundle::class => ['dev' => true],
     Twig\Extra\TwigExtraBundle\TwigExtraBundle::class => ['all' => true],

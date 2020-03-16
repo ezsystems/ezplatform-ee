@@ -49,7 +49,7 @@ security:
             user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
             anonymous: ~
             ezpublish_rest_session: ~
-            simple_preauth:
+            guard:
                 authenticator: 'EzSystems\EzPlatformPageBuilder\Security\EditorialMode\TokenAuthenticator'
             form_login:
                 require_previous_session: false
