@@ -1,2 +1,0 @@
-ezplatform_content_comparison:
-    resource: '@EzPlatformContentComparisonBundle/Resources/config/routing.yaml'
