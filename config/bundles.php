@@ -59,6 +59,7 @@ return [
     EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle::class => ['all' => true],
     EzSystems\EzPlatformWorkflowBundle\EzPlatformWorkflowBundle::class => ['all' => true],
     EzSystems\EzPlatformCalendarBundle\EzPlatformCalendarBundle::class => ['all' => true],
+    EzSystems\EzPlatformSiteFactoryBundle\EzPlatformSiteFactoryBundle::class => ['all' => true],
     EzSystems\EzPlatformGraphQL\EzSystemsEzPlatformGraphQLBundle::class => ['all' => true],
     EzSystems\EzPlatformQueryFieldType\Symfony\EzSystemsEzPlatformQueryFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformContentComparisonBundle\EzPlatformContentComparisonBundle::class => ['all' => true],
