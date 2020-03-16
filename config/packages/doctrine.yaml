@@ -9,13 +9,27 @@ parameters:
 
 doctrine:
     dbal:
-        # configure these for your database server
-        driver: '%database_driver%'
-        charset: '%database_charset%'
-        default_table_options:
-            charset: '%database_charset%'
-            collate: '%database_collation%'
-        url: '%env(resolve:DATABASE_URL)%'
+        connections:
+            default:
+                # configure these for your database server
+                driver: '%database_driver%'
+                charset: '%database_charset%'
+                default_table_options:
+                    charset: '%database_charset%'
+                    collate: '%database_collation%'
+                url: '%env(resolve:DATABASE_URL)%'
+
+            # This connection is dedicated for SiteFactory to avoid known issues, should be the same as default
+            site_factory:
+                # configure these for your database server
+                driver: '%database_driver%'
+                charset: '%database_charset%'
+                default_table_options:
+                    charset: '%database_charset%'
+                    collate: '%database_collation%'
+                url: '%env(resolve:DATABASE_URL)%'
+
+
     orm:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore

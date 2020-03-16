@@ -15,5 +15,10 @@ framework:
         #app: cache.adapter.apcu
 
         # Namespaced pools use the above "app" backend by default
-        #pools:
-            #my.dedicated.cache: ~
+
+        pools:
+            # This pool should be used only by SiteFactory bundle
+            site_factory_pool:
+                # You can configure it according to your needs
+                adapter: cache.app
+                tags: true
