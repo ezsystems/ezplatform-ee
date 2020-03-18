@@ -5,7 +5,7 @@ jms_translation:
     configs:
         page_builder:
             dirs:
-                - '%kernel.root_dir%/../vendor/ezsystems/ezplatform-page-builder/src'
-            output_dir: '%kernel.root_dir%/../vendor/ezsystems/ezplatform-page-builder/src/bundle/Resources/translations/'
+                - '%kernel.project_dir%/vendor/ezsystems/ezplatform-page-builder/src'
+            output_dir: '%kernel.project_dir%/vendor/ezsystems/ezplatform-page-builder/src/bundle/Resources/translations/'
             excluded_dirs: [Behat, Tests]
             output_format: "xlf"
