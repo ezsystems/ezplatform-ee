@@ -1,0 +1,10 @@
+ez_platform_site_factory:
+    templates:
+        ez_conference:
+            siteaccess_group: sf_group_1
+            name: Conference
+            thumbnail: https://placekitten.com/500/500
+        ez_conference2:
+            siteaccess_group: sf_group_2
+            name: RoadShow
+            thumbnail: https://placedog.net/400/400
