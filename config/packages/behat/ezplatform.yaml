@@ -8,10 +8,22 @@ ezplatform:
         groups:
             site_group:
                 - other_site
+            sf_group_1: []
+            sf_group_2: []
         default_siteaccess: site
         match:
             URIElement: 1
+            '@EzSystems\EzPlatformSiteFactory\SiteAccessMatcher': ~
+    system:
+        sf_group_1:
+            design: conference
+        sf_group_2:
+            design: roadshow
+
 ezdesign:
+    design_list:
+        conference: [conference_template]
+        roadshow: [roadshow_template]
     phpstorm:
         enabled: false
 
