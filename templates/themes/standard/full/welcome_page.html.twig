@@ -27,7 +27,7 @@
             {{ constant('EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle::VERSION') }}
         </h1>
         <div class="pt-5">
-            {{ ez_render_field(content, 'short_description') }}
+            <p>{{ ez_render_field(content, 'description') }}</p>
             <p>{{ 'ezplatform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to: %target%') }}</p>
 
             {% set admin_url = url('ezplatform.dashboard', { 'siteaccess': 'admin' }) %}
@@ -43,7 +43,7 @@
         <div class="row py-4">
             <div class="col-12 py-4">
                 <div class="container text-center">
-                    {{ ez_render_field(content, 'description') }}
+                    {{ ez_render_field(content, 'page') }}
                 </div>
             </div>
         </div>
