@@ -1,0 +1,7 @@
+ez_platform_site_factory:
+    enabled: false
+#    templates:
+#        site_template:
+#            siteaccess_group: site_factory_group
+#            name: Example Site
+#            thumbnail: https://placekitten.com/500/500
