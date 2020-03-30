@@ -1,4 +1,5 @@
 ez_platform_site_factory:
+    enabled: true
     templates:
         ez_conference:
             siteaccess_group: sf_group_1
