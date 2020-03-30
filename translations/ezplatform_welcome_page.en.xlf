@@ -12,8 +12,8 @@
         <note>key: ezplatform_welcome_page.community_slack_channel</note>
       </trans-unit>
       <trans-unit id="7a962f72da65e7106687adac6e6d7b5d658991b1" resname="ezplatform_welcome_page.copyright">
-        <source>eZ Platform ©1999-%current_year% %ez_link_open%eZ Systems AS%ez_link_close% and others.</source>
-        <target state="new">eZ Platform ©1999-%current_year% %ez_link_open%eZ Systems AS%ez_link_close% and others.</target>
+        <source>eZ Platform Enterprise Edition ©1999-%current_year% %ez_link_open%eZ Systems AS%ez_link_close% and others.</source>
+        <target state="new">eZ Platform Enterprise Edition ©1999-%current_year% %ez_link_open%eZ Systems AS%ez_link_close% and others.</target>
         <note>key: ezplatform_welcome_page.copyright</note>
       </trans-unit>
       <trans-unit id="dce2b551a81d5cbd0b2c34dcea1e31311f67ed0d" resname="ezplatform_welcome_page.create_new_content_at">
