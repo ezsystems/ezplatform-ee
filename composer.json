@@ -44,7 +44,7 @@
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-version-comparison": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
-        "ezsystems/templated-uri-bundle": "^3.3@dev",
+        "hautelook/templated-uri-bundle": "^3.2",
         "friendsofsymfony/jsrouting-bundle": "^2.5",
         "gregwar/captcha-bundle": "^2.0",
         "knplabs/knp-menu-bundle": "^3.0",
