@@ -27,6 +27,12 @@ UPDATE `ezkeyword_attribute_link` SET `version` = (
 );
 --
 
+-- EZP-31079: Provided default value for ezuser login pattern --
+UPDATE `ezcontentclass_attribute` SET `data_text2` = '^[^@]+$'
+    WHERE `data_type_string` = 'ezuser'
+    AND `data_text2` IS NULL;
+--
+
 -- EZEE-2880: Added support for stage and transition actions --
 ALTER TABLE `ezeditorialworkflow_markings`
     ADD COLUMN `message` TEXT NOT NULL default '',

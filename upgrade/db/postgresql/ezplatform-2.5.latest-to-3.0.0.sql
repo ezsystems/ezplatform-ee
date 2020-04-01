@@ -29,6 +29,12 @@ ALTER TABLE ezkeyword_attribute_link ALTER COLUMN version SET NOT NULL;
 CREATE INDEX ezkeyword_attr_link_oaid_ver ON ezkeyword_attribute_link (objectattribute_id, version);
 --
 
+-- EZP-31079: Provided default value for ezuser login pattern --
+UPDATE "ezcontentclass_attribute" SET "data_text2" = '^[^@]+$'
+    WHERE "data_type_string" = 'ezuser'
+    AND "data_text2" IS NULL;
+--
+
 -- EZEE-2880: Added support for stage and transition actions --
 ALTER TABLE ezeditorialworkflow_markings
     ADD COLUMN message TEXT NOT NULL default '',
