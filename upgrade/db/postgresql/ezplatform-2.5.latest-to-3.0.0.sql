@@ -28,3 +28,10 @@ ALTER TABLE ezkeyword_attribute_link ALTER COLUMN version SET NOT NULL;
 
 CREATE INDEX ezkeyword_attr_link_oaid_ver ON ezkeyword_attribute_link (objectattribute_id, version);
 --
+
+-- EZEE-2880: Added support for stage and transition actions --
+ALTER TABLE ezeditorialworkflow_markings
+    ADD COLUMN message TEXT NOT NULL default '',
+    ADD COLUMN reviewer_id INTEGER,
+    ADD COLUMN result TEXT;
+--
