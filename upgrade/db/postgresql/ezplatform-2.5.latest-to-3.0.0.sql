@@ -41,3 +41,21 @@ ALTER TABLE ezeditorialworkflow_markings
     ADD COLUMN reviewer_id INTEGER,
     ADD COLUMN result TEXT;
 --
+
+-- EZEE-2988: Added availability for schedule hide --
+START TRANSACTION;
+ALTER TABLE ezdatebasedpublisher_scheduled_version RENAME COLUMN publication_date TO action_timestamp;
+ALTER TABLE ezdatebasedpublisher_scheduled_version ADD COLUMN action VARCHAR(32);
+UPDATE ezdatebasedpublisher_scheduled_version SET action = 'publish';
+ALTER TABLE ezdatebasedpublisher_scheduled_version ALTER COLUMN action SET NOT NULL ;
+COMMIT;
+--
+START TRANSACTION;
+ALTER TABLE ezdatebasedpublisher_scheduled_version
+    RENAME TO ezdatebasedpublisher_scheduled_entries;
+ALTER TABLE ezdatebasedpublisher_scheduled_entries
+    ALTER COLUMN version_id DROP NOT NULL;
+ALTER TABLE ezdatebasedpublisher_scheduled_entries
+    ALTER COLUMN version_number DROP NOT NULL;
+COMMIT;
+--
