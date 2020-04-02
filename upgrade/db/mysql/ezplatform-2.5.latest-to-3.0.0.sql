@@ -50,8 +50,6 @@ UPDATE `ezdatebasedpublisher_scheduled_version` SET `action` = 'publish';
 ALTER TABLE  `ezdatebasedpublisher_scheduled_version` CHANGE COLUMN `action` `action` VARCHAR(32) NOT NULL;
 COMMIT;
 --
-
--- EZEE-2988: Added availability for schedule hide --
 ALTER TABLE `ezdatebasedpublisher_scheduled_version`
 CHANGE COLUMN `version_id` `version_id` INT NULL ,
 CHANGE COLUMN `version_number` `version_number` INT NULL ,
