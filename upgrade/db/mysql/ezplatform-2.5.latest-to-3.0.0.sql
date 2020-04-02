@@ -41,7 +41,7 @@ ALTER TABLE `ezeditorialworkflow_markings`
 --
 
 -- EZEE-2988: Added availability for schedule hide --
-BEGIN;
+START TRANSACTION;
 ALTER TABLE  `ezdatebasedpublisher_scheduled_version`
 CHANGE COLUMN `publication_date` `action_timestamp` INT(11) NOT NULL;
 ALTER TABLE  `ezdatebasedpublisher_scheduled_version`
