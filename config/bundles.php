@@ -45,6 +45,7 @@ return [
     EzSystems\EzPlatformMatrixFieldtypeBundle\EzPlatformMatrixFieldtypeBundle::class => ['all' => true],
     EzSystems\BehatBundle\EzSystemsBehatBundle::class => ['behat' => true],
     EzSystems\PlatformHttpCacheBundle\EzSystemsPlatformHttpCacheBundle::class => ['all' => true],
+    EzSystems\PlatformFastlyCacheBundle\EzSystemsPlatformFastlyCacheBundle::class => ['all' => true],
     EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle::class => ['all' => true],
     EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformFormBuilderBundle\EzPlatformFormBuilderBundle::class => ['all' => true],
