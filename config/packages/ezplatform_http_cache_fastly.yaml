@@ -2,7 +2,7 @@ parameters:
     fastly_service_id: '%env(FASTLY_SERVICE_ID)%'
     fastly_key: '%env(FASTLY_KEY)%'
 
-ezplatform_kernel:
+ezplatform:
     system:
         default:
             http_cache:
