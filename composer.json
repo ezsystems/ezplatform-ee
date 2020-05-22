@@ -76,7 +76,8 @@
         "symfony/web-link": "^5.0",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "^5.0",
-        "twig/extra-bundle": "^3.0"
+        "twig/extra-bundle": "^3.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "behat/behat": "^3.6",
@@ -97,7 +98,8 @@
         "phpunit/phpunit": "^8.2",
         "symfony/debug-pack": "^1.0",
         "symfony/maker-bundle": "^1.14",
-        "symfony/test-pack": "^1.0"
+        "symfony/test-pack": "^1.0",
+        "ext-json": "*"
     },
     "conflict": {
         "doctrine/persistence": "1.3.2",
@@ -120,7 +122,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "EzSystems\\UserGeneratedContent\\": "bundles/user-generated-content/src/lib/",
+            "EzSystems\\UserGeneratedContentBundle\\": "bundles/user-generated-content/src/bundle/"
         }
     },
     "scripts": {

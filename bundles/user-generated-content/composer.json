@@ -1,0 +1,19 @@
+{
+    "name": "nattfarinn/user-generated-content-bundle",
+    "description": "UGC FieldType for eZ Platform",
+    "type": "library",
+    "license": "Mozilla Public License 2.0",
+    "authors": [
+        {
+            "name": "Slawomir Dolzycki-Uchto",
+            "email": "nattfarinn@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "UserGeneratedContent\\": "src/lib/",
+            "UserGeneratedContentBundle\\": "src/bundle/"
+        }
+    }
+}

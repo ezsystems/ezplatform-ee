@@ -1,0 +1,4 @@
+system:
+    admin_group:
+        fielddefinition_edit_templates:
+            - { template: "@ezdesign/user_generated_content_fieldtype/fielddefinition_form_fields.html.twig", priority: 10 }
