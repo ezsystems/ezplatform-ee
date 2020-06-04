@@ -2,3 +2,6 @@ ezplatform.ee.form_builder:
     resource: '@EzPlatformFormBuilderBundle/Resources/config/routing.yaml'
     defaults:
         siteaccess_group_whitelist: '%admin_group_name%'
+
+ezplatform.ee.form_builder.form_captcha:
+    resource: '@EzPlatformFormBuilderBundle/Resources/config/captcha_routing.yaml'
