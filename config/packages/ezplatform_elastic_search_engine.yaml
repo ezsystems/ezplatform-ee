@@ -1,0 +1,6 @@
+# Base configuration for Elasticsearch
+ezplatform_elastic_search_engine:
+    connections:
+        default:
+            hosts:
+                - "http://localhost:9200"
