@@ -29,6 +29,7 @@
         "ezsystems/ezplatform-cron": "^3.0@dev",
         "ezsystems/ezplatform-design-engine": "^3.0@dev",
         "ezsystems/ezplatform-ee-installer": "^3.0@dev",
+        "ezsystems/ezplatform-elastic-search-engine": "^1.0@dev",
         "ezsystems/ezplatform-form-builder": "^2.0@dev",
         "ezsystems/ezplatform-graphql": "^2.0@dev",
         "ezsystems/ezplatform-http-cache": "^2.0@dev",
