@@ -1,6 +1,9 @@
 # Base configuration for Elasticsearch
+parameters:
+    elasticsearch_dsn: "%env(ELASTICSEARCH_DSN)%"
+
 ezplatform_elastic_search_engine:
     connections:
         default:
             hosts:
-                - "http://localhost:9200"
+                - "%elasticsearch_dsn%"
