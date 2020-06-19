@@ -6,4 +6,4 @@ ezplatform_elastic_search_engine:
     connections:
         default:
             hosts:
-                - { dsn: "%elasticsearch_dsn%" }
+                - "%elasticsearch_dsn%"
