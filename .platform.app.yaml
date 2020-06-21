@@ -34,7 +34,8 @@ relationships:
     #redissession: 'redissession:redis'
     # If you wish to use solr, uncomment this relationship and the corresponding service in .platform/services.yaml
     #solr: 'solrsearch:collection1'
-
+    # If you wish to use elasticsearch, uncomment this relationship and the corresponding service in .platform/services.yaml
+    #elasticsearch: 'elasticsearch:elasticsearch'
 variables:
     php:
         # Example of setting php.ini config
@@ -161,8 +162,11 @@ hooks:
         ##php bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
         ##php bin/console kaliop:migration:migrate --no-interaction --no-debug
 
-        # When using Solr, there are two cases where you'll need to rebuild indexes:
-        # - When Solr / search configuration changes
+        # Configure ElasticSearch
+        ##php bin/console ezplatform:elasticsearch:put-index-template
+
+        # When using Solr / ElasticSearch, there are two cases where you'll need to rebuild indexes:
+        # - When Solr / ElasticSearch / search configuration changes
         # - On database import/restore
         # So in development it might be convenient to rebuild indexes, slowing down deploy time
         ##php bin/console ezplatform:reindex --processes=auto
