@@ -65,4 +65,5 @@ return [
     FriendsOfBehat\SymfonyExtension\Bundle\FriendsOfBehatSymfonyExtensionBundle::class => ['test' => true, 'behat' => true],
     Hautelook\TemplatedUriBundle\HautelookTemplatedUriBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\ElasticSearchEngine\PlatformElasticSearchEngineBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\Permissions\PlatformPermissionsBundle::class => ['all' => true],
 ];
