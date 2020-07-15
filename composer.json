@@ -20,7 +20,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "ezsystems/date-based-publisher": "^4.1@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
-        "ezsystems/ez-support-tools": "^2.0@dev",
+        "ezsystems/ez-support-tools": "^2.1@dev",
         "ezsystems/ezplatform-admin-ui": "^2.1@dev",
         "ezsystems/ezplatform-admin-ui-assets": "^5.1@beta",
         "ezsystems/ezplatform-calendar": "^1.1@dev",
