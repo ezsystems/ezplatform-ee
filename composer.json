@@ -16,6 +16,10 @@
             "name": "ezsystems/behatbundle",
             "type": "git",
             "url": "https://github.com/kaff/BehatBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow.git"
         }
     ],
     "replace": {
@@ -57,7 +61,7 @@
         "ezsystems/ezplatform-solr-search-engine": "^1.6@dev",
         "ezsystems/ezplatform-standard-design": "^0.2@dev",
         "ezsystems/ezplatform-user": "^1.0@dev",
-        "ezsystems/ezplatform-workflow": "fix-1.1.8/EZEE-3155-hide-trashed-content as 1.1.x-dev",
+        "ezsystems/ezplatform-workflow": "dev-fix-1.1.8/EZEE-3155-hide-trashed-content as 1.1.x-dev",
         "ezsystems/ezpublish-kernel": "^7.5@dev",
         "ezsystems/flex-workflow": "^3.2@dev",
         "ezsystems/repository-forms": "^2.5@dev",
@@ -92,7 +96,7 @@
         "ezsystems/allure-behat": "^2.0@dev",
         "ezsystems/allure-php-api": "^2.0@dev",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1.0@dev",
-        "ezsystems/behatbundle": "EZEE-3155-add-trash-context as 7.0.x-dev",
+        "ezsystems/behatbundle": "dev-EZEE-3155-add-trash-context as 7.0.x-dev",
         "liuggio/fastest": "~1.6.0",
         "overblog/graphiql-bundle": "^0.1.2",
         "phpunit/phpunit": "^6.5.13",
