@@ -32,3 +32,4 @@ ez_platform_standard_design:
 
 parameters:
     ezsettings.admin_group.notifications.success.timeout: 20000
+    ezplatform.behat.enable_enterprise_services: true
