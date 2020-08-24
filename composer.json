@@ -18,6 +18,8 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
+        "ezplatform-i18n/ezplatform-i18n-fr_fr": "^3.0",
+        "ezplatform-i18n/ezplatform-i18n-pl_pl": "^3.0",
         "ezsystems/date-based-publisher": "^4.2@dev",
         "ezsystems/doctrine-dbal-schema": "^1.0@dev",
         "ezsystems/ez-support-tools": "^2.2@dev",

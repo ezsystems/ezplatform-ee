@@ -1,0 +1,26 @@
+ezplatform_page_fieldtype:
+  blocks:
+    example_block:
+      name: Example Block
+      # The group that contains the block in the Elements menu
+      category: Example
+      thumbnail: /bundles/ezplatformadminui/img/ez-icons.svg#tag
+      views:
+        default:
+          template: '@ezdesign/blocks/example_block.html.twig'
+          name: Default view
+          priority: -255
+      attributes:
+        name:
+          type: text
+          validators:
+            not_blank:
+              message: Please provide a name
+        email:
+          type: string
+          name: E-mail address
+          validators:
+            regexp:
+              options:
+                pattern: '/^\S+@\S+\.\S+$/'
+              message: Provide a valid e-mail address
