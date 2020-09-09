@@ -10,18 +10,30 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
-    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        "DE654932-AAEB-4E7D-B8D0-D3642EE0D95B": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/BehatBundle"
+        },
+        "3A284025-1F99-4379-A902-2085ECFB7C04": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-admin-ui"
+        }
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.0",
+        "ezsystems/behatbundle": "dev-ezee-3237_add_new_QueryType as 8.1.x-dev",
         "ezsystems/date-based-publisher": "~4.1.0@dev",
         "ezsystems/doctrine-dbal-schema": "~1.0.0@dev",
         "ezsystems/ez-support-tools": "~2.1.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~2.1.0@dev",
+        "ezsystems/ezplatform-admin-ui": "dev-ezee-3237_add_support_for_parameters as 2.1.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.1.0@beta",
         "ezsystems/ezplatform-calendar": "~1.1.0@dev",
         "ezsystems/ezplatform-content-forms": "~1.1.0@dev",
@@ -93,7 +105,6 @@
         "ezsystems/allure-behat": "~3.1.0@dev",
         "ezsystems/allure-php-api": "~3.1.0@dev",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "~1.1.0@dev",
-        "ezsystems/behatbundle": "~8.1.0@dev",
         "liuggio/fastest": "^1.7",
         "friends-of-behat/mink-browserkit-driver": "^1.4",
         "friends-of-behat/mink-extension": "^2.4",
