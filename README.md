@@ -53,17 +53,23 @@ For further information [on requirements see online doc](https://doc.ezplatform.
 Assuming you have prerequisites sorted out, you can get the install up and running with the following commands in your terminal:
 
 ``` bash
-composer create-project --keep-vcs ezsystems/ezplatform-ee ezplatform ^2
+composer create-project --keep-vcs ezsystems/ezplatform-ee ezplatform ^3
 cd ezplatform
 ```
 
 _Note: If composer is installed locally instead of globally, the first command will start with `php composer.phar`._
 
-During the installation process you will be asked to input things like database host name, login, password, etc.
-They will be placed in `<ezplatform>/app/config/parameters.yml`.
+You must add your database connection credentials (hostname, login, password) to the environment file.  
+To do this, in the main project directory, the `.env` file, change the parameters that are prefixed with `DATABASE_` as necessary.
+Store the database credentials in your `.env.local` file. Do not commit the file to the Version Control System.
 
-Next you will receive instructions on how to install data into the database, and how to run a simplified dev server using the `bin/console server:run` command.
-_Tip: For a more complete and better performing setup using Apache or Nginx, read up on how to [install eZ Platform manually](https://doc.ezplatform.com/en/latest/getting_started/install_manually/)._
+Use the following command to install eZ Platform (insert base data into the database):
+
+```bash
+composer ezplatform-install
+```
+
+**Tip:** For a more complete and better performing setup using Apache or Nginx, see how to [install eZ Platform manually](https://doc.ezplatform.com/en/latest/getting_started/install_manually/).
 
 ## Issue tracker
 Submitting bugs, improvements and stories is possible on https://jira.ez.no/browse/EZEE.
@@ -73,10 +79,10 @@ If you discover a security issue, please see how to responsibly report such issu
 eZ Platform aims to be **100% content compatible** with eZ Publish 5.x, 4.x and 3.x *(introduced in 2002)*, meaning that content in those versions of the CMS can be upgraded using
 [online documentation](http://doc.ez.no/eZ-Publish/Upgrading) to eZ Platform.
 
-Unlike eZ Publish Platform 5.x, eZ Platform does not ship with eZ Publish Legacy (4.x). But this is available by optional installing [LegacyBridge](https://github.com/ezsystems/LegacyBridge/releases/) to allow eZ Platform and eZ Publish Legacy to run together, this is only recommended for migration use cases and not for new installations.
+Unlike eZ Publish Platform 5.x, eZ Platform does not ship with eZ Publish Legacy (4.x).
 
 ## COPYRIGHT
-Copyright (C) 1999-2019 eZ Systems AS. All rights reserved.
+Copyright (C) 1999-2020 eZ Systems AS. All rights reserved.
 
 ## LICENSE
 - http://ez.no/Products/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.1 eZ Business Use License Agreement eZ BUL Version 2.1
