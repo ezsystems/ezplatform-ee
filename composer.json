@@ -101,9 +101,6 @@
         "twig/twig": "2.6.1",
         "symfony/webpack-encore-bundle": "1.2.0||1.2.1"
     },
-    "conflict": {
-        "doctrine/dbal": ">=2.11.0"
-    },
     "scripts": {
         "symfony-scripts": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
