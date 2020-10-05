@@ -1,0 +1,2 @@
+ibexa.ezplatform.connector_dam:
+    resource: '@IbexaPlatformConnectorDamBundle/Resources/config/routing.yaml'
