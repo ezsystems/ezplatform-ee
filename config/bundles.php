@@ -67,4 +67,5 @@ return [
     Ibexa\Platform\Bundle\ElasticSearchEngine\PlatformElasticSearchEngineBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Permissions\PlatformPermissionsBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Connector\Dam\IbexaPlatformConnectorDamBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\Segmentation\IbexaPlatformSegmentationBundle::class => ['all' => true],
 ];

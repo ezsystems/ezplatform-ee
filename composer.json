@@ -44,6 +44,7 @@
         "ezsystems/ezplatform-rest": "^1.2@dev",
         "ezsystems/ezplatform-richtext": "^2.2@dev",
         "ezsystems/ezplatform-search": "^1.1@dev",
+        "ezsystems/ezplatform-segmentation": "^1.0@dev",
         "ezsystems/ezplatform-site-factory": "^1.2@dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.2@dev",
         "ezsystems/ezplatform-standard-design": "^0.4@dev",
