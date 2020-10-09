@@ -67,4 +67,5 @@ imports:
     - vendor/ezsystems/ezplatform-workflow/behat_suites.yml
     - vendor/ezsystems/date-based-publisher/behat_suites.yml
     - vendor/ezsystems/ezplatform-user/behat_suites.yml
+    - vendor/ezsystems/ezplatform-page-fieldtype/behat_suites.yml
 
