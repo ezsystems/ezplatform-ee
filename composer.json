@@ -11,7 +11,17 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        {
+            "name": "ezsystems/ezplatform-page-fieldtype",
+            "type": "git",
+            "url": "https://github.com/kaff/ezplatform-page-fieldtype"
+        },
+        {
+            "name": "ezsystems/ezplatform-page-builder",
+            "type": "git",
+            "url": "https://github.com/kaff/ezplatform-page-builder"
+        }
     ],
     "require": {
         "php": "^7.3",
@@ -36,8 +46,8 @@
         "ezsystems/ezplatform-http-cache-fastly": "^2.1@dev",
         "ezsystems/ezplatform-kernel": "^1.2@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.1@dev",
-        "ezsystems/ezplatform-page-builder": "^2.2@dev",
-        "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
+        "ezsystems/ezplatform-page-builder": "dev-feature/EZEE-2817_scheduled_blocks_in_calendar_view as 2.2.x-dev",
+        "ezsystems/ezplatform-page-fieldtype": "dev-EZEE-2817_scheduled_blocks_in_calendar_view as 2.2.x-dev",
         "ezsystems/ezplatform-permissions": "^1.1@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.2@dev",
         "ezsystems/ezplatform-rest": "^1.2@dev",
