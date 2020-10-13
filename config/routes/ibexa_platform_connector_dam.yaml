@@ -1,2 +1,6 @@
 ibexa.platform.connector_dam:
     resource: '@IbexaPlatformConnectorDamBundle/Resources/config/routing.yaml'
+
+ibexa.platform.connector_dam.rest:
+    resource: '@IbexaPlatformConnectorDamBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ezpublish_rest.path_prefix%'
