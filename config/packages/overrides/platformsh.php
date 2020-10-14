@@ -3,7 +3,7 @@
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader;
 
-require_once dirname(__DIR__, 2).'/bootstrap.php';
+require_once dirname(__DIR__, 2) . '/bootstrap.php';
 
 // Run for all hooks, incl build step
 if ($_SERVER['PLATFORM_PROJECT_ENTROPY'] ?? false) {
@@ -57,7 +57,7 @@ if ($dfsNfsPath = $_SERVER['PLATFORMSH_DFS_NFS_PATH'] ?? false) {
         $container->setParameter('dfs_database_driver', $container->getParameter('database_driver'));
     }
 
-    $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__).'/dfs'));
+    $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__) . '/dfs'));
     $loader->load('dfs.yaml');
 }
 // Use Redis-based caching if possible.
@@ -67,7 +67,7 @@ if (isset($relationships['rediscache'])) {
             continue;
         }
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__).'/cache_pool'));
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__) . '/cache_pool'));
         $loader->load('cache.redis.yaml');
 
         $container->setParameter('cache_pool', 'cache.redis');
@@ -85,7 +85,7 @@ if (isset($relationships['rediscache'])) {
         $container->setParameter('cache_pool', 'cache.memcached');
         $container->setParameter('cache_dsn', sprintf('%s:%d', $endpoint['host'], $endpoint['port']));
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__).'/cache_pool'));
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(dirname(__DIR__) . '/cache_pool'));
         $loader->load('cache.memcached.yaml');
     }
 }
@@ -123,6 +123,25 @@ if (isset($relationships['solr'])) {
         $container->setParameter('solr_dsn', sprintf('http://%s:%d/%s', $endpoint['host'], $endpoint['port'], 'solr'));
         // To set solr_core parameter we assume path is in form like: "solr/collection1"
         $container->setParameter('solr_core', substr($endpoint['path'], 5));
+    }
+}
+
+if (isset($relationships['elasticsearch'])) {
+    foreach ($relationships['elasticsearch'] as $endpoint) {
+        $dsn = sprintf('%s:%d', $endpoint['host'], $endpoint['port']);
+
+        if ($endpoint['username'] !== null && $endpoint['password'] !== null) {
+            $dsn = $endpoint['username'] . ':' . $endpoint['password'] . '@' . $dsn;
+        }
+
+        if ($endpoint['path'] !== null) {
+            $dsn .= '/' . $endpoint['path'];
+        }
+
+        $dsn = $endpoint['scheme'] . '://' . $dsn;
+
+        $container->setParameter('search_engine', 'elasticsearch');
+        $container->setParameter('elasticsearch_dsn', $dsn);
     }
 }
 
