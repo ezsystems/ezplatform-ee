@@ -143,11 +143,11 @@ hooks:
         unset NPM_CONFIG_PREFIX
         command -v nvm && nvm use 10.15.3
 
-        # Configure ElasticSearch
-        ##php bin/console ezplatform:elasticsearch:put-index-template
-
         # Mainly relevant for eZ Platform demo usage, for own setup adapt this or remove and rely on migrations.
         if [ ! -f public/var/.platform.installed ]; then
+            # Configure ElasticSearch mappings
+            ##php bin/console ezplatform:elasticsearch:put-index-template
+
             # To workaround issues with p.sh Varnish we clear container cache & temporary set Symfony Proxy
             rm -Rf var/cache/$APP_ENV/*.*
             HTTPCACHE_PURGE_TYPE="local" php -d memory_limit=-1 `which composer` ezplatform-install
