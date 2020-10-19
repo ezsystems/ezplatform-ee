@@ -29,7 +29,7 @@
                 {{ constant('EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle::VERSION') }}
             </h1>
             <div class="pt-5">
-                {{ ez_render_field(content, 'description') }}
+                <strong>{{ ez_render_field(content, 'description') }}</strong>
                 <p class="mb-0">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to: %target%') }}</p>
 
                 {% set admin_url = url('ezplatform.dashboard', { 'siteaccess': 'admin' }) %}
@@ -152,7 +152,7 @@
             '%ibexa_link_open%': '<a href="http://ibexa.co" target="_blank">',
             '%ibexa_link_close%': '</a>',
             '%current_year%': "now"|date("Y")
-        }) |desc('Ibexa Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others')|raw }}
+        }) |desc('Ibexa Digital Experience Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others')|raw }}
         </span>
     </div>
 </footer>
