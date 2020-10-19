@@ -12,8 +12,8 @@
         <note>key: ibexa_platform_welcome_page.community_slack_channel</note>
       </trans-unit>
       <trans-unit id="4c881f4c860503bedbef66f45a3500ac13c22621" resname="ibexa_platform_welcome_page.copyright">
-        <source>Ibexa Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</source>
-        <target state="new">Ibexa Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</target>
+        <source>Ibexa Digital Experience Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</source>
+        <target state="new">Ibexa Digital Experience Platform © %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</target>
         <note>key: ibexa_platform_welcome_page.copyright</note>
       </trans-unit>
       <trans-unit id="38fed69c2be5e97705fcf090148d490768d8c81d" resname="ibexa_platform_welcome_page.create_new_content_at">
