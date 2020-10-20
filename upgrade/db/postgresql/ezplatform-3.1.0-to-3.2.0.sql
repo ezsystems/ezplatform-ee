@@ -11,7 +11,7 @@ CREATE TABLE ibexa_segment_group_map (
 
 DROP TABLE IF EXISTS ibexa_segment_groups;
 CREATE TABLE ibexa_segment_groups (
-  id int NOT NULL,
+  id SERIAL NOT NULL,
   identifier varchar(255) NOT NULL,
   name varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (id,identifier),
@@ -27,7 +27,7 @@ CREATE TABLE ibexa_segment_user_map (
 
 DROP TABLE IF EXISTS ibexa_segments;
 CREATE TABLE ibexa_segments (
-  id int NOT NULL,
+  id SERIAL NOT NULL,
   identifier varchar(255) NOT NULL,
   name varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (id,identifier),
