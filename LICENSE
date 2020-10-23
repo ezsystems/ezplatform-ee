@@ -1,14 +1,14 @@
-Copyright (C) 1999-2017 eZ Systems AS. All rights reserved.
+Copyright (C) 1999-2020 Ibexa AS. All rights reserved.
 This source code is provided under the license bundled below.
 
 The source code is available separately under the eZ BUL 2.2 License,
-granted by having a valid eZ Platform Enterprise subscription:
-- https://ez.no/Products/eZ-Platform-Enterprise-Edition
-- https://ez.no/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.2
+granted by having a valid Ibexa Digital Experience Platform (DXP) subscription:
+- https://www.ibexa.co/products
+- https://www.ibexa.co/software-information/licenses-and-agreements/ez-business-use-license-agreement-ez-bul-version-2.2
 
 To get access to the full source code under TTL license below,
-reach out to eZ Systems AS for evaluation access:
-- https://ez.no/About-eZ/Contact-Us
+reach out to Ibexa AS for evaluation access:
+- https://www.ibexa.co/about-ibexa/contact-us
 
 ----------------------------------------------------------
 
@@ -36,7 +36,7 @@ The parties hereby agree to the following software license terms:
 
 1. Definitions
 
-"Licensed Software" means the eZ Platform Enterprise Edition content
+"Licensed Software" means the Ibexa Digital Experience Platform (DXP) content
 management system or other software product (such as eZ Commerce) downloaded, ordered or
 otherwise legally acquired (licensed) by Licensee from Licensor (or
 other party authorized by the Licensor) under these terms.
