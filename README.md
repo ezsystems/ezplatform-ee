@@ -1,25 +1,20 @@
-# Ibexa Platform Enterprise Edition
+# Ibexa Experience 
 
 [![Latest release](https://img.shields.io/github/release/ezsystems/ezplatform-ee.svg?style=flat-square)](https://github.com/ezsystems/ezplatform-ee/releases)
 [![License](https://img.shields.io/packagist/l/ezsystems/ezplatform-ee.svg?style=flat-square)](LICENSE)
 
-## What is eZ Platform Enterprise Edition?
-*eZ Platform Enterprise Edition* is commercial CMS (Content Management System) software developed by eZ Systems.
+## What is Ibexa Experience?
+*Ibexa Experience* is commercial Digital Experience Platform (DXP) software developed by Ibexa.
 
-*eZ Platform Enterprise Edition* derives from *[eZ Platform](https://github.com/ezsystems/ezplatform)*. It is composed of a set of bundles. eZ Platform Enterprise Edition, like eZ Platform, is built on top of the Symfony framework (Full Stack). It has been in development since 2014.
+*Ibexa Experience* derives from *[Ibexa Platform](https://github.com/ezsystems/ezplatform)*. It is composed of a set of bundles. Ibexa Experience, like Ibexa Platform, is built on top of the Symfony framework (Full Stack). It has been in development since 2014.
 
-### How to get access to eZ Platform Enterprise Edition?
+### How to get access to Ibexa Experience?
 
 While this meta repository, `ezplatform-ee`, is public to ease installation and upgrades, full access can be obtained in one of three ways:
-- Request an online demo on [ez.no](https://ez.no/Products/eZ-Platform-Enterprise-Edition)
-- As a partner, download trial version from [Partner Portal](http://ez.no/Partner-Portal)
-- As a customer with an eZ Enterprise subscription, get full version from [Service Portal](https://support.ez.no/Downloads).
-  Or by setting up [Composer Authentication Tokens](https://doc.ez.no/display/DEVELOPER/Using+Composer) for use in combination with this repository.
-
-### eZ Platform Enterprise Edition vs. eZ Platform
-[eZ Platform Enterprise Edition](https://ez.no/Products/eZ-Platform-Enterprise-Edition) is a distribution flavor of [eZ Platform](http://ezplatform.com/), our Symfony-based enterprise level open source CMS.
-In short, Enterprise comes with addtional features and services that extend eZ Platform functionality for media industry and team collaboration.
-
+- Request an online demo on [ibexa.co](https://www.ibexa.co/products)
+- As a partner, download trial version from [Partner Portal](https://www.ibexa.co/partner-portal)
+- As a customer with an Ibexa Experience subscription, get full version from [Service Portal](https://support.ibexa.co/Downloads).
+  Or by setting up [Composer Authentication Tokens](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/#set-up-authentication-tokens) for use in combination with this repository.
 
 #### Further information:
 Ibexa Platform is 100% open source and is the foundation for the commercial *Ibexa Digital Experience Platform* software which adds advanced features for editorial teams, 100% built on top of *Ibexa Platform* APIs.
@@ -29,11 +24,8 @@ Ibexa Platform is 100% open source and is the foundation for the commercial *Ibe
 
 ## Installation
 
-NOTE: *For simplified installation, consider using community supported [eZ Launchpad](https://ezsystems.github.io/launchpad/) which takes care of the whole server setup for you.*
-
-Installation instructions below are for installing a clean installation of eZ Platform Enterprise Edition in latest version with _no_ demo content or demo website.
-Full installation documentation is [in the online docs](https://doc.ezplatform.com/en/latest/getting_started/install_using_composer/).
-It includes instructions on installing other distributions _(like [ezplatform "clean"](https://github.com/ezsystems/ezplatform) and [ezplatform-ee-demo](https://github.com/ezsystems/ezplatform-ee-demo) enterprise edition)_, or other versions.
+Installation instructions below are for installing a clean installation of Ibexa Experience in latest version with _no_ demo content or demo website.
+Full installation documentation is [in the online docs](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
 
 #### Prerequisites
 
@@ -62,26 +54,26 @@ You must add your database connection credentials (hostname, login, password) to
 To do this, in the main project directory, the `.env` file, change the parameters that are prefixed with `DATABASE_` as necessary.
 Store the database credentials in your `.env.local` file. Do not commit the file to the Version Control System.
 
-Use the following command to install Ibexa Platform (insert base data into the database):
+Use the following command to install Ibexa Experience (insert base data into the database):
 
 ```bash
 composer ezplatform-install
 ```
 
-**Tip:** For a more complete and better performing setup using Apache or Nginx, see how to [install Ibexa Platform manually](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
+**Tip:** For a more complete and better performing setup using Apache or Nginx, see how to [install Ibexa Experience manually](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
 
 ## Issue tracker
 Submitting bugs, improvements and stories is possible on https://jira.ez.no/browse/EZEE.
-If you discover a security issue, please see how to responsibly report such issues on https://doc.ez.no/Security.
+If you discover a security issue, please see how to responsibly report such issues on https://www.ibexa.co/software-information/security.
 
 ## Backwards compatibility
-Ibexa Platform aims to be **100% content compatible** with eZ Publish 5.x, 4.x and 3.x *(introduced in 2002)*, meaning that content in those versions of the CMS can be upgraded using
-[online documentation](http://doc.ez.no/eZ-Publish/Upgrading) to Ibexa Platform.
+Ibexa Experience aims to be **fully content compatible** with eZ Publish 5.x, meaning that the content in these versions of the CMS can be upgraded using
+[online documentation](https://doc.ezplatform.com/en/latest/migrating/migrating_from_ez_publish_platform/) to Ibexa Experience.
 
 
 ## COPYRIGHT
 Copyright (C) 1999-2020 Ibexa AS. All rights reserved.
 
 ## LICENSE
-- http://ez.no/Products/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.1 eZ Business Use License Agreement eZ BUL Version 2.1
-- https://ez.no/About-our-Software/Licenses-and-agreements/eZ-Trial-and-Test-License-Agreement-eZ-TTL-v2.0 eZ Trial and Test License Agreement (eZ TTL) v2.0
+- https://www.ibexa.co/software-information/licenses-and-agreements/ibexa-trial-and-test-license-agreement-ibexa-ttl-v2.2 Ibexa Business Use License Agreement Ibexa BUL Version 2.3
+- https://www.ibexa.co/software-information/licenses-and-agreements/ibexa-business-use-license-agreement-ibexa-bul-version-2.3 Ibexa Trial and Test License Agreement (Ibexa TTL) v2.2
