@@ -1,7 +1,7 @@
 Copyright (C) 1999-2020 Ibexa AS. All rights reserved.
 This source code is provided under the license bundled below.
 
-The source code is available separately under the eZ BUL 2.2 License,
+The source code is available separately under the Ibexa BUL 2.2 License,
 granted by having a valid Ibexa Digital Experience Platform (DXP) subscription:
 - https://www.ibexa.co/products
 - https://www.ibexa.co/software-information/licenses-and-agreements/ez-business-use-license-agreement-ez-bul-version-2.2
@@ -12,13 +12,13 @@ reach out to Ibexa AS for evaluation access:
 
 ----------------------------------------------------------
 
-eZ Trial and Test License Agreement ("eZ TTL") Version 2.1
+Ibexa Trial and Test License Agreement ("Ibexa TTL") Version 2.1
 
 
 IMPORTANT: Please read the following license agreement carefully.
 
-This license agreement is between eZ systems AS (Norwegian business
-registration no. 981 601 564), a Norwegian company ("Licensor" or "eZ"),
+This license agreement is between Ibexa systems AS (Norwegian business
+registration no. 981 601 564), a Norwegian company ("Licensor" or "Ibexa"),
 and a test or trial user ("Licensee" or "you"). By installing all or any
 portion of the software (or authorizing any other person to do so), you
 accept the terms and conditions of this license. If you acquired the
@@ -37,7 +37,7 @@ The parties hereby agree to the following software license terms:
 1. Definitions
 
 "Licensed Software" means the Ibexa Digital Experience Platform (DXP) content
-management system or other software product (such as eZ Commerce) downloaded, ordered or
+management system or other software product (such as Ibexa Commerce) downloaded, ordered or
 otherwise legally acquired (licensed) by Licensee from Licensor (or
 other party authorized by the Licensor) under these terms.
 
@@ -64,7 +64,7 @@ building and presenting sample solutions to your clients or potential
 clients.
 
 Since the license is free of charge, you are obliged to submit Licensee
-Modifications to eZ on a continuous basis to contribution@ez.no as
+Modifications to Ibexa on a continuous basis to contribution@ez.no as
 contributions, see section 7.1. Such contribution must include a short
 note explaining the Licensee Modification.
 
@@ -127,7 +127,7 @@ through 11 shall survive the termination of this license for any reason.
 Licensee agrees that the copyright and all other intellectual property
 and proprietary rights of whatever nature in the Licensed Software and
 related documentation are not by this license transferred to you. No
-trademarks of eZ may be used by you without Licensor's express written
+trademarks of Ibexa may be used by you without Licensor's express written
 permission. If permission is grated, use must always take place in
 accordance with the applicable Licensor guidelines as they may be
 updated from time to time. For Licensee Modifications, you must, in the
@@ -137,7 +137,7 @@ Licensed Software contains modifications and state their dates.
 7.2 Contribution of Licensee Modifications
 To the extent that any contributed Licensee Modifications incorporates
 any element which is subject to any intellectual property right owned by
-Licensee, Licensee hereby grants to eZ an unrestricted, non-exclusive,
+Licensee, Licensee hereby grants to Ibexa an unrestricted, non-exclusive,
 perpetual, royalty-free, world-wide, irrevocable and fully transferable
 license to make, use, sell, offer for sale, reproduce, create
 derivatives of, publish, display, sublicense or otherwise practice such
@@ -228,7 +228,7 @@ provision shall be enforceable and enforced.
 This license shall terminate automatically and you may no longer
 exercise any of the rights granted to you by this license as of the date
 you commence an action, including a cross-claim or counterclaim, against
-eZ, an eZ partner or other licensee of eZ software alleging that the
+Ibexa, an Ibexa partner or other licensee of Ibexa software alleging that the
 Software infringes a patent.
 
 11.3 Assignment
@@ -278,9 +278,9 @@ Licensee at the address provided to Licensor (or authorized
 representative) at the time of order, and to Licensor at
 
 Attn: Software Licensing Dept/CLA,
-eZ Systems AS,
-Porselensvegen 18,
-3920 Porsgrunn
+Ibexa AS
+Solligata 2
+0254 Oslo
 Norway
 
 Notices are deemed received by any party: (a) on the day given, if
