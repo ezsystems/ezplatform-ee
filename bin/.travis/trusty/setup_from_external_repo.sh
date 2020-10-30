@@ -36,7 +36,8 @@ ls -al .
 
 ./bin/.travis/trusty/update_docker.sh
 
-echo "> Modify composer.json to point to local checkout"
+echo "> Modify composer.json to point to local checkout and give it higher priority than updates.ez.no"
+composer config repositories.0 '{"type": "composer", "url": "https://updates.ez.no/ttl", "canonical": false}'
 composer config repositories.tmp_travis_folder git ${HOME}/build/ezplatform/tmp_travis_folder
 
 
