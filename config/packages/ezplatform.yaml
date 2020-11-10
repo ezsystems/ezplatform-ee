@@ -121,3 +121,19 @@ framework:
         #       default session name will be set to "eZSESSID{siteaccess_hash}" (unique session name per siteaccess)
         #       Further reading on sessions: http://doc.ezplatform.com/en/latest/guide/sessions/
     http_method_override: true
+
+ezrecommendation:
+    system:
+        default:
+            site_name: 'eZ Platform EE Demo v3'
+            authentication:
+                customer_id: '%env(int:RECOMMENDATION_CUSTOMER_ID)%'
+                license_key: '%env(RECOMMENDATION_LICENSE_KEY)%'
+            included_content_types: [inspiration]
+            random_content_types: []
+            host_uri: '%env(RECOMMENDATION_HOST_URI)%'
+            export:
+                authentication:
+                    method: 'basic'
+                    login: '%env(int:RECOMMENDATION_CUSTOMER_ID)%'
+                    password: '%env(RECOMMENDATION_LICENSE_KEY)%'
