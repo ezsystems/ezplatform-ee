@@ -26,8 +26,43 @@ ezplatform:
                 media: /1/43/
             assets:
                 icon_sets:
-                    default_icons: /bundles/ezplatformadminui/img/ez-icons.svg
-                default_icon_set: default_icons
+                    streamlineicons: /bundles/ibexaplatformicons/img/all-icons.svg
+                default_icon_set: streamlineicons
+            content_type:
+                about:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#about'
+                article:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#article'
+                blog:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#blog'
+                blog_post:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#blog_post'
+                folder:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#folder'
+                form:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#form'
+                place:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#place'
+                product:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#product'
+                field:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#field'
+                user:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#user'
+                user_group:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#user_group'
+                file:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#file'
+                gallery:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#gallery'
+                image:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#image'
+                video:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#video'
+                landing_page:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#landing_page'
+                default-config:
+                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#file'
 
 jms_translation:
     configs:
