@@ -1,13 +1,6 @@
-# Siteaccesses are first added in ../ezplatform.yaml.
-# Only merge additional siteaccesses here.
-
 ezplatform:
     siteaccess:
-        list:
-            - other_site
         groups:
-            site_group:
-                - other_site
             sf_group_1: []
             sf_group_2: []
         default_siteaccess: site
@@ -26,9 +19,6 @@ ezdesign:
         roadshow: [roadshow_template]
     phpstorm:
         enabled: false
-
-ez_platform_standard_design:
-    override_kernel_templates: false
 
 parameters:
     ezsettings.admin_group.notifications.success.timeout: 20000
