@@ -14,6 +14,10 @@
         {
             "type": "composer",
             "url": "https://updates.ez.no/ttl"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/ezsystems/ezplatform-personalization.git"
         }
     ],
     "require": {
@@ -87,7 +91,9 @@
         "symfony/web-link": "^5.0",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "^5.0",
-        "twig/extra-bundle": "^3.0"
+        "twig/extra-bundle": "^3.0",
+        "ezsystems/ezrecommendation-client": "^2.0@dev",
+        "ezsystems/ezplatform-personalization": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.6",
