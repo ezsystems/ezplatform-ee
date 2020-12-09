@@ -28,7 +28,9 @@ services:
      - DATABASE_PASSWORD
      - DATABASE_NAME
      - DATABASE_HOST=db
-     - PUBLIC_SERVER_URI
+     - RECOMMENDATION_CUSTOMER_ID=0
+     - RECOMMENDATION_LICENSE_KEY
+     - RECOMMENDATION_HOST_URI
     networks:
      - backend
     volumes:
