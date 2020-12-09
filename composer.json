@@ -13,7 +13,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://updates.ez.no/ttl"
+            "url": "https://updates.ibexa.co"
         }
     ],
     "require": {
@@ -44,6 +44,7 @@
         "ezsystems/ezplatform-page-builder": "^2.2@dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.2@dev",
         "ezsystems/ezplatform-permissions": "^1.0@dev",
+        "ezsystems/ezplatform-personalization": "^1.0@dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.3@dev",
         "ezsystems/ezplatform-rest": "^1.2@dev",
         "ezsystems/ezplatform-richtext": "^2.2@dev",
@@ -55,6 +56,7 @@
         "ezsystems/ezplatform-user": "^2.2@dev",
         "ezsystems/ezplatform-version-comparison": "^1.2@dev",
         "ezsystems/ezplatform-workflow": "^2.2@dev",
+        "ezsystems/ezrecommendation-client": "^2.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.5.1",
         "gregwar/captcha-bundle": "^2.0",
         "hautelook/templated-uri-bundle": "^3.3",

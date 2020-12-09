@@ -70,4 +70,6 @@ return [
     Ibexa\Platform\Bundle\Permissions\PlatformPermissionsBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Connector\Dam\IbexaPlatformConnectorDamBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Segmentation\IbexaPlatformSegmentationBundle::class => ['all' => true],
+    EzSystems\EzRecommendationClientBundle\EzRecommendationClientBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\Personalization\IbexaPlatformPersonalizationBundle::class => ['all' => true],
 ];
