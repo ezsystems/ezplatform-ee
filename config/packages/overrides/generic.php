@@ -39,6 +39,9 @@ if (($pool = $_SERVER['CACHE_POOL'] ?? false) && file_exists(dirname(__DIR__)."/
 // Params that needs to be set at compile time and thus can't use Symfony's env()
 if ($purgeType = $_SERVER['HTTPCACHE_PURGE_TYPE'] ?? false) {
     $container->setParameter('purge_type', $purgeType);
+    if ($purgeType === 'fastly') {
+        $container->setParameter('purge_server', 'https://api.fastly.com');
+    }
 }
 
 if ($value = $_SERVER['MAILER_TRANSPORT'] ?? false) {
