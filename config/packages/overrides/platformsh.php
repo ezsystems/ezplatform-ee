@@ -126,6 +126,25 @@ if (isset($relationships['solr'])) {
     }
 }
 
+if (isset($relationships['elasticsearch'])) {
+    foreach ($relationships['elasticsearch'] as $endpoint) {
+        $dsn = sprintf('%s:%d', $endpoint['host'], $endpoint['port']);
+
+        if ($endpoint['username'] !== null && $endpoint['password'] !== null) {
+            $dsn = $endpoint['username'] . ':' . $endpoint['password'] . '@' . $dsn;
+        }
+
+        if ($endpoint['path'] !== null) {
+            $dsn .= '/' . $endpoint['path'];
+        }
+
+        $dsn = $endpoint['scheme'] . '://' . $dsn;
+
+        $container->setParameter('search_engine', 'elasticsearch');
+        $container->setParameter('elasticsearch_dsn', $dsn);
+    }
+}
+
 // We will pick a varnish route by the following prioritization:
 // - The first route found that has upstream: varnish
 // - if primary route has upstream: varnish, that route will be prioritised
