@@ -104,7 +104,7 @@
         "ezsystems/allure-behat": "^3.4@dev",
         "ezsystems/allure-php-api": "^3.4@dev",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1@dev",
-        "ezsystems/behatbundle": "^8.3@dev",
+        "ezsystems/behatbundle": "^8.3.x-dev",
         "friends-of-behat/mink-browserkit-driver": "^1.4",
         "friends-of-behat/mink-extension": "^2.4",
         "friends-of-behat/symfony-extension": "^2.1",
