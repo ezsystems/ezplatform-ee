@@ -63,14 +63,3 @@ ezplatform:
                     thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#landing_page'
                 default-config:
                     thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#file'
-
-jms_translation:
-    configs:
-        admin:
-            dirs:
-                - '%kernel.project_dir%/vendor/ezsystems/ezplatform-admin-ui/src'
-            output_dir: '%kernel.project_dir%/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/translations/'
-            excluded_dirs: [Behat, Tests, node_modules]
-            extractor:
-                - ez_policy
-            output_format: "xliff"
