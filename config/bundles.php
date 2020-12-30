@@ -74,4 +74,6 @@ return [
     Ibexa\Platform\Bundle\Personalization\IbexaPlatformPersonalizationBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Migration\IbexaPlatformMigrationBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\ImageEditor\IbexaPlatformImageEditorBundle::class => ['all' => true],
+    KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\OAuth2Client\IbexaPlatformOAuth2ClientBundle::class => ['all' => true],
 ];
