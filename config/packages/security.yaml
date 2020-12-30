@@ -65,6 +65,28 @@ security:
         #        entry_point: lexik_jwt_authentication.jwt_token_authenticator
         #    stateless: true
 
+        # Uncomment ibexa_oauth2_connect, ibexa_with_oauth2 rules and comment ezpublish_front firewall
+        # to enable OAuth2 authentication
+
+        #ibexa_front_oauth2_connect:
+        #    pattern: /oauth2/connect/*
+        #    security: false
+
+        #ibexa_front:
+        #    pattern: ^/
+        #    user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
+        #    anonymous: ~
+        #    ezpublish_rest_session: ~
+        #    guard:
+        #        authenticators:
+        #            - Ibexa\Platform\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #            - EzSystems\EzPlatformPageBuilder\Security\EditorialMode\TokenAuthenticator
+        #        entry_point: Ibexa\Platform\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #    form_login:
+        #        require_previous_session: false
+        #        csrf_token_generator: security.csrf.token_manager
+        #    logout: ~
+
         ezpublish_front:
             pattern: ^/
             user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker

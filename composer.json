@@ -62,6 +62,7 @@
         "hautelook/templated-uri-bundle": "^3.3",
         "ibexa/image-editor": "^1.0@dev",
         "ibexa/migrations": "^1.0@dev",
+        "ibexa/oauth2-client": "^1.0@dev",
         "knplabs/knp-menu-bundle": "^3.1",
         "lexik/jwt-authentication-bundle": "^2.10",
         "monolog/monolog": "^2.1",
