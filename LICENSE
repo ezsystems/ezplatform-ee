@@ -1,14 +1,21 @@
-Copyright (C) 1999-2020 Ibexa AS. All rights reserved.
-This source code is provided under the license bundled below.
+Copyright (C) 1999-2021 Ibexa AS (formerly eZ Systems AS). All rights reserved.
 
-The source code is available separately under the Ibexa BUL 2.3 License,
-granted by having a valid Ibexa Digital Experience Platform (DXP) subscription:
-- https://www.ibexa.co/products
-- https://www.ibexa.co/software-information/licenses-and-agreements/ibexa-business-use-license-agreement-ibexa-bul-version-2.3
+This source code is available separately under the following licenses:
 
-To get access to the full source code under TTL license below,
-reach out to Ibexa AS for evaluation access:
-- https://www.ibexa.co/about-ibexa/contact-us
+A - Ibexa Business Use License Agreement (Ibexa BUL),
+version 2.3 or later versions (as license terms may be updated from time to time)
+Ibexa BUL is granted by having a valid Ibexa DXP (formerly eZ Platform Enterprise) subscription,
+as described at: https://www.ibexa.co/product
+For the full Ibexa BUL license text, please see:
+- LICENSE-bul file placed in the root of this source code, or
+- https://www.ibexa.co/software-information/licenses-and-agreements (latest version applies)
+
+AND
+
+B - Ibexa Trial and Test License Agreement (Ibexa TTL),
+version 2.2 or later versions (as license terms may be updated from time to time)
+Full Ibexa TTL license text below, or online on: https://www.ibexa.co/software-information/licenses-and-agreements (latest version applies)
+
 
 ----------------------------------------------------------
 
@@ -18,14 +25,14 @@ Ibexa Trial and Test License Agreement ("Ibexa TTL") Version 2.2
 IMPORTANT: Please read the following license agreement carefully.
 
 This license agreement is between Ibexa AS (Norwegian business
-registration no. 981 601 564), a Norwegian company ("Licensor" or "Ibexa"),
-and a test or trial user ("Licensee" or "you"). By installing all or any
-portion of the software (or authorizing any other person to do so), you
-accept the terms and conditions of this license. If you acquired the
-software without an opportunity to review this license and do not accept
-the license, you must: (a) not use the software and (b) return or delete
-the software, with your certification of deletion, within thirty (30)
-days of the acquire date.
+registration no. 981 601 564, formerly eZ Systems AS), a Norwegian company
+("Licensor" or "Ibexa"), and a test or trial user ("Licensee" or "you").
+By installing all or any portion of the software (or authorizing any other
+person to do so), you accept the terms and conditions of this license.
+If you acquired the software without an opportunity to review this license
+and do not accept the license, you must: (a) not use the software and (b)
+return or delete the software, with your certification of deletion, within
+thirty (30) days of the acquire date.
 
 This license agreement is entered into in connection with Licensee's
 participation in testing a new version of Licensor software and is valid
@@ -37,9 +44,9 @@ The parties hereby agree to the following software license terms:
 1. Definitions
 
 "Licensed Software" means the Ibexa Digital Experience Platform (DXP)
-or other software product (such as Ibexa Commerce) downloaded, ordered or
-otherwise legally acquired (licensed) by Licensee from Licensor (or
-other party authorized by the Licensor) under these terms.
+or other Ibexa software product (such as eZ Platform Enterprise Edition,
+eZ Publish Platform) downloaded, ordered or otherwise legally acquired
+(licensed) by you from Ibexa (or other party authorized by Ibexa).
 
 "Licensed Copy" means one sample of the Licensed Software.
 
@@ -278,8 +285,8 @@ Licensee at the address provided to Licensor (or authorized
 representative) at the time of order, and to Licensor at
 
 Attn: Software Licensing Dept/CLA,
-Ibexa AS
-Solligata 2
+Ibexa AS,
+Solligata 2,
 0254 Oslo
 Norway
 
@@ -313,4 +320,3 @@ Unless you within 30 days from when you were first made aware or should
 have become aware of the new license has not made reservations directed
 at Licensor in writing, such new version of the license shall be deemed
 as accepted by you.
-
