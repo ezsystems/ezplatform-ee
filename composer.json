@@ -10,12 +10,44 @@
             "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "3A1FC9DE-1323-4027-A1D9-5E5AD192A1C6": {
+            "type": "vcs",
+            "url": "https://github.com/lucasOsti/ezplatform-admin-ui"
+        },
+        "E8216775-04E0-49CB-8E07-1D86AB673FA6": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-site-factory"
+        },
+        "FB7FCDF3-DDA6-4824-93BA-27A6CC384905": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-page-builder"
+        },
+        "CC194DB1-1F05-46B8-83A9-6AFA9F8508B2": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-calendar"
+        },
+        "E118D272-8D90-4110-B46B-7ACEC3C71F09": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-personalization"
+        },
+        "79AC53D3-0F4C-4881-9C7E-EF75107F5559": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ez-support-tools"
+        },
+        "CD66C907-8230-43BA-B1ED-C1CEADA8E90A": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-segmentation"
+        },
+        "9ADEC66D-1398-4539-ADA2-91D45919A62C": {
+            "type": "vcs",
+            "url": "https://github.com/ezsystems/ezplatform-workflow"
+        },
+        "0": {
             "type": "composer",
             "url": "https://updates.ibexa.co"
         }
-    ],
+    },
     "require": {
         "php": "^7.3",
         "ext-ctype": "*",
@@ -23,10 +55,10 @@
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "ezsystems/date-based-publisher": "^4.3@dev",
         "ezsystems/doctrine-dbal-schema": "^1.1@dev",
-        "ezsystems/ez-support-tools": "^2.3@dev",
-        "ezsystems/ezplatform-admin-ui": "^2.3@dev",
+        "ezsystems/ez-support-tools": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 2.3.x-dev",
+        "ezsystems/ezplatform-admin-ui": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 2.3.x-dev",
         "ezsystems/ezplatform-admin-ui-assets": "~5.3.0@beta",
-        "ezsystems/ezplatform-calendar": "^1.3@dev",
+        "ezsystems/ezplatform-calendar": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 1.3.x-dev",
         "ezsystems/ezplatform-connector-dam": "^1.1@dev",
         "ezsystems/ezplatform-content-forms": "^1.3@dev",
         "ezsystems/ezplatform-core": "^2.3@dev",
@@ -41,21 +73,21 @@
         "ezsystems/ezplatform-icons": "~1.0.0@dev",
         "ezsystems/ezplatform-kernel": "^1.3@dev",
         "ezsystems/ezplatform-matrix-fieldtype": "^2.2@dev",
-        "ezsystems/ezplatform-page-builder": "^2.3@dev",
+        "ezsystems/ezplatform-page-builder": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 2.3.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.3@dev",
         "ezsystems/ezplatform-permissions": "^1.1@dev",
-        "ezsystems/ezplatform-personalization": "^1.0@dev",
+        "ezsystems/ezplatform-personalization": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 1.0.x-dev",
         "ezsystems/ezplatform-query-fieldtype": "^2.3@dev",
         "ezsystems/ezplatform-rest": "^1.3@dev",
         "ezsystems/ezplatform-richtext": "^2.3@dev",
         "ezsystems/ezplatform-search": "^1.2@dev",
-        "ezsystems/ezplatform-segmentation": "^1.1@dev",
-        "ezsystems/ezplatform-site-factory": "^1.3@dev",
+        "ezsystems/ezplatform-segmentation": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 1.1.x-dev",
+        "ezsystems/ezplatform-site-factory": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 1.3.x-dev",
         "ezsystems/ezplatform-solr-search-engine": "^3.3@dev",
         "ezsystems/ezplatform-standard-design": "^0.4@dev",
         "ezsystems/ezplatform-user": "^2.3@dev",
         "ezsystems/ezplatform-version-comparison": "^1.3@dev",
-        "ezsystems/ezplatform-workflow": "^2.3@dev",
+        "ezsystems/ezplatform-workflow": "dev-EZP-32179-Add-footer-to-platform-when-user-is-logged-in as 2.3.x-dev",
         "ezsystems/ezrecommendation-client": "^2.1@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.7",
         "gregwar/captcha-bundle": "^2.0",
