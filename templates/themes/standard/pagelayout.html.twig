@@ -7,7 +7,7 @@
         {% set title = ez_content_name( content ) %}
     {% endif %}
     <title>{{ title|default( 'Home' ) }}</title>
-    <meta name="generator" content="eZ Platform"/>
+    <meta name="generator" content="Ibexa DXP"/>
     {% if content is defined and content.contentInfo.mainLocationId %}
         <link rel="canonical" href="{{ ez_path(content) }}" />
     {% endif %}
