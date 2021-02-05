@@ -7,3 +7,6 @@ CREATE TABLE ibexa_setting (
   PRIMARY KEY (id),
   CONSTRAINT ibexa_setting_group_identifier UNIQUE ("group", identifier)
 );
+
+INSERT INTO "ibexa_setting" ("group", "identifier", "value")
+VALUES ('personalization', 'installation_key', '""');

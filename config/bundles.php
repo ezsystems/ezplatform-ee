@@ -50,7 +50,6 @@ return [
     EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle::class => ['all' => true],
     EzSystems\EzPlatformFormBuilderBundle\EzPlatformFormBuilderBundle::class => ['all' => true],
     EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle::class => ['all' => true],
-    EzSystems\EzPlatformEnterpriseEditionInstallerBundle\EzPlatformEnterpriseEditionInstallerBundle::class => ['all' => true],
     EzSystems\EzPlatformWorkflowBundle\EzPlatformWorkflowBundle::class => ['all' => true],
     EzSystems\EzPlatformCalendarBundle\EzPlatformCalendarBundle::class => ['all' => true],
     EzSystems\EzPlatformSiteFactoryBundle\EzPlatformSiteFactoryBundle::class => ['all' => true],
