@@ -7,3 +7,6 @@ CREATE TABLE `ibexa_setting` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `ibexa_setting_group_identifier` (`group`, `identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+INSERT INTO `ibexa_setting` (`group`, `identifier`, `value`)
+VALUES ('personalization', 'installation_key', '""');
