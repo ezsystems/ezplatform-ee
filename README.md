@@ -3,6 +3,11 @@
 [![Latest release](https://img.shields.io/github/release/ezsystems/ezplatform-ee.svg?style=flat-square)](https://github.com/ezsystems/ezplatform-ee/releases)
 [![License](https://img.shields.io/packagist/l/ezsystems/ezplatform-ee.svg?style=flat-square)](LICENSE)
 
+## **This repository is no longer in active development!**
+
+The `master` branch of this repository is no longer in development.
+Please refer to [ibexa/experience](https://github.com/ibexa/experience) for the current, Flex-based repository.
+
 ## What is Ibexa Experience?
 *Ibexa Experience* is commercial Digital Experience Platform (DXP) software developed by Ibexa.
 
