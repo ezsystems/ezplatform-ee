@@ -37,7 +37,7 @@ UPDATE "ezcontentclass_attribute" SET "data_text2" = '^[^@]+$'
 
 -- EZEE-2880: Added support for stage and transition actions --
 ALTER TABLE ezeditorialworkflow_markings
-    ADD COLUMN message TEXT NOT NULL,
+    ADD COLUMN message TEXT NOT NULL DEFAULT '',
     ADD COLUMN reviewer_id INTEGER,
     ADD COLUMN result TEXT;
 --
