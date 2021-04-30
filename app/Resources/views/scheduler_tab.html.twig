@@ -62,43 +62,107 @@
             <div class="ez-raw-content-title d-flex justify-content-between mb-3">
                 <h2>
                     <a data-toggle="collapse" href=".ez-content-loaded-snapshot-collapse" class="ez-content-preview-toggle" aria-expanded="true">
-                        Loaded Snapshot ({{ loaded_snapshot.date|ez_full_datetime }})
+                        Loaded Snapshot ({% if loaded_snapshot is not null %}{{ loaded_snapshot.date|ez_full_datetime }}){% endif %}
                     </a>
                 </h2>
 
             </div>
             <div class="ez-content-loaded-snapshot-collapse collapse show" style="">
-                <section class="ez-fieldgroup container">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>ID</th>
-                            <th>Addition Date</th>
-                            <th>Content</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for initial_item in loaded_snapshot.initialItems  %}
+                {% if loaded_snapshot is not null %}
+                    <section class="ez-fieldgroup container">
+                        <table class="table">
+                            <thead>
                             <tr>
-                                <td class="ez-table__cell">
-                                    {{ loop.index }}
-                                </td>
-                                <td class="ez-table__cell">
-                                    {{ initial_item.id }}
-                                </td>
-                                <td class="ez-table__cell">
-                                    {{ initial_item.additionDate|ez_full_datetime }}
-                                </td>
-                                <td class="ez-table__cell">
-                                    {{ ez_content_name(initial_item.location.contentInfo) }}
-                                </td>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Addition Date</th>
+                                <th>Content</th>
                             </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                            {% for initial_item in loaded_snapshot.initialItems  %}
+                                <tr>
+                                    <td class="ez-table__cell">
+                                        {{ loop.index }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ initial_item.id }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ initial_item.additionDate|ez_full_datetime }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ ez_content_name(initial_item.location.contentInfo) }}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
 
-                </section>
+
+                        <h3>Events applied after loading snapshot:</h3>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Content</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for event in applied_events[schedule_block.id] %}
+                                {% set event_content = '' %}
+                                {% set bg = '#ffffff' %}
+
+                                {% if event.type == 'itemAdded' %}
+                                    {% set bg = '#ddffcc' %}
+                                {% elseif event.type == 'itemRemoved' %}
+                                    {% set bg = '#ffcccc' %}
+                                {% elseif event.type == 'itemsReordered' %}
+                                    {% set bg = '#e6f2ff' %}
+                                {% elseif event.type == 'limitChanged' %}
+                                    {% set bg = '#ffe6ff' %}
+                                {% endif %}
+
+                                <tr style="background: {{ bg }}">
+                                    <td class="ez-table__cell">
+                                        {{ loop.index }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ event.type }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ event.id }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {{ event.datetime|ez_full_datetime }}
+                                    </td>
+                                    <td class="ez-table__cell">
+                                        {% if event.type == 'itemAdded' %}
+                                            {{ ez_content_name(event.item.location.contentInfo) }}
+                                        {% elseif event.type == 'itemRemoved' %}
+                                            {{ ez_content_name(items[schedule_block.id][event.itemId].location.contentInfo) }}
+                                        {% elseif event.type == 'itemsReordered' %}
+                                            <ol>
+                                                {% for itemId in event.map %}
+                                                    <li>{{ ez_content_name(items[schedule_block.id][itemId].location.contentInfo) }}</li>
+                                                {% endfor %}
+                                            </ol>
+                                        {% elseif event.type == 'limitChanged' %}
+                                            {{ event.limit }}
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+
+                    </section>
+                {% else %}
+                    No snapshot loaded.
+                {% endif %}
             </div>
 
             <div class="ez-raw-content-title d-flex justify-content-between mb-3">

@@ -10,6 +10,7 @@ use EzSystems\EzPlatformAdminUi\Util\ContentTypeUtil;
 use EzSystems\EzPlatformPageFieldType\ScheduleBlock\Scheduler;
 use EzSystems\EzPlatformPageFieldType\ScheduleBlock\ScheduleService;
 use EzSystems\EzPlatformPageFieldType\ScheduleBlock\ScheduleSnapshotService;
+use EzSystems\EzPlatformPageFieldType\ScheduleBlock\Snapshot\Snapshot;
 use EzSystems\EzPlatformPageFieldType\ScheduleBlock\Timeline\Event\ItemAddedEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
@@ -131,6 +132,7 @@ class SchedulerSnapshotsTab extends AbstractEventDispatchingTab implements Order
         $form->handleRequest($this->requestStack->getMasterRequest());
 
         $scheduleBlocks = [];
+        $appliedEvents = [];
         $events = [];
         $items = [];
         foreach ($page->getZones() as $zone) {
@@ -141,10 +143,10 @@ class SchedulerSnapshotsTab extends AbstractEventDispatchingTab implements Order
 
                 $scheduleBlocks[] = $blockValue;
 
-                $events = $blockValue->getAttribute('events')->getValue();
+                $blockEvents = $blockValue->getAttribute('events')->getValue();
 
-                $events[$blockValue->getId()] = $events;
-                $items[$blockValue->getId()] = $this->getItems($events);
+                $events[$blockValue->getId()] = $blockEvents;
+                $items[$blockValue->getId()] = $this->getItems($blockEvents);
 
                 if ($form->isSubmitted() && $form->isValid()) {
                     $date = $form->getData()['date'];
@@ -152,7 +154,14 @@ class SchedulerSnapshotsTab extends AbstractEventDispatchingTab implements Order
                     $this->scheduleService->initializeScheduleData($blockValue);
                     $this->scheduleSnapshotService->restoreFromSnapshot($blockValue, $date);
                     $this->scheduler->scheduleToDate($blockValue, $date);
-                    dump($blockValue);
+                    $loadedSnapshot = $blockValue->getAttribute('loaded_snapshot')->getValue();
+
+                    $filteredEvents = $this->scheduler->filterEvents($blockEvents, null !== $loadedSnapshot ? $loadedSnapshot->getDate() : null, $date);
+                    $filteredEvents = $this->scheduler->sortEvents($filteredEvents);
+
+                    $filteredEvents = $this->filterInvalidEvents($loadedSnapshot, $filteredEvents);
+
+                    $appliedEvents[$blockValue->getId()] = $filteredEvents;
                 }
             }
         }
@@ -161,6 +170,7 @@ class SchedulerSnapshotsTab extends AbstractEventDispatchingTab implements Order
             'schedule_blocks' => $scheduleBlocks,
             'items' => $items,
             'schedule_form' => $form->createView(),
+            'applied_events' => $appliedEvents,
         ];
 
         return array_replace($contextParameters, $parameters);
@@ -189,5 +199,20 @@ class SchedulerSnapshotsTab extends AbstractEventDispatchingTab implements Order
         ;
 
         return $builder->getForm();
+    }
+
+    private function filterInvalidEvents(Snapshot $loadedSnapshot, array $filteredEvents): array
+    {
+        $events = [];
+
+        foreach ($filteredEvents as $event) {
+            if ($loadedSnapshot->getDate() >= $event->getDateTime()) {
+                continue;
+            }
+
+            $events[] = $event;
+        }
+
+        return $events;
     }
 }
