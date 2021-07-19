@@ -1,0 +1,67 @@
+dist: xenial
+language: php
+php:
+    - 7.1
+
+env:
+  global:
+    - EZPLATFORM_REPO="https://github.com/ezsystems/ezplatform-ee.git"
+    - SYMFONY_ENV=behat
+    - SYMFONY_DEBUG=1
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+# test only master and stable branches (+ Pull requests)
+branches:
+  only:
+    - master
+    - /^\d+\.\d+$/
+
+matrix:
+  include:
+    - name: "FormBuilder UI Tests"
+      env:
+        - COMPOSE_FILE="doc/docker/base-dev.yml:doc/docker/selenium.yml"
+        - BEHAT_OPTS="--profile=formBuilder --suite=formBuilder"
+        - COMPOSER_MEMORY_LIMIT=4G
+
+notifications:
+  slack:
+    rooms:
+      - secure: e0qpLmSmPg9F65qqEQHLdA57hbO62vAGRLpnLaj0YvypCmHndYUoHIf3EqEsCbWG4ZYcfKZAuZ42ql6+8SoNZCoQSGuoPOdONmYyV0YLD0Cs4ijbq7JH6zVgdTtfrb+0a9VtHgm5xjZjt4qffXtGNm9BLbq+dR8fnzgoxSoZJfzB5zxqWISZyZNhwlhdHONohnBo3teolPQuEcciNdTPatl9WhNub3X1Y+2uVOrhsa5cymNMKqsxEOiN6hQnHrkpoCqqUVqfPGam+R4B8SjG2GTnShU6P/GaFwU0Ybdr+q6Rnf0XBk8mJWZGFOv2ENOhaJz7e5zi9gEP7cw8FhSOqPu7fMWwoBvnCmSJrTcNEun9OepfNtxng7/CexRezF96bMnxzdiQz7TjyQoBjN+ew1c6M3zAhqIUya82ykAT5J4FFxr+TN0BYZ3wxRy5oYGqLl4s8KNFAJkmBfmqqaNauVSpJBlPvA/tfQc6/Rg0u9MsNSlrMR3boQHTM/iAGkbHfE9Z3cke7jt2GYBUqoZQxznwVXJ8ak5VdbfnqdHDFL2CtnCZ+iUQnIDF5kntD6MWK0yECQAl+vS3MTt7pTa52UR9A6Gjtcw7tptBujbPIXAw/jd9RmoBcL2bwLMHc53gq66VgKlbWQgwzALtQpDM5mwOWI6fLr5/NolBoi2kc08=
+    on_success: change
+    on_failure: always
+    on_pull_requests: false
+
+before_install:
+  # Disable XDebug for performance
+  - phpenv config-rm xdebug.ini
+  # Get latest composer build
+  - travis_retry composer selfupdate
+  # Avoid memory issues on composer install
+  - echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  # Set composer credentials for private repositories
+  - if [ "$NETWORK_KEY" = "" ] ; then echo "Env variables are not available in pull requests from forks. Is your branch on the original repository?" && exit 1 ; fi
+  - travis_retry composer config http-basic.updates.ez.no $NETWORK_KEY $NETWORK_TOKEN
+  - travis_retry composer config http-basic.updates.ibexa.co $NETWORK_KEY $NETWORK_TOKEN
+  - travis_retry composer config github-oauth.github.com $GITHUB_TOKEN
+
+install:
+    # Prepare whole environment if needed
+  -  ./.travis/prepare_ezplatform.sh ${INSTALL_EZ_INSTALL_TYPE};
+
+script:
+    - cd "$HOME/build/ezplatform"; docker-compose exec --user www-data app sh -c "bin/ezbehat ${BEHAT_OPTS}" ;
+
+after_failure:
+  # Will show us the last bit of the log of container's main processes
+  # (not counting shell process above running php and behat)
+  # NOTE: errors during docker setup of travis build won't show up here (can't output all as it is too much in debug/verbose mode)
+  - docker-compose logs -t --tail=15
+  # Will show us what is up, and how long it's been up
+  - docker ps -s
+
+after_script:
+  - bin/ezreport
