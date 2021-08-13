@@ -37,6 +37,9 @@ ezplatform.ee.page_builder:
     defaults:
         siteaccess_group_whitelist: '%admin_group_name%'
 
+ezplatform.ee.page_builder_preview:
+    resource: '@EzPlatformPageBuilderBundle/Resources/config/routing_preview.yaml'
+
 ezplatform.ee.form_builder:
     resource: '@EzPlatformFormBuilderBundle/Resources/config/routing.yml'
     defaults:
