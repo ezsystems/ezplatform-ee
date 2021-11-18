@@ -13,7 +13,7 @@ jobs:
         uses: ezsystems/ezplatform-admin-ui/.github/workflows/browser-tests-ez-platform.yaml@move-to-github-actions-v2
         with:
             project-edition: "ezsystems/ezplatform"
-            project-version: "dev-move-to-ga"
+            project-version: "dev-${{ github.head_ref }}"
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/selenium.yml"
             php-image: "ezsystems/php:7.1-v2-node10"
             test-suite: "--profile=adminui --suite=adminui"
