@@ -22,7 +22,7 @@ if [[ -z "${1}" ]]; then
     # If not set, read default from .env file
     export $(grep "COMPOSE_FILE" ${EZPLATFORM_BUILD_DIR}/.env)
 else
-    COMPOSE_FILE=$1
+    export COMPOSE_FILE=$1
 fi
 
 if [[ -n "${DEPENDENCY_PACKAGE_DIR}" ]]; then
