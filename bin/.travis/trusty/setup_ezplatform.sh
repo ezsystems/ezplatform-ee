@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 # This script provides setup steps needed to build eZ Platform docker containers ready to execute
 # functional and acceptance (behat) tests.
 #
@@ -104,3 +106,5 @@ echo '> Install data'
 docker-compose --env-file=.env exec -T --user www-data app sh -c "php /scripts/wait_for_db.php; composer ezplatform-install"
 
 echo '> Done, ready to run tests'
+
+pwd
