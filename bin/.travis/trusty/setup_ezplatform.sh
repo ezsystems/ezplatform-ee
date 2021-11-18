@@ -54,7 +54,7 @@ if [[ -n "${DEPENDENCY_PACKAGE_NAME}" ]]; then
     # move dependency to directory available for docker volume
     BASE_PACKAGE_NAME=`basename ${DEPENDENCY_PACKAGE_NAME}`
     echo "> Move ${DEPENDENCY_PACKAGE_DIR} to ${EZPLATFORM_BUILD_DIR}/${BASE_PACKAGE_NAME}"
-    mv ${DEPENDENCY_PACKAGE_DIR} ${EZPLATFORM_BUILD_DIR}/${BASE_PACKAGE_NAME}
+    cp -R ${DEPENDENCY_PACKAGE_DIR} ${EZPLATFORM_BUILD_DIR}/${BASE_PACKAGE_NAME}
     cd ${EZPLATFORM_BUILD_DIR}/${BASE_PACKAGE_NAME}
 
     # perform full checkout to allow using as local Composer depenency
