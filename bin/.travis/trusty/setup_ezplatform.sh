@@ -91,7 +91,7 @@ if [[ -n "${DOCKER_PASSWORD}" ]]; then
 fi
 
 echo "> Install DB and dependencies"
-docker-compose -f doc/docker/install-dependencies.yml up --abort-on-container-exit
+docker-compose --env-file=.env -f doc/docker/install-dependencies.yml up --abort-on-container-exit
 
 echo "> Start docker containers specified by ${COMPOSE_FILE}"
 docker-compose --env-file=.env up -d
