@@ -92,18 +92,21 @@ if [[ -n "${DOCKER_PASSWORD}" ]]; then
     echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
 fi
 
+# Workaround for older Docker Compose version used on Travis
+cp .env doc/docker
+
 echo "> Install DB and dependencies"
-docker-compose --env-file=.env -f doc/docker/install-dependencies.yml up --abort-on-container-exit
+docker-compose -f doc/docker/install-dependencies.yml up --abort-on-container-exit
 
 echo "> Start docker containers specified by ${COMPOSE_FILE}"
-docker-compose --env-file=.env up -d
+docker-compose up -d
 
 # for behat builds to work
 echo '> Change ownership of files inside docker container'
-docker-compose --env-file=.env exec -T app sh -c 'chown -R www-data:www-data /var/www'
+docker-compose exec -T app sh -c 'chown -R www-data:www-data /var/www'
 
 echo '> Install data'
-docker-compose --env-file=.env exec -T --user www-data app sh -c "php /scripts/wait_for_db.php; composer ezplatform-install"
+docker-compose exec -T --user www-data app sh -c "php /scripts/wait_for_db.php; composer ezplatform-install"
 
 echo '> Done, ready to run tests'
 
