@@ -1,0 +1,22 @@
+name: Browser tests
+
+on:
+    push:
+        branches:
+            - master
+            - "[0-9]+.[0-9]+"
+    pull_request: ~
+
+jobs:
+    admin-ui:
+        name: "[PHP 7.1/PostgreSQL] Admin UI on Clean Platform"
+        uses: ezsystems/ezplatform-admin-ui/.github/workflows/browser-tests-ez-platform.yaml@move-to-github-actions-v2
+        with:
+            project-edition: "ezsystems/ezplatform"
+            project-version: "dev-${{ github.head_ref }}"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/selenium.yml"
+            php-image: "ezsystems/php:7.1-v2-node10"
+            test-suite: "--profile=adminui --suite=adminui"
+            add-as-dependency: false
+        secrets:
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
