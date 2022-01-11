@@ -130,6 +130,10 @@
         "sort-packages": true,
         "preferred-install": {
             "ezsystems/*": "dist"
+        },
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "symfony/thanks": true
         }
     },
     "extra": {
