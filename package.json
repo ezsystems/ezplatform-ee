@@ -5,5 +5,8 @@
     "node-sass": "^4.11.0",
     "react-collapsible": "^2.5.0",
     "sass-loader": "^7.0.1"
+  },
+  "resolutions": {
+    "sockjs-client": "1.5.2"
   }
 }
